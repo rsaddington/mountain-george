@@ -1,0 +1,44 @@
+# Application 'eersaddington', environment 'dev'.
+dev:
+  root: /var/www/html/eersaddington.dev/docroot
+  ac-site: eersaddington
+  ac-env: dev
+  ac-realm: prod
+  uri: eersaddingtondev.prod.acquia-sites.com
+  dev.livedev:
+    parent: '@eersaddington.dev'
+    root: /mnt/gfs/eersaddington.dev/livedev/docroot
+  host: eersaddingtondev.ssh.prod.acquia-sites.com
+  user: eersaddington.dev
+  paths:
+    drush-script: drush9
+
+# Application 'eersaddington', environment 'prod'.
+prod:
+  root: /var/www/html/eersaddington.prod/docroot
+  ac-site: eersaddington
+  ac-env: prod
+  ac-realm: prod
+  uri: eersaddington.prod.acquia-sites.com
+  prod.livedev:
+    parent: '@eersaddington.prod'
+    root: /mnt/gfs/eersaddington.prod/livedev/docroot
+  host: eersaddington.ssh.prod.acquia-sites.com
+  user: eersaddington.prod
+  paths:
+    drush-script: drush9
+
+# Application 'eersaddington', environment 'test'.
+test:
+  root: /var/www/html/eersaddington.test/docroot
+  ac-site: eersaddington
+  ac-env: test
+  ac-realm: prod
+  uri: eersaddingtonstg.prod.acquia-sites.com
+  test.livedev:
+    parent: '@eersaddington.test'
+    root: /mnt/gfs/eersaddington.test/livedev/docroot
+  host: eersaddingtonstg.ssh.prod.acquia-sites.com
+  user: eersaddington.test
+  paths:
+    drush-script: drush9
