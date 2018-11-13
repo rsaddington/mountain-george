@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.video_driver.field_link
+    - field.field.paragraph.video_driver.field_video_embed
+    - paragraphs.paragraphs_type.video_driver
+  module:
+    - link
+    - video_embed_field
+id: paragraph.video_driver.default
+targetEntityType: paragraph
+bundle: video_driver
+mode: default
+content:
+  field_link:
+    weight: 1
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_video_embed:
+    weight: 0
+    label: above
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: true
+    third_party_settings: {  }
+    type: video_embed_field_video
+    region: content
+hidden: {  }

@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph
+    - paragraphs.paragraphs_type.image_driver
+    - paragraphs.paragraphs_type.image_driver_2
+  module:
+    - entity_reference_revisions
+id: paragraph.image_driver_2.field_paragraph
+field_name: field_paragraph
+entity_type: paragraph
+bundle: image_driver_2
+label: Paragraph
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      image_driver: image_driver
+    target_bundles_drag_drop:
+      image_driver_2:
+        weight: 5
+        enabled: false
+      image_driver:
+        enabled: true
+        weight: 6
+      multi_column_driver:
+        weight: 7
+        enabled: false
+      video_driver:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

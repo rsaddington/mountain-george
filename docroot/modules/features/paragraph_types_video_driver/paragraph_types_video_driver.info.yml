@@ -1,0 +1,11 @@
+name: 'Video driver'
+type: module
+core: 8.x
+package: 'Paragraph types'
+dependencies:
+  - content_moderation
+  - field
+  - link
+  - paragraphs
+  - shared_configuration_fieldbases
+  - video_embed_field

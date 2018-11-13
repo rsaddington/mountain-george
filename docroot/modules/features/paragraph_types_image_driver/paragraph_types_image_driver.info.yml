@@ -1,0 +1,12 @@
+name: 'Image driver'
+type: module
+core: 8.x
+dependencies:
+  - content_moderation
+  - field
+  - image
+  - link
+  - paragraphs
+  - shared_configuration_fieldbases
+package: 'Paragraph types'
+description: 'Provides Image driver paragraphs type and related configuration. Image and link'

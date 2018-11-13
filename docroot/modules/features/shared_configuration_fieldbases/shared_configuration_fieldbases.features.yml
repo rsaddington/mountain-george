@@ -1,0 +1,8 @@
+bundle: shared_configuration
+excluded:
+  - core.entity_form_display.paragraph.video_driver.default
+  - core.entity_view_display.paragraph.video_driver.default
+  - field.field.paragraph.video_driver.field_link
+  - field.field.paragraph.video_driver.field_video_embed
+  - paragraphs.paragraphs_type.video_driver
+required: true

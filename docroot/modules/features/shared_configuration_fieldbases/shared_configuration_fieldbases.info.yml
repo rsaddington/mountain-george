@@ -1,0 +1,15 @@
+name: Fieldbases
+description: 'Field configuration for multiple paragraph types'
+type: module
+core: 8.x
+dependencies:
+  - content_moderation
+  - entity_reference_revisions
+  - field
+  - file
+  - image
+  - link
+  - paragraphs
+  - text
+  - video_embed_field
+package: 'Shared configuration'

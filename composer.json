@@ -6,10 +6,13 @@
     "prefer-stable": true,
     "require": {
         "acquia/blt": "^9.2.0",
+        "drupal/admin_toolbar": "^1.24",
         "drupal/ds": "^3.1",
+        "drupal/features": "^3.8",
         "drupal/geofield": "^1.0@beta",
         "drupal/geofield_map": "^2.18",
-        "drupal/paragraphs": "^1.5"
+        "drupal/paragraphs": "^1.5",
+        "drupal/views_slideshow": "^4.6"
     },
     "require-dev": {
         "geerlingguy/drupal-vm": "^4.8"

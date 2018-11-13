@@ -1,0 +1,11 @@
+uuid: b6faed04-aada-4f45-9adb-c6441ca2b55d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: USsNIQ9hBI-VdHwYFAasjEPO-0Jn-FNqy9xsX3kgBrk
+id: single_column_driver
+label: 'Single column driver'
+icon_uuid: null
+description: 'Contains a title, image, text field and driver link'
+behavior_plugins: {  }

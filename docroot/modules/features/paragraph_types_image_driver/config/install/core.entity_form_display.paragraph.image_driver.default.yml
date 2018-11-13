@@ -1,0 +1,43 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_driver.field_image
+    - field.field.paragraph.image_driver.field_link
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.image_driver
+  module:
+    - content_moderation
+    - image
+    - link
+id: paragraph.image_driver.default
+targetEntityType: paragraph
+bundle: image_driver
+mode: default
+content:
+  field_image:
+    weight: 101
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_link:
+    weight: 102
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

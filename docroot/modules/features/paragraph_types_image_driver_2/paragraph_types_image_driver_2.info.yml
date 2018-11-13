@@ -1,0 +1,14 @@
+name: 'Image driver 2'
+type: module
+core: 8.x
+dependencies:
+  - content_moderation
+  - entity_reference_revisions
+  - field
+  - image
+  - link
+  - paragraph_types_image_driver
+  - paragraphs
+  - shared_configuration_fieldbases
+  - text
+package: 'Paragraph types'
