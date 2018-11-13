@@ -6,6 +6,8 @@
     "prefer-stable": true,
     "require": {
         "acquia/blt": "^9.2.0",
+        "drupal/acquia_contenthub": "^1.32",
+        "drupal/acquia_lift": "^3.10",
         "drupal/admin_toolbar": "^1.24",
         "drupal/ds": "^3.1",
         "drupal/features": "^3.8",
