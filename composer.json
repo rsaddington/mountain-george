@@ -5,7 +5,8 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "acquia/blt": "^9.2.0"
+        "acquia/blt": "^9.2.0",
+        "drupal/geofield": "^1.0@beta"
     },
     "require-dev": {
         "geerlingguy/drupal-vm": "^4.8"
