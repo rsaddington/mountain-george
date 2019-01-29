@@ -15,8 +15,7 @@ class AnalyticsRedirectsEventSubscriber implements EventSubscriberInterface {
   /**
    * {@inheritdoc}
    */
-  public function getHeaderAcquiaStrippedQuery(FilterResponseEvent $event)
-  {
+  public function getHeaderAcquiaStrippedQuery(FilterResponseEvent $event) {
     /* @var $response \Symfony\Component\HttpFoundation\RedirectResponse */
     $response = $event->getResponse();
 
