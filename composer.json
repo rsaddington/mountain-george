@@ -9,12 +9,23 @@
         "drupal/acquia_contenthub": "^1.32",
         "drupal/acquia_lift": "^3.10",
         "drupal/admin_toolbar": "^1.24",
+        "drupal/core": "^8.6.6",
         "drupal/ds": "^3.1",
         "drupal/features": "^3.8",
         "drupal/geofield": "^1.0@beta",
         "drupal/geofield_map": "^2.18",
+        "drupal/jsonapi": "^2.0-rc4",
         "drupal/paragraphs": "^1.5",
-        "drupal/views_slideshow": "^4.6"
+        "drupal/quick_node_clone": "^1.11",
+        "drupal/rules": "^3.0@alpha",
+        "drupal/seckit": "^1.1",
+        "drupal/shield": "^1.2",
+        "drupal/simplesamlphp_auth": "^3.0",
+        "drupal/views_slideshow": "^4.6",
+        "drupal/workbench": "^1.1",
+        "drupal/workbench_access": "^1.0@beta",
+        "drupal/workflow_notifications": "^1.0@alpha",
+        "webflo/drupal-core-require-dev": "^8.6.0"
     },
     "require-dev": {
         "geerlingguy/drupal-vm": "^4.8"
@@ -58,6 +69,11 @@
             "drush/Commands/{$name}": [
                 "type:drupal-drush"
             ]
+        },
+        "patches": {
+            "drupal/shield": {
+                "IP whitelist and enable/disable option as config": "https://www.drupal.org/files/issues/2018-04-17/ip_whitelist-2855364-22.patch"
+            }
         },
         "merge-plugin": {
             "require": [
