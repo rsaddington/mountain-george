@@ -15,17 +15,18 @@ class AnalyticsRedirectsEventSubscriber implements EventSubscriberInterface {
   /**
    * {@inheritdoc}
    */
-  public function getHeaderAcquiaStrippedQuery(FilterResponseEvent $event) {
-
-    $request = $event->getRequest();
-    $headers = $request->headers;
-
+  public function getHeaderAcquiaStrippedQuery(FilterResponseEvent $event)
+  {
+    /* @var $response \Symfony\Component\HttpFoundation\RedirectResponse */
     $response = $event->getResponse();
 
     if ($response->getStatusCode() == 301 || $response->getStatusCode() == 302) {
-
-      if ($headers->has('X-Acquia-Stripped-Query')) {
-        $target = $_ENV['SCRIPT_URI'] . '?' . $_ENV['HTTP_X_ACQUIA_STRIPPED_QUERY'];
+      $request = $event->getRequest();
+      $headers = $request->headers;
+      if (!empty($query_string = $headers->get('X-Acquia-Stripped-Query'))) {
+        $target = $response->getTargetUrl();
+        $glue = (strpos($target, '?') === FALSE ? '?' : '&');
+        $target = $target . $glue . $query_string;
         $event->setResponse(new RedirectResponse($target, $response->getStatusCode()));
       }
     }
