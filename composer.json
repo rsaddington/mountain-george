@@ -76,9 +76,6 @@
         "patches": {
             "drupal/shield": {
                 "IP whitelist and enable/disable option as config": "https://www.drupal.org/files/issues/2018-04-17/ip_whitelist-2855364-22.patch"
-            },
-            "drupal/acquia_contenthub": {
-                "Remove the timestamp checking that stops webhooks from registering behind cloudflare": "patches/content-hub-disable-webhook-timecheck.patch"
             }
         },
         "merge-plugin": {
