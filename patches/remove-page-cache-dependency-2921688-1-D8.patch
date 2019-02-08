@@ -1,0 +1,12 @@
+diff --git a/acquia_purge.info.yml b/acquia_purge.info.yml
+index 66f3333..d0eb8bf 100644
+--- a/acquia_purge.info.yml
++++ b/acquia_purge.info.yml
+@@ -10,7 +10,6 @@ dependencies:
+   - purge_processor_cron
+   - purge_processor_lateruntime
+   - dynamic_page_cache
+-  - page_cache
+ 
+ # Information added by Drupal.org packaging script on 2017-09-04
+ version: '8.x-1.0-beta3'
