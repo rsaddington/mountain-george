@@ -76,6 +76,9 @@
         "patches": {
             "drupal/shield": {
                 "IP whitelist and enable/disable option as config": "https://www.drupal.org/files/issues/2018-04-17/ip_whitelist-2855364-22.patch"
+            },
+            "drupal/acquia_purge": {
+                "Remove page cache dependency": "patches/remove-page-cache-dependency-2921688-1-D8.patch"
             }
         },
         "merge-plugin": {
