@@ -37,6 +37,9 @@ class AnalyticsRedirectsEventSubscriber implements EventSubscriberInterface {
     // different cache variations in Acquia Varnish.
     $vary_headers = $response->getVary();
     $vary_headers[] = 'X-Acquia-Stripped-Query';
+
+    \Drupal::logger('acquia_analytics_redirect')->error($vary_headers);
+
     $response->setVary($vary_headers);
   }
 
