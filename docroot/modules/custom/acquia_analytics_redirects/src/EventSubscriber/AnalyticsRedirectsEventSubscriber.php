@@ -5,7 +5,7 @@ namespace Drupal\acquia_analytics_redirects\EventSubscriber;
 use Symfony\Component\HttpKernel\KernelEvents;
 use Symfony\Component\HttpKernel\Event\FilterResponseEvent;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use Symfony\Component\HttpFoundation\RedirectResponse;
+use Drupal\Core\Routing\TrustedRedirectResponse;
 use Drupal\Component\Utility\UrlHelper;
 
 /**
