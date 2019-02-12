@@ -32,7 +32,7 @@ class AnalyticsRedirectsEventSubscriber implements EventSubscriberInterface {
 
         // Make sure unique values of X-Acquia-Stripped-Query are stored in
         // different cache variations in Acquia Varnish.
-        $response->headers->set('Vary', 'X-Acquia-Stripped-Query', false);
+        $response->headers->set('Vary', 'X-Acquia-Stripped-Query', FALSE);
         $response->headers->set('X-Acquia-Stripped-Query', 'True');
 
         $event->setResponse(new TrustedRedirectResponse($target, $response->getStatusCode(), $response->headers->all()));
