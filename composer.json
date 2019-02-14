@@ -79,6 +79,9 @@
             },
             "drupal/acquia_purge": {
                 "Remove page cache dependency": "patches/remove-page-cache-dependency-2921688-1-D8.patch"
+            },
+            "drupal/simplesamlphp_auth": {
+                "Installing the module causes exception and Drupal whitescreen":"https://www.drupal.org/files/issues/2019-02-13/simplesamlphp_auth-fatal-error-on-enable-2915568-31.patch"
             }
         },
         "merge-plugin": {
