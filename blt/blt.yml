@@ -18,6 +18,12 @@ drush:
     local: self
     ci: self
   default_alias: '${drush.aliases.local}'
+disable-targets:
+    tests:
+      phpcs:
+        sniff:
+          all: true
+          files: true
 modules:
   local:
     enable: [dblog, devel, seckit, views_ui]
