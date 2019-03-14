@@ -36,7 +36,7 @@ events:
         - tests:
             type: script
             script:
-              - source ${BLT_DIR}/scripts/pipelines/tests
+             # - source ${BLT_DIR}/scripts/pipelines/tests
         - build-artifact:
             type: script
             script:
