@@ -770,4 +770,11 @@ $settings['entity_update_batch_size'] = 50;
 # }
 require DRUPAL_ROOT . "/../vendor/acquia/blt/settings/blt.settings.php";
 
-$base_url = "dev.mountaingeorge.uk";
+//$base_url = "dev.mountaingeorge.uk";
+
+$settings['trusted_host_patterns'] = array(
+	'^www\.local\.mountain-george\.com$',
+	'^local\.mountain-george\.com$',
+    '^dev\.mountaingeorge\.uk$',
+    '^mountaingeorge\.uk$',
+);
