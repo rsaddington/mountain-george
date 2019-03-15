@@ -772,6 +772,8 @@ require DRUPAL_ROOT . "/../vendor/acquia/blt/settings/blt.settings.php";
 
 //$base_url = "dev.mountaingeorge.uk";
 
+$settings['simplesamlphp_dir'] = DRUPAL_ROOT . "/../simplesamlphp";
+
 $settings['trusted_host_patterns'] = array(
 	'^www\.local\.mountain-george\.com$',
 	'^local\.mountain-george\.com$',
