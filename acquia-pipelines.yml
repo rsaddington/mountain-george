@@ -51,8 +51,3 @@ events:
       - deploy:
           script:
             - pipelines-deploy
-  pre-closed:
-    steps:
-      - deploy:
-          script:
-            - pipelines-deploy
