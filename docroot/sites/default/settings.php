@@ -778,5 +778,8 @@ $settings['trusted_host_patterns'] = array(
 	'^www\.local\.mountain-george\.com$',
 	'^local\.mountain-george\.com$',
     '^dev\.mountaingeorge\.uk$',
+    '^stage\.mountaingeorge\.uk$',
+    '^test\.mountaingeorge\.uk$',
+    '^www\.mountaingeorge\.uk$',
     '^mountaingeorge\.uk$',
 );
