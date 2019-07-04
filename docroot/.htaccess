@@ -112,6 +112,16 @@ AddEncoding gzip svgz
   # RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
   # RewriteRule ^ http%{ENV:protossl}://%1%{REQUEST_URI} [L,R=301]
 
+  # example bare->www redirect
+  RewriteCond %{HTTP_HOST} ^de\.total\.com$
+  RewriteCond %{HTTP_HOST} !^www\. [NC]
+  RewriteRule ^(.*)$ https://www.de.total.com/$1 [L,QSA,R=301]
+
+  # example www->bare redirect
+  RewriteCond %{HTTP_HOST} ^www\.za\.total\.com$
+  RewriteRule ^(.*)$ https://za.total.com/$1 [L,QSA,R=301]
+
+
   # Modify the RewriteBase if you are using Drupal in a subdirectory or in a
   # VirtualDocumentRoot and the rewrite rules are not working properly.
   # For example if your site is at http://example.com/drupal uncomment and
