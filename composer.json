@@ -17,6 +17,7 @@
         "drupal/geofield": "^1.0@beta",
         "drupal/geofield_map": "^2.18",
         "drupal/google_tag": "^1.1",
+        "drupal/http_cache_control": "^1.0",
         "drupal/jsonapi": "^2.0-rc4",
         "drupal/paragraphs": "^1.5",
         "drupal/quick_node_clone": "^1.11",
