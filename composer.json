@@ -5,7 +5,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "acquia/blt": "^9.2.0",
+        "acquia/blt": "9.2.4",
         "drupal/acquia_connector": "^1.5",
         "drupal/acquia_contenthub": "^1.32",
         "drupal/acquia_lift": "^3.10",
