@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8183bf3be43de44351fa7dd43aa77038",
+    "content-hash": "03b88c9643c29693c418753102e4ed06",
     "packages": [
         {
             "name": "acquia/blt",
@@ -1834,6 +1834,49 @@
             ],
             "description": "Provides a way to patch Composer packages.",
             "time": "2018-10-24T15:51:16+00:00"
+        },
+        {
+            "name": "cweagans/php-webdam-client",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cweagans/php-webdam-client.git",
+                "reference": "8cca72b87858c9994ba1208960d8abd267d5b115"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cweagans/php-webdam-client/zipball/8cca72b87858c9994ba1208960d8abd267d5b115",
+                "reference": "8cca72b87858c9994ba1208960d8abd267d5b115",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": ">=4.1.4 <7.0",
+                "guzzlehttp/psr7": "~1.0",
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "cweagans\\webdam\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cameron Eagans",
+                    "email": "me@cweagans.net",
+                    "homepage": "https://cweagans.net"
+                }
+            ],
+            "description": "Integrates with the Webdam.com API.",
+            "homepage": "https://github.com/cweagans/php-webdam-client",
+            "time": "2017-09-22T00:02:06+00:00"
         },
         {
             "name": "dealerdirect/phpcodesniffer-composer-installer",
@@ -5004,6 +5047,67 @@
             }
         },
         {
+            "name": "drupal/fallback_formatter",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/fallback_formatter.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/fallback_formatter-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "65288e69133ef61262249a0b6d059f55c9baff58"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1468356839",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "Drupal Media Team",
+                    "homepage": "https://www.drupal.org/user/3260690"
+                },
+                {
+                    "name": "Drupal media CI",
+                    "homepage": "https://www.drupal.org/user/3057985"
+                },
+                {
+                    "name": "slashrsm",
+                    "homepage": "https://www.drupal.org/user/744628"
+                }
+            ],
+            "description": "Provides a field formatter that can attempt multiple formatters and the first one that returns output wins.",
+            "homepage": "https://www.drupal.org/project/fallback_formatter",
+            "support": {
+                "source": "https://git.drupalcode.org/project/fallback_formatter",
+                "issues": "https://www.drupal.org/project/issues/fallback_formatter",
+                "irc": "irc://irc.freenode.org/drupal-media"
+            }
+        },
+        {
             "name": "drupal/features",
             "version": "3.8.0",
             "source": {
@@ -6255,6 +6359,99 @@
             "homepage": "https://www.drupal.org/project/lightning_workflow",
             "support": {
                 "source": "https://git.drupalcode.org/project/lightning_workflow"
+            }
+        },
+        {
+            "name": "drupal/media_acquiadam",
+            "version": "1.35.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/media_acquiadam.git",
+                "reference": "8.x-1.35"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/media_acquiadam-8.x-1.35.zip",
+                "reference": "8.x-1.35",
+                "shasum": "ee8128bc4446d2d8503cbddbf4fe7cbe6e89b2dd"
+            },
+            "require": {
+                "cweagans/php-webdam-client": "dev-master",
+                "drupal/core": "^8.4",
+                "drupal/fallback_formatter": "^1.0"
+            },
+            "require-dev": {
+                "acquia/coding-standards": "*",
+                "brainmaestro/composer-git-hooks": "^2.7",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.5",
+                "drupal/entity_usage": "*",
+                "drupal/fallback_formatter": "*",
+                "drupal/media": "*",
+                "drupal/media_acquiadam_example-media_acquiadam_example": "*",
+                "drupal/views-views": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev",
+                    "dev-8.x-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.35",
+                    "datestamp": "1561365485",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "hooks": {
+                    "pre-commit": "vendor/bin/phpcs",
+                    "pre-push": "vendor/bin/phpcs"
+                },
+                "phpcodesniffer-search-depth": 4
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "scripts": {
+                "post-install-cmd": [
+                    "vendor/bin/cghooks add --ignore-lock"
+                ],
+                "post-update-cmd": [
+                    "vendor/bin/cghooks update"
+                ],
+                "cghooks": [
+                    "vendor/bin/cghooks"
+                ],
+                "phpcs": [
+                    "vendor/bin/phpcs"
+                ]
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Acquia",
+                    "homepage": "https://acquia.com",
+                    "email": "sales@acquia.com"
+                },
+                {
+                    "name": "cweagans",
+                    "homepage": "https://www.drupal.org/user/404732"
+                },
+                {
+                    "name": "seanpclark",
+                    "homepage": "https://www.drupal.org/user/375472"
+                },
+                {
+                    "name": "steven.wichers",
+                    "homepage": "https://www.drupal.org/user/1774136"
+                }
+            ],
+            "description": "Integrates the Media module ecosystem with Acquia DAM.",
+            "homepage": "https://www.drupal.org/project/media_acquiadam",
+            "support": {
+                "source": "https://cgit.drupalcode.org/media_acquiadam",
+                "issues": "https://drupal.org/project/issues/media_acquiadam"
             }
         },
         {
