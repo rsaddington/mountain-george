@@ -1,0 +1,63 @@
+<?php
+
+/**
+ * Allows modules to modify the drupal entity before its normalization to CDF.
+ *
+ * Common Data Format (CDF): https://docs.acquia.com/content-hub/cdf.
+ *
+ * This is very useful to add additional ad-hoc fields into the drupal entity
+ * before it is converted to CDF during the export process.
+ * Note that the changes will be reflected in the entity published in Content
+ * Hub, but the local Drupal entity will not be affected.
+ *
+ * @param string $entity_type_id
+ *   The Drupal Entity type ID.
+ * @param object $entity
+ *   The Drupal entity.
+ */
+function mountain_george_general_acquia_contenthub_drupal_to_cdf_alter($entity_type_id, $entity) {
+
+  // The following example modifies the title of the node for all nodes
+  // exported to Content Hub and adds the string ' - By My Cool Site'.
+  // It does it by changing the drupal entity title before it is converted
+  // to Common Data Format (CDF).
+  if ($entity_type_id === 'node') {
+    // Site String.
+    $site_string = ' - By My Cool Site - NODE';
+
+    // Obtain the title from the node entity.
+    $title = $entity->get('title')->getValue();
+
+    // Always check that the changes have already been applied, because the
+    // normalizer could be called more than once during the export process.
+    if (strpos($title[0]['value'], $site_string) === FALSE) {
+
+      // Add the site string to the title.
+      $title[0]['value'] .= $site_string;
+      $entity->get('title')->setValue($title);
+    }
+  }
+
+  if ($entity_type_id === 'paragraph') {
+    // Site String.
+     $site_string = ' - By My Cool Site - PARAGRAPH';
+
+     $parent_id = $entity->getParentEntity();
+
+     if (isset($parent_id)) {
+       $parent = $this->entityTypeManager->getStorage('paragraph')->load($parent_id);
+      }
+
+     // Obtain the title from the patent node entity.
+     $title = $parent->get('title')->getValue();
+
+     // Always check that the changes have already been applied, because the
+     // normalizer could be called more than once during the export process.
+     if (strpos($title[0]['value'], $site_string) === FALSE) {
+
+      // Add the site string to the title.
+      $title[0]['value'] .= $site_string;
+      $entity->get('title')->setValue($title);
+     }
+  }
+}
