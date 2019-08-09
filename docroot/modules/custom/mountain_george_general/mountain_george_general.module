@@ -42,11 +42,7 @@ function mountain_george_general_acquia_contenthub_drupal_to_cdf_alter($entity_t
     // Site String.
      $site_string = ' - By My Cool Site - PARAGRAPH';
 
-     $parent_id = $entity->getParentEntity();
-
-     if (isset($parent_id)) {
-       $parent = $this->entityTypeManager->getStorage('paragraph')->load($parent_id);
-      }
+     $parent = $entity->getParentEntity();
 
      // Obtain the title from the patent node entity.
      $title = $parent->get('title')->getValue();

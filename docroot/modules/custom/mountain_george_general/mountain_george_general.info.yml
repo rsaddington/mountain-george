@@ -1,4 +1,6 @@
-name: Mountain George General
+name: 'Mountain George General'
 type: module
-description: 'Custom module for the mountain george site'
-core: 8.x
+description: 'Custom module for the mountain george site.'
+core: '8.x'
+version: '8.x-1.0'
+package: 'Custom'
