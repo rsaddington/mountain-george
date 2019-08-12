@@ -1,6 +1,14 @@
 <?php
 
 /**
+ * @file
+ * Hooks provided by the Acquia Content Hub module.
+ */
+use Drupal\Core\Entity\ContentEntityInterface;
+use Acquia\ContentHubClient\Entity as ContentHubEntity;
+use Drupal\Core\Entity\EntityInterface;
+
+/**
  * Allows modules to modify the drupal entity before its normalization to CDF.
  *
  * Common Data Format (CDF): https://docs.acquia.com/content-hub/cdf.
@@ -38,22 +46,28 @@ function mountain_george_general_acquia_contenthub_drupal_to_cdf_alter($entity_t
     }
   }
 
-  if ($entity_type_id === 'paragraph') {
+}
+
+function mountain_george_general_acquia_contenthub_cdf_from_drupal_alter(ContentHubEntity $contenthub_entity) {
+
+  // The following example modifies the title of the node for all nodes
+  // exported to Content Hub and adds the string ' - By My Cool Site'.
+  // It does it by modifying the title after producing the CDF that is fetched
+  // by Content Hub.
+  if ($contenthub_entity->getType() == 'paragraph') {
     // Site String.
-     $site_string = ' - By My Cool Site - PARAGRAPH';
+    $site_string = ' - By My Cool Site - PARAGRAPH';
 
-     $parent = $entity->getParentEntity();
+    // Always check that the changes have already been applied, because the
+    // normalizer could be called more than once during the export process.
+    if (strpos($title[$language], $site_string) === FALSE) {
+      $contenthub_entity->getAttribute('title')->setValue($title[$language] . $site_string, $language);
 
-     // Obtain the title from the patent node entity.
-     $title = $parent->get('title')->getValue();
-
-     // Always check that the changes have already been applied, because the
-     // normalizer could be called more than once during the export process.
-     if (strpos($title[0]['value'], $site_string) === FALSE) {
-
-      // Add the site string to the title.
-      $title[0]['value'] .= $site_string;
-      $entity->get('title')->setValue($title);
-     }
+      // Remember, in the code above you are just adding text to the CDF that
+      // comes from an existent drupal entity without saving changes to the
+      // entity itself, then in order for these changes to be obtained from
+      // Content Hub, you would need to invalidate the cache tag for this
+      // particular node so the changes take effect.
+    }
   }
 }
