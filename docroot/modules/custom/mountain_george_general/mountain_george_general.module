@@ -57,20 +57,22 @@ function mountain_george_general_acquia_contenthub_cdf_from_drupal_alter(Content
   // by Content Hub.
   if ($contenthub_entity->getType() == 'paragraph') {
 
-    // Site String.
-    $site_string = ' - By My Cool Site - PARAGRAPH';
-
     // Always check that the changes have already been applied, because the
     // normalizer could be called more than once during the export process.
     if (!$contenthub_entity->getAttribute('title')) {
 
-      // In here we can load the parent node and grab the title
-      
+      // Site String.
+      $site_string = ' - PARAGRAPH - ';
+
+      // Load the paragraph and find the parent node...
+      $entity = \Drupal::entityTypeManager()->getStorage('paragraph')->loadByProperties(['uuid' => $contenthub_entity>getUuid]);
+      $node = node_load($entity->getParentEntity());
+
       // Create a new attribute...
       $title = new Attribute('string');
 
       // Set our custom title...
-      $title->setValue($site_string);
+      $title->setValue($node->getTitle() . " " . $site_string . " " . $entity->bundle());
 
       // Apply the title to CDF...
       $contenthub_entity->setAttribute('title',$title);
