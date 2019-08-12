@@ -65,7 +65,7 @@ function mountain_george_general_acquia_contenthub_cdf_from_drupal_alter(Content
       $site_string = ' - PARAGRAPH - ';
 
       // Load the paragraph and find the parent node...
-      $entity = \Drupal::entityTypeManager()->getStorage('paragraph')->loadByProperties(['uuid' => $contenthub_entity->getUuid]);
+      $entity = \Drupal::entityTypeManager()->getStorage('paragraph')->loadByProperties(['uuid' => $contenthub_entity->getUuid()]);
       $node = $entity->getParentEntity();
 
       // Create a new attribute...
