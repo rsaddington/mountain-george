@@ -6,6 +6,7 @@
  */
 use Drupal\Core\Entity\ContentEntityInterface;
 use Acquia\ContentHubClient\Entity as ContentHubEntity;
+use Acquia\ContentHubClient\Attribute as Attribute;
 use Drupal\Core\Entity\EntityInterface;
 
 /**
@@ -55,13 +56,24 @@ function mountain_george_general_acquia_contenthub_cdf_from_drupal_alter(Content
   // It does it by modifying the title after producing the CDF that is fetched
   // by Content Hub.
   if ($contenthub_entity->getType() == 'paragraph') {
+
     // Site String.
     $site_string = ' - By My Cool Site - PARAGRAPH';
 
     // Always check that the changes have already been applied, because the
     // normalizer could be called more than once during the export process.
-    if (strpos($title[$language], $site_string) === FALSE) {
-      $contenthub_entity->getAttribute('title')->setValue($title[$language] . $site_string, $language);
+    if (!$contenthub_entity->getAttribute('title')) {
+
+      // In here we can load the parent node and grab the title
+      
+      // Create a new attribute...
+      $title = new Attribute('string');
+
+      // Set our custom title...
+      $title->setValue($site_string);
+
+      // Apply the title to CDF...
+      $contenthub_entity->setAttribute('title',$title);
 
       // Remember, in the code above you are just adding text to the CDF that
       // comes from an existent drupal entity without saving changes to the
