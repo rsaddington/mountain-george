@@ -31,6 +31,7 @@
         "drupal/seckit": "^1.1",
         "drupal/shield": "^1.2",
         "drupal/simplesamlphp_auth": "^3.0",
+        "drupal/tfa": "^1.0@alpha",
         "drupal/views_slideshow": "^4.6",
         "drupal/workbench": "^1.1",
         "drupal/workbench_access": "^1.0@beta",
