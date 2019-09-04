@@ -55,15 +55,12 @@ function mountain_george_general_acquia_contenthub_cdf_from_drupal_alter(Content
   // exported to Content Hub and adds the string ' - By My Cool Site'.
   // It does it by modifying the title after producing the CDF that is fetched
   // by Content Hub.
-  /*
+  
   if ($contenthub_entity->getType() == 'paragraph') {
 
     // Always check that the changes have already been applied, because the
     // normalizer could be called more than once during the export process.
     if (!$contenthub_entity->getAttribute('title')) {
-
-      // Site String.
-      $site_string = ' - PARAGRAPH - ';
 
       // Load the paragraph in full....
       $paragraph = \Drupal::entityTypeManager()->getStorage('paragraph')->loadByProperties(['uuid' => $contenthub_entity->getUuid()]);
@@ -71,15 +68,16 @@ function mountain_george_general_acquia_contenthub_cdf_from_drupal_alter(Content
       //$paragraph = \Drupal::service('entity.repository')->loadEntityByUuid($contenthub_entity->getType(), $contenthub_entity->getUuid());
       $paragraph_bundle = $paragraph->bundle();
       $paragraph_label =  _get_paragraph_label($paragraph_bundle);
-      $paragraph_id = $paragraph->id();
-      $entity_label  = explode(">",$paragraph->label());
-      $node_title = $entity_label[0];
+
+      //$paragraph_id = $paragraph->id();
+      //$entity_label  = explode(">",$paragraph->label());
+      $node_title = "My node title"
 
       // Create a new attribute...
       $title = new Attribute('string');
 
       // Set our custom title...
-      $title->setValue($node_title . " " . $site_string . " " . $entity_label);
+      $title->setValue($node_title . " - PARAGRAPH -  " . $paragraph_label);
 
       // Apply the title to CDF...
       $contenthub_entity->setAttribute('title',$title);
@@ -91,5 +89,4 @@ function mountain_george_general_acquia_contenthub_cdf_from_drupal_alter(Content
       // particular node so the changes take effect.
     }
   }
-  */
 }
