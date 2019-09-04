@@ -78,7 +78,7 @@ function mountain_george_general_acquia_contenthub_cdf_from_drupal_alter(Content
       $title = new Attribute('string');
 
       // Set our custom title...
-      $title->setValue($node_title . " " . $site_string . " " . $entity->bundle());
+      $title->setValue($node_title . " " . $site_string . " " . $entity_label);
 
       // Apply the title to CDF...
       $contenthub_entity->setAttribute('title',$title);
