@@ -55,6 +55,7 @@ function mountain_george_general_acquia_contenthub_cdf_from_drupal_alter(Content
   // exported to Content Hub and adds the string ' - By My Cool Site'.
   // It does it by modifying the title after producing the CDF that is fetched
   // by Content Hub.
+  /*
   if ($contenthub_entity->getType() == 'paragraph') {
 
     // Always check that the changes have already been applied, because the
@@ -90,4 +91,5 @@ function mountain_george_general_acquia_contenthub_cdf_from_drupal_alter(Content
       // particular node so the changes take effect.
     }
   }
+  */
 }
