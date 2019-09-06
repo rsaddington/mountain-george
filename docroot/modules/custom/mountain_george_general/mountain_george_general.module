@@ -71,7 +71,7 @@ function mountain_george_general_acquia_contenthub_cdf_from_drupal_alter(Content
 
       //$paragraph_id = $paragraph->id();
       //$entity_label  = explode(">",$paragraph->label());
-      $node_title = "My node title"
+      $node_title = "My node title";
 
       // Create a new attribute...
       $title = new Attribute('string');
