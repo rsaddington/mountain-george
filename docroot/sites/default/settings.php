@@ -410,8 +410,7 @@ $settings['update_free_access'] = FALSE;
  * HTTP proxy, and bypass the reverse proxy if one is used) in order to avoid
  * getting cached pages from the proxy.
  */
-# $settings['omit_vary_cookie'] = TRUE;
-
+$settings['omit_vary_cookie'] = TRUE;
 
 /**
  * Cache TTL for client error (4xx) responses.
