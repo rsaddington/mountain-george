@@ -15,6 +15,7 @@
         "drupal/devel": "^2.0",
         "drupal/ds": "^3.1",
         "drupal/features": "^3.8",
+        "drupal/ga_login": "^1.0@alpha",
         "drupal/geofield": "^1.0@beta",
         "drupal/geofield_map": "^2.18",
         "drupal/google_tag": "^1.1",
