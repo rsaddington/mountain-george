@@ -89,6 +89,9 @@
             },
             "drupal/simplesamlphp_auth": {
                 "Installing the module causes exception and Drupal whitescreen":"https://www.drupal.org/files/issues/2019-02-13/simplesamlphp_auth-fatal-error-on-enable-2915568-31.patch"
+            },
+            "drupal/tfa": {
+                "Default encryption method mcrypt is deprecated since PHP7.1":"https://www.drupal.org/files/issues/2019-05-29/tfa_deprecated-mcrypt-2978265-8-1-alpha1-25.patch"
             }
         },
         "merge-plugin": {

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ff4202fb12f7adeaaee945da1377756d",
+    "content-hash": "c8ff536acc33af7f842725add31253c6",
     "packages": [
         {
             "name": "acquia/blt",
@@ -9115,6 +9115,9 @@
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "Default encryption method mcrypt is deprecated since PHP7.1": "https://www.drupal.org/files/issues/2019-05-29/tfa_deprecated-mcrypt-2978265-8-1-alpha1-25.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
