@@ -1,0 +1,5 @@
+name: GD Commercetools integration.
+type: module
+description: Provides Drupal-friendly wrapper for commercetools api.
+package: Glen Dimplex
+core: 8.x

@@ -1,0 +1,22 @@
+uuid: ca5a29c6-7e96-4f67-9886-ebde9b6487c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.catalog
+  module:
+    - text
+id: node.catalog.body
+field_name: body
+entity_type: node
+bundle: catalog
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

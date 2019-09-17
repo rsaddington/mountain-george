@@ -1,0 +1,36 @@
+#Schema for the configuration file of area interest module
+native_share_link.settings:
+  type: config_object
+  label: 'Enabled social tools'
+  mapping:
+    facebook:
+      type: mapping
+      label: 'Facebook settings'
+      mapping:
+        share:
+          type: boolean
+          label: 'Share'
+        app_id:
+          type: string
+          label: 'App Id'
+    pinterest:
+      type: mapping
+      label: 'Pinterest settings'
+      mapping:
+        share:
+          type: boolean
+          label: 'Share'
+    twitter:
+      type: mapping
+      label: 'Twitter settings'
+      mapping:
+        share:
+          type: boolean
+          label: 'Share'
+    email:
+      type: mapping
+      label: 'Email settings'
+      mapping:
+        share:
+          type: boolean
+          label: 'Share'

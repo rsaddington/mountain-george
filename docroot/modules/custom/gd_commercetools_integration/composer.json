@@ -1,0 +1,15 @@
+{
+    "name": "dept/gd_commercetools_integration",
+    "description": "Provides Drupal-friendly wrapper for commercetools api.",
+    "type": "drupal-module",
+    "authors": [
+      {
+        "name": "Artem Vasiatkin (ArchieV)",
+        "homepage": "https://www.drupal.org/u/archiev",
+        "role": "Maintainer"
+      }
+    ],
+    "require": {
+        "commercetools/php-sdk": "^2.8"
+    }
+}

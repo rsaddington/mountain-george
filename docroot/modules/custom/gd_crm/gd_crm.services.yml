@@ -1,0 +1,5 @@
+services:
+  plugin.manager.crm_integration:
+    class: Drupal\gd_crm\PluginManagerCrmIntegration
+    arguments: ['@gd_regions.region_manager', '@language_manager']
+    parent: default_plugin_manager

@@ -1,0 +1,12 @@
+{
+    "name": "dept/gd_product",
+    "description": "GD Product-related functionality.",
+    "type": "drupal-module",
+    "authors": [
+      {
+        "name": "Artem Vasiatkin (ArchieV)",
+        "homepage": "https://www.drupal.org/u/archiev",
+        "role": "Maintainer"
+      }
+    ]
+}

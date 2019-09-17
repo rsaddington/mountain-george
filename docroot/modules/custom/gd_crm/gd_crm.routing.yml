@@ -1,0 +1,15 @@
+gd_crm.settings:
+  path: '/admin/config/services/gd-crm'
+  defaults:
+    _title: 'CRM Integration Settings'
+    _form: 'Drupal\gd_crm\Form\SettingsForm'
+  requirements:
+    _permission: 'administer site configuration'
+
+gd_crm.crm_webhook:
+  path: '/api/v1/crm/file-upload-request'
+  defaults:
+    _title: 'File Upload'
+    _controller: '\Drupal\gd_crm\Controller\GdCrmController::build'
+  requirements:
+    _permission: 'access content'

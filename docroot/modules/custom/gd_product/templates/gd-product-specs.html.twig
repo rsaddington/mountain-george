@@ -1,0 +1,32 @@
+<div id="product-specs">
+  {{ title }}
+
+  {% for variant in variants %}
+    <div id="variant-{{ variant.id }}-specs">
+      {% for spec in variant.specs %}
+        <div class="spec">
+          <span class="spec-name">
+            {{ spec.name }}
+          </span>
+          <span class="spec-value">
+            {{ spec.value }}
+          </span>
+        </div>
+      {% endfor %}
+    </div>
+  {% endfor %}
+
+  {% if cta is not empty %}
+    <a href="{{ cta.url }}">{{ cta.title }}</a>
+  {% endif %}
+
+  {% if full_specs_url is not empty %}
+    <a href="{{ full_specs_url.url }}">{{ full_specs_url.title }}</a>
+  {% endif %}
+
+  {% if cta_additional is not empty %}
+    {% for cta_extra in cta_additional %}
+      <a href="{{ cta_extra.url }}">{{ cta_extra.title }}</a>
+    {% endfor %}
+  {% endif %}
+</div>

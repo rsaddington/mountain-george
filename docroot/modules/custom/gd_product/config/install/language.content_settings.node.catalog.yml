@@ -1,0 +1,11 @@
+uuid: 0ad1a989-bdaf-469e-ae88-569ecde5f611
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.catalog
+id: node.catalog
+target_entity_type_id: node
+target_bundle: catalog
+default_langcode: site_default
+language_alterable: false

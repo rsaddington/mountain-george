@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_available_languages
+    - group.type.region
+id: group.region.field_available_languages
+field_name: field_available_languages
+entity_type: group
+bundle: region
+label: 'Available Languages'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

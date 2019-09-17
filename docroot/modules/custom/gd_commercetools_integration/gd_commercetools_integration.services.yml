@@ -1,0 +1,4 @@
+services:
+  gd_commercetools_integration.product_provider_commercetools:
+    class: Drupal\gd_commercetools_integration\ProductProviderCommerceTools
+    arguments: ['@current_user', '@config.factory', '@cache.default']

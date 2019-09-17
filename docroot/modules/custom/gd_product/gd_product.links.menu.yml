@@ -1,0 +1,5 @@
+gd_product.settings:
+  title: GD Product Settings
+  parent: system.admin_config_services
+  route_name: gd_product.settings
+  weight: 10

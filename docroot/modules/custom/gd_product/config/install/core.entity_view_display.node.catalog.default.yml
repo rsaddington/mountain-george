@@ -1,0 +1,38 @@
+uuid: 122d4354-70ad-4d4e-9046-442b55e8d16d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.catalog.body
+    - field.field.node.catalog.field_product_key
+    - node.type.catalog
+  module:
+    - text
+    - user
+id: node.catalog.default
+targetEntityType: node
+bundle: catalog
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_product_key:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

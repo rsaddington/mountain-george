@@ -1,0 +1,74 @@
+<?php
+
+use Drupal\Component\Plugin\Exception\PluginException;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\gd_crm\CrmConnectionInterface;
+use Drupal\gd_crm\PluginManagerCrmIntegration;
+use Drupal\webform\Entity\WebformSubmission;
+use Drupal\webform\WebformInterface;
+
+/**
+ * Implements hook_webform_third_party_settings_form_alter().
+ */
+function gd_crm_webform_third_party_settings_form_alter(array &$form, FormStateInterface $form_state) {
+
+  /** @var WebformInterface $webform */
+  $webform = $form_state->getFormObject()->getEntity();
+  $type = Drupal::service('plugin.manager.crm_integration');
+  $plugin_definitions = $type->getDefinitions();
+
+  foreach ($plugin_definitions as $plugin_definition) {
+    /* @var CrmConnectionInterface $crm_connection_plugin */
+    $crm_connection_plugin = $type->createInstance($plugin_definition['id']);
+    $crm_connection_plugin->alterWebformSettingsForm($webform, $form, $form_state);
+  }
+
+  $form['#validate'][] = 'gd_crm_webform_third_party_settings_validate';
+}
+
+/**
+ * Validates CRM form settings.
+ *
+ * @param array $form
+ * @param FormStateInterface $form_state
+ */
+function gd_crm_webform_third_party_settings_validate(array &$form, FormStateInterface $form_state) {
+  $crm_integration_settings = $form_state->getValue('third_party_settings')['gd_crm'];
+
+  if ($crm_integration_settings['enable_crm_integration'] && !$crm_integration_settings['crm_form_id']) {
+    $form_state->setErrorByName('third_party_settings][gd_crm][crm_form_id', t('CRM form ID is required in order to use CRM integration.'));
+  }
+}
+
+/**
+ * Reacts on webform submission.
+ *
+ * @param WebformSubmission $webform_submission
+ * @throws  PluginException
+ */
+function gd_crm_webform_submission_presave(WebformSubmission $webform_submission) {
+  $data = $webform_submission->getData();
+
+  $webform = $webform_submission->getWebform();
+  $crm_integration_settings = $webform->getThirdPartySettings('gd_crm');
+
+  if (!isset($crm_integration_settings['enable_crm_integration']) || !$crm_integration_settings['enable_crm_integration']) {
+    // No integration - no actions needed.
+    return;
+  }
+
+  // Change data/format if needed.
+  $prepared_data = $data;
+
+  /* @var $manager PluginManagerCrmIntegration */
+  $manager = Drupal::service('plugin.manager.crm_integration');
+
+  $plugin = $manager->createInstance('azure');
+
+  /* @var $plugin CrmConnectionInterface */
+  $request_id = $plugin->sendWebformSubmission($crm_integration_settings, $prepared_data);
+
+  if ($request_id) {
+    $webform_submission->setElementData('requestId', $request_id);
+  }
+}

@@ -1,0 +1,40 @@
+<div class="product">
+  <div class="product-title">
+    {{ title }}
+  </div>
+
+  <div class="product-description">
+    {{ description }}
+  </div>
+
+  <div class="cta-link">
+    <a href="{{ product_details_cta['url'] }}">{{ product_details_cta['title'] }}</a>
+  </div>
+  <div class="compare-link">
+    <a href="{{ add_to_compare_link }}">{{ 'Compare'|t }}</a>
+  </div>
+  <div class="find-retailer-link">
+    <a href="{{ find_retailer_url }}">{{ 'Find retailer'|t }}</a>
+  </div>
+
+  {% if variants is not empty %}
+    <div class="variants">
+      {% for variant in variants %}
+        {% for feature in variant.features %}
+          {{ feature }}
+        {% endfor %}
+        <div class="variant" id="{{ variant.id }}">
+          <div class="variant-title">
+            {{ variant['title'] }}
+          </div>
+          <div class="variant-images">
+            {% for image in variant['images'] %}
+              <img src="{{ image['thumb_url'] }}" alt="{{ image['title'] }}">
+              <img style="display: none;" src="{{ image['url'] }}" alt="{{ image['title'] }}">
+            {% endfor %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>

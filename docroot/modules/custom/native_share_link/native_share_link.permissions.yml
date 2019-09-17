@@ -1,0 +1,4 @@
+administer social link share:
+  title: 'Administer native social link share'
+  description: 'Access form for native social share setting.'
+  restrict access: true

@@ -1,0 +1,19 @@
+uuid: e1ab17ba-2e56-4a8f-ac01-13a60d0e05e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_product_key
+    - node.type.catalog
+id: node.catalog.field_product_key
+field_name: field_product_key
+entity_type: node
+bundle: catalog
+label: 'Product Key'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

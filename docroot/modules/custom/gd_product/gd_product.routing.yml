@@ -1,0 +1,40 @@
+gd_product.settings:
+  path: '/admin/config/services/gd-product'
+  defaults:
+    _title: 'GD Product Settings'
+    _form: 'Drupal\gd_product\Form\SettingsForm'
+  requirements:
+    _permission: 'administer gd_product configuration'
+
+gd_product.product_listing_init:
+  path: '/product-listing/init'
+  defaults:
+    _title: 'Product Listing Initialisation'
+    _controller: '\Drupal\gd_product\Controller\ProductController::productListingInit'
+  requirements:
+    _permission: 'access content'
+
+gd_product.product_listing_filter:
+  path: '/product-listing/filter'
+  defaults:
+    _title: 'Product Listing Filtering'
+    _controller: '\Drupal\gd_product\Controller\ProductController::productListingFilter'
+  requirements:
+    _permission: 'access content'
+
+gd_product.product_listing_load_more:
+  path: '/product-listing/load-more'
+  defaults:
+    _title: 'Product Listing Load MOre'
+    _controller: '\Drupal\gd_product\Controller\ProductController::productListingLoadMore'
+  requirements:
+    _permission: 'access content'
+
+gd_product.product_details_init:
+  path: '/product/{node}/init'
+  defaults:
+    _title: 'Product Details Initialisation'
+    _controller: '\Drupal\gd_product\Controller\ProductController::productDetailsInit'
+  requirements:
+    _permission: 'access content'
+    node: \d+

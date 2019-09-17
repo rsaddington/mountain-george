@@ -1,0 +1,78 @@
+{#
+/**
+ * @file
+ * Native Share Link block.
+ */
+#}
+
+{# Example of share this link #}
+{# <a href="https://faberfire.ddev.site/en-uk/" data-share-this data-toggle="modal" data-target="#shareLink">Share this example link to be removed</a> #}
+
+<div class="modal fade" id="shareThis" tabindex="-1" role="dialog" aria-labelledby="shareThis" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header d-flex align-items-center p-3">
+        <h5 class="modal-title">{{ 'Share a Link'|t }}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg width="24" height="24">
+            <use xlink:href="/{{ base_path ~ directory }}/public/assets/images/icons-sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body p-3">
+        <div class="share_modal" style="display:none">
+            <div class="share_modal__list pb-2">
+              <ul class="d-flex justify-content-between">
+                  {% if socials.facebook.share %}
+                    <li>
+                      <a href="#" class="facebook-share">
+                        <svg width="50" height="50">
+                          <use xlink:href="/{{ base_path ~ directory }}/public/assets/images/icons-sprite.svg#Facebook_Dark"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  {% endif %}
+                  {% if socials.twitter.share %}
+                    <li>
+                      <a href="#" class="twitter-share">
+                        <svg width="50" height="50">
+                          <use xlink:href="/{{ base_path ~ directory }}/public/assets/images/icons-sprite.svg#Twitter_Dark"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  {% endif %}
+                  {% if socials.pinterest.share %}
+                    <li>
+                      <a href="#" class="pinterest-share">
+                        <svg width="50" height="50">
+                          <use xlink:href="/{{ base_path ~ directory }}/public/assets/images/icons-sprite.svg#Pinterest_Dark"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  {% endif %}
+                  {% if socials.email.share %}
+                    <li>
+                      <a href="#" class="email-share">
+                        <svg width="50" height="50">
+                          <use xlink:href="/{{ base_path ~ directory }}/public/assets/images/icons-sprite.svg#send"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  {% endif %}
+              </ul>
+            </div>
+            <div class="share_modal__link">
+              <form class="form form--standard d-flex align-items-baseline">
+                <div class="form-group flex-grow-1">
+                  <input readonly class="url"/>
+                </div>
+                <button type="button" class="btn brand-button brand-button--link copy-url  ml-2">{{ 'Copy Url'|t }}</button>
+              </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

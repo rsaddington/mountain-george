@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Attach custom theme to the native_share_link_block.
+ *
+ * Add extra vars to drupalSettings.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function native_share_link_theme() {
+  return [
+    'native_share_link' => [
+      'variables' => ['socials' => NULL],
+    ],
+  ];
+}
+
+/**
+ * @param array $variables
+ */
+function native_share_link_preprocess_page(array &$variables) {
+  $variables['#attached']['drupalSettings']['nsl']['sitename'] = \Drupal::config('system.site')->get('name');
+}

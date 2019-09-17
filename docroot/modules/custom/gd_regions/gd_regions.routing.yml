@@ -1,0 +1,7 @@
+gd_regions.settings:
+  path: '/admin/config/services/gd-regions'
+  defaults:
+    _title: 'GD Multiregional Settings'
+    _form: 'Drupal\gd_regions\Form\SettingsForm'
+  requirements:
+    _permission: 'administer site configuration'

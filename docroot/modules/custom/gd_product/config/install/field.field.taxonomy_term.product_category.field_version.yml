@@ -1,0 +1,23 @@
+uuid: 8713c12c-88bf-4c13-8703-f762c5dd66c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_version
+    - taxonomy.vocabulary.product_category
+id: taxonomy_term.product_category.field_version
+field_name: field_version
+entity_type: taxonomy_term
+bundle: product_category
+label: Version
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

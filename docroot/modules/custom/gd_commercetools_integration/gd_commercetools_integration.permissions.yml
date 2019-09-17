@@ -1,0 +1,9 @@
+administer gd_commercetools_integration configuration:
+  title: 'Administer commercetools API configuration'
+  description: 'Grants access to manage commercetools configurations.'
+  restrict access: true
+
+use commercetools api:
+  title: 'Use commercetools API'
+  description: 'Grants access to commercetools API calls.'
+  restrict access: true

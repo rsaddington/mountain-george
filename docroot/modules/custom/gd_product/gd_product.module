@@ -1,0 +1,133 @@
+<?php
+
+use Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException;
+use Drupal\Component\Plugin\Exception\PluginNotFoundException;
+use Drupal\Core\Access\AccessResultNeutral;
+use Drupal\gd_product\ProductSynchroniser;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Session\AccountInterface;
+use Drupal\Core\Access\AccessResult;
+use Drupal\gd_regions\RegionManager;
+
+const PRODUCT_CONTENT_TYPE_MACHINE_NAME = 'product';
+const PRODUCT_GROUP_RELATION_TYPE = 'region-group_node-product';
+
+/**
+ * Implements hook_theme().
+ */
+function gd_product_theme() {
+  return [
+    'gd_product_listing_placeholder' => [
+      'variables' => [
+        'region' => NULL,
+        'token' => '',
+      ],
+    ],
+    'gd_product_listing' => [
+      'variables' => [
+        'filters' => NULL,
+        'products' => NULL,
+        'pager' => NULL,
+      ],
+    ],
+    'gd_product_details_placeholder' => [
+      'variables' => [
+        'region' => NULL
+      ],
+    ],
+    'gd_product_details' => [
+      'variables' => [
+        'title' => NULL,
+        'add_to_compare_url' => NULL,
+        'find_retailer_url' => NULL,
+        'cta' => [],
+        'variants' => [],
+      ],
+    ],
+    'gd_product_specs_placeholder' => [
+      'variables' => [
+        'region' => NULL
+      ],
+    ],
+    'gd_product_specs' => [
+      'variables' => [
+        'title' => NULL,
+        'main' => [],
+        'variants' => [],
+        'cta' => [],
+        'full_specs_url' => [],
+        'cta_additional' => [],
+      ],
+    ],
+    'gd_product_product_preview' => [
+      'variables' => [
+        'image_url' => '',
+        'product_url' => '',
+        'title' => '',
+        'description' => '',
+      ],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_cron().
+ */
+function gd_product_cron() {
+  // @todo: implement intervals for
+  $category_sync = Drupal::service('gd_product.category_synchroniser');
+  $product_sync = Drupal::service('gd_product.product_synchroniser');
+
+  // Fetching products for re-sync.
+//  $category_sync->categoriesFetchAndQueueForResync();
+
+  /* @var $product_sync ProductSynchroniser */
+  $product_sync->productsFetchAndQueueForResync();
+}
+
+/**
+ * Implements hook_entity_access().
+ * @param EntityInterface $entity
+ * @param $operation
+ * @param AccountInterface $account
+ * @return AccessResult
+ *
+ * @throws InvalidPluginDefinitionException
+ * @throws PluginNotFoundException
+ */
+function gd_product_entity_access(EntityInterface $entity, $operation, AccountInterface $account) {
+  /* @var $region_manager RegionManager */
+  $region_manager = Drupal::service('gd_regions.region_manager');
+
+  if (!$region_manager->isMultiRegional()) {
+    return;
+  }
+
+  if ($entity->getEntityTypeId() != 'node' || $entity->bundle() != PRODUCT_CONTENT_TYPE_MACHINE_NAME) {
+    return AccessResult::neutral();
+  }
+
+  $current_region = $region_manager->getCurrentRegion();
+
+  $group_content = \Drupal::entityTypeManager()->getStorage('group_content')
+    ->loadByProperties([
+      'type' => PRODUCT_GROUP_RELATION_TYPE,
+      'entity_id' => $entity->id(),
+    ]);
+
+  if (!$group_content) {
+    return AccessResult::neutral();
+  }
+
+  $group = FALSE;
+  $group_content = reset($group_content);
+  if (!empty($group_content)) {
+    $group = $group_content->getGroup();
+  }
+
+  if ($current_region->id() != $group->id()) {
+    return AccessResult::forbidden();
+  }
+
+  return AccessResult::neutral();
+}

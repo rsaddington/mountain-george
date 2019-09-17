@@ -1,0 +1,9 @@
+name: GD CRM Integration
+type: module
+description: CRM Integration
+package: Glen Dimplex
+core: 8.x
+dependencies:
+  - webform
+  - gd_regions
+  - gd_utility

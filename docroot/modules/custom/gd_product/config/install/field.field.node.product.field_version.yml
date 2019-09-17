@@ -1,0 +1,23 @@
+uuid: 17e89daa-a0b6-4867-955f-ea3f406aa5b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_version
+    - node.type.product
+id: node.product.field_version
+field_name: field_version
+entity_type: node
+bundle: product
+label: Version
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

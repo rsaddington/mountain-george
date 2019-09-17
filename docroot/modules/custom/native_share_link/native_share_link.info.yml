@@ -1,0 +1,7 @@
+name: Native Share Link
+type: module
+description: Share links to facebook, email, twiiter ect.
+package: GlenDimplex
+core: 8.x
+dependencies:
+  - block

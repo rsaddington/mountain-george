@@ -1,0 +1,41 @@
+main:
+  version: 1.x
+  header: true
+  js:
+    js/main.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings
+
+facebook:
+  version: 1.x
+  header: true
+  js:
+    js/facebook.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings
+
+pinterest:
+  version: 1.x
+  js:
+    js/pinterest.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings
+
+twitter:
+  version: 1.x
+  js:
+    js/twitter.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings

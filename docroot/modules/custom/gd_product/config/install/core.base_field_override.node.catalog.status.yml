@@ -1,0 +1,22 @@
+uuid: 2973ce5a-8c3e-4046-9d76-b7dab188a8ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.catalog
+id: node.catalog.status
+field_name: status
+entity_type: node
+bundle: catalog
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

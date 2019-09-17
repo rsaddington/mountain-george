@@ -1,0 +1,4 @@
+administer gd_product configuration:
+  title: 'Administer gd_product configuration'
+  description: 'Optional description.'
+  restrict access: true

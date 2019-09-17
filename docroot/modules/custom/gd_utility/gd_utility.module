@@ -1,0 +1,73 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function gd_utility_theme() {
+  return [
+    'gd_utility_selectboxes' => [
+      'render element' => 'element',
+    ],
+  ];
+}
+
+function gd_utility_preprocess_gd_utility_selectboxes(&$variables) {
+  $element = $variables['element'];
+  $variables['attributes'] = [];
+  if (isset($element['#id'])) {
+    $variables['attributes']['id'] = $element['#id'];
+  }
+
+  $variables['title'] = $element['#title'];
+  $variables['checkboxes'] = $element['#options'];
+}
+
+function gd_utility_preprocess_block(&$variables) {
+  if (!isset($variables['plugin_id']) || $variables['plugin_id'] != 'gd_utility_custom_style_block') {
+    return;
+  }
+
+  $data = $variables['configuration']['data'];
+
+  foreach ($data as $key => $elem) {
+    if (strpos($key, 'key') !== FALSE) {
+
+      $parsed = explode('_', $key);
+      $index = $parsed[1];
+
+      $variables[$elem] = $data['value_' . $index];
+    }
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function gd_utility_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+  $current_theme = \Drupal::service('theme.manager')->getActiveTheme()->getName();
+
+  if (!isset($variables['elements']['#id'])) {
+    return;
+  }
+
+  $id = $variables['elements']['#id'];
+
+  $elements = explode('__', $id);
+  $first = array_shift($elements);
+
+  if ($first == $current_theme) {
+
+    $suggestions[] = 'block__' . $elements[0];
+  }
+}
+
+function gd_utility_snake_to_camel($string, $capitalizeFirstCharacter = false) {
+
+  $str = str_replace('_', '', ucwords($string, '_'));
+
+  if (!$capitalizeFirstCharacter) {
+    $str = lcfirst($str);
+  }
+
+  return $str;
+}

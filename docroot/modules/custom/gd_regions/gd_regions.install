@@ -1,0 +1,10 @@
+<?php
+
+//use Drupal\group\Entity\Group;
+//
+///**
+// * Implements hook_install().
+// */
+//function gd_regions_install() {
+//
+//}

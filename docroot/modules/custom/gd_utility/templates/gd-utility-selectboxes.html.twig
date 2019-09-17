@@ -1,0 +1,13 @@
+<div class="selectbox">
+  <div class="header">
+    {{ title | raw }}
+  </div>
+  <div class="options">
+    {% for checkbox in checkboxes %}
+      <div class="option">
+        <input type="checkbox" value="{{ checkbox.value }}" {% if checkbox.checked %} checked {% endif %} {{ checkbox.attributes }}>
+        <label for="{{ checkbox.attributes.id }}">{{ checkbox.title | raw }}</label>
+      </div>
+    {% endfor %}
+  </div>
+</div>

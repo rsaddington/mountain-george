@@ -1,0 +1,7 @@
+block.settings.gd_utility_custom_style_block:
+  type: block_settings
+  label: 'Custom Style Block block'
+  mapping:
+    foo:
+      type: string
+      label: Foo

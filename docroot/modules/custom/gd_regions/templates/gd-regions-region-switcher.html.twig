@@ -1,0 +1,15 @@
+<div id="region-switcher" class="region-switcher" style="display: flex;">
+  <div class="region-switcher-links">
+    <div class="region-link current">{{ current_region }}</div>
+    {% for link in region_links %}
+      <div class="region-link">{{ link }}</div>
+    {% endfor %}
+
+  </div>
+  <div class="language-switcher-links">
+    <div class="language-link current">{{ current_language }}</div>
+    {% for link in language_links %}
+      <div class="language-link">{{ link }}</div>
+    {% endfor %}
+  </div>
+</div>

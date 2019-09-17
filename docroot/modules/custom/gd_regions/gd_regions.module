@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for GD Regions module.
+ *
+ * @DCG
+ * This file is no longer required in Drupal 8.
+ * @see https://www.drupal.org/node/2217931
+ */
+
+const REGION_GROUP_TYPE = 'region';
+
+/**
+ * Implements hook_theme().
+ */
+function gd_regions_theme() {
+  return [
+    'gd_regions_region_switcher' => [
+      'variables' => [
+        'region_links' => [],
+        'language_links' => [],
+        'current_region' => '',
+        'current_language' => '',
+      ],
+    ],
+  ];
+}

@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.region
+  module:
+    - user
+id: region-group_membership
+label: 'Region: Group membership'
+description: 'Adds users to groups as members.'
+group_type: region
+content_plugin: group_membership
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1

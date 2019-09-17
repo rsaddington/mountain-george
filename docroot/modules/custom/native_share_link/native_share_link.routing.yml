@@ -1,0 +1,7 @@
+native_share_link.admin_settings:
+  path: 'admin/config/content/native-share-link'
+  defaults:
+    _form: 'Drupal\native_share_link\Form\NativeShareLinkSettingsForm'
+    _title: 'Native social share settings'
+  requirements:
+    _permission: 'administer social link share'

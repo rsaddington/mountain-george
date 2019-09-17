@@ -1,0 +1,25 @@
+services:
+  gd_regions.region_manager:
+    class: Drupal\gd_regions\RegionManager
+    arguments: ['@entity_type.manager', '@request_stack', '@config.factory', '@language_manager']
+  gd_regions.path_processor:
+    class: Drupal\gd_regions\PathProcessor\PathProcessorRegions
+    arguments: ['@gd_regions.region_manager', '@language_manager']
+    tags:
+      - { name: path_processor_inbound, priority: 500 }
+      - { name: path_processor_outbound, priority: 500 }
+  gd_regions.current_region_context:
+    class: Drupal\gd_regions\ContextProvider\CurrentRegionContext
+    arguments: ['@gd_regions.region_manager']
+    tags:
+      - { name: 'context_provider' }
+  cache_context.region:
+    class: Drupal\gd_regions\Cache\Context\RegionsCacheContext
+    arguments: ['@gd_regions.region_manager']
+    tags:
+      - { name: cache.context}
+  gd_regions.middleware:
+    class: Drupal\gd_regions\GdRegionsMiddleware
+    arguments: ['@language_manager', '@gd_regions.region_manager']
+    tags:
+      - { name: http_middleware, priority: 50 }

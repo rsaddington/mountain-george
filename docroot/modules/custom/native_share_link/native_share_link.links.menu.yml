@@ -1,0 +1,6 @@
+native_share_link.admin_settings:
+  title: 'Native share link'
+  description: 'Native share link settings'
+  parent: system.admin_config_content
+  route_name: native_share_link.admin_settings
+  weight: 10

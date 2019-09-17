@@ -1,0 +1,13 @@
+services:
+  gd_product.product_synchroniser:
+    class: Drupal\gd_product\ProductSynchroniser
+    arguments: ['@gd_commercetools_integration.product_provider_commercetools', '@current_user', '@queue', '@config.factory', '@database', '@entity_type.manager', '@gd_regions.region_manager', '@gd_product.product_manager']
+  gd_product.category_synchroniser:
+    class: Drupal\gd_product\CategorySynchroniser
+    arguments: ['@gd_commercetools_integration.product_provider_commercetools', '@current_user', '@queue', '@config.factory', '@database', '@entity_type.manager', '@language_manager', '@gd_regions.region_manager']
+  gd_product.catalog_manager:
+    class: Drupal\gd_product\CatalogManager
+    arguments: ['@language_manager', '@gd_commercetools_integration.product_provider_commercetools']
+  gd_product.product_manager:
+    class: Drupal\gd_product\ProductManager
+    arguments: ['@gd_commercetools_integration.product_provider_commercetools', '@database', '@language_manager', '@gd_regions.region_manager']

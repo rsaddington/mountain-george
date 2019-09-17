@@ -1,0 +1,4 @@
+administer gd_regions configuration:
+  title: 'Administer gd_regions configuration'
+  description: 'Optional description.'
+  restrict access: true

@@ -1,0 +1,41 @@
+uuid: 7b5eb8a6-ab3a-488e-8486-e383e5e92a09
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.product_category.field_category_id
+    - field.field.taxonomy_term.product_category.field_version
+    - taxonomy.vocabulary.product_category
+  module:
+    - text
+id: taxonomy_term.product_category.default
+targetEntityType: taxonomy_term
+bundle: product_category
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_category_id:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_version:
+    weight: 2
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+hidden:
+  langcode: true

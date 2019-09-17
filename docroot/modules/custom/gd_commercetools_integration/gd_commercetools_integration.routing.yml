@@ -1,0 +1,23 @@
+gd_commercetools_integration.example:
+  path: '/gd-commercetools-integration/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\gd_commercetools_integration\Controller\GdCommercetoolsintegrationController::build'
+  requirements:
+    _permission: 'access content'
+
+gd_commercetools_integration.settings_form:
+  path: '/admin/config/system/gd-commercetools-integration'
+  defaults:
+    _title: 'gd_commercetools_integration settings'
+    _form: 'Drupal\gd_commercetools_integration\Form\SettingsForm'
+  requirements:
+    _permission: 'administer gd_commercetools_integration configuration'
+
+gd_commercetools_integration.commerce_tools_configurations:
+  path: '/admin/config/services/commercetools'
+  defaults:
+    _title: 'Commercetools Configurations'
+    _form: 'Drupal\gd_commercetools_integration\Form\CommerceToolsConfigurations'
+  requirements:
+    _permission: 'administer gd_commercetools_integration configuration'

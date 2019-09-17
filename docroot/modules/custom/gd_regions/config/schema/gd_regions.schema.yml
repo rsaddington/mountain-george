@@ -1,0 +1,7 @@
+block.settings.gd_regions_products_listing:
+  type: block_settings
+  label: 'Products Listing block'
+  mapping:
+    foo:
+      type: string
+      label: Foo

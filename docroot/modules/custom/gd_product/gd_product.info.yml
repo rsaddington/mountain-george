@@ -1,0 +1,12 @@
+name: GD Product
+type: module
+description: GD Product-related functionality.
+package: Glen Dimplex
+core: 8.x
+dependencies:
+  - gd_commercetools_integration
+  - gd_regions
+  - node
+  - metatag
+  - taxonomy
+  - gd_utility

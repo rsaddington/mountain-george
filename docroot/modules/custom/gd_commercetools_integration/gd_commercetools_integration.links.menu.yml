@@ -1,0 +1,6 @@
+gd_commercetools_integration.commerce_tools_configurations:
+  title: Commercetools Configurations
+  description: Commercetools configurations
+  parent: system.admin_config_services
+  route_name: gd_commercetools_integration.commerce_tools_configurations
+  weight: 10

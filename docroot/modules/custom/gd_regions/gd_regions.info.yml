@@ -1,0 +1,10 @@
+name: GD Regions
+type: module
+description: Provides extra layer for splitting content and users into groups which represent countries or other territorial regions.
+package: Glen Dimplex
+core: 8.x
+dependencies:
+  - group
+  - language
+  - taxonomy
+  - node
