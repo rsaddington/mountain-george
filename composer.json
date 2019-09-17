@@ -6,7 +6,6 @@
     "prefer-stable": true,
     "require": {
         "acquia/blt": "9.2.4",
-        "commercetools/php-sdk": "^2.8",
         "drupal/acquia_connector": "^1.5",
         "drupal/acquia_contenthub": "^1.32",
         "drupal/acquia_lift": "^3.10",
