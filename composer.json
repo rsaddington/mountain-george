@@ -1,6 +1,6 @@
 {
     "name": "acquia/blt-project",
-    "description": "Project template for Drupal 8 sites built with BLT.",
+    "description": "Project template for Drupal 8 sites built with BLT - yehaa",
     "type": "project",
     "minimum-stability": "dev",
     "prefer-stable": true,
