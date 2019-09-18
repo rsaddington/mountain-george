@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2cd3f5765282be49e2dea2cbe9cb52be",
+    "content-hash": "436a08819f30e978bcdd7645a3258a8d",
     "packages": [
         {
             "name": "acquia/blt",
@@ -974,191 +974,6 @@
             "time": "2019-07-14T23:16:24+00:00"
         },
         {
-            "name": "cache/adapter-common",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-cache/adapter-common.git",
-                "reference": "6320bb5f5574cb88438059b59f8708da6b6f1d32"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-cache/adapter-common/zipball/6320bb5f5574cb88438059b59f8708da6b6f1d32",
-                "reference": "6320bb5f5574cb88438059b59f8708da6b6f1d32",
-                "shasum": ""
-            },
-            "require": {
-                "cache/tag-interop": "^1.0",
-                "php": "^5.6 || ^7.0",
-                "psr/cache": "^1.0",
-                "psr/log": "^1.0",
-                "psr/simple-cache": "^1.0"
-            },
-            "require-dev": {
-                "cache/integration-tests": "^0.16",
-                "phpunit/phpunit": "^5.7.21"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.1-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Cache\\Adapter\\Common\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Aaron Scherer",
-                    "email": "aequasi@gmail.com",
-                    "homepage": "https://github.com/aequasi"
-                },
-                {
-                    "name": "Tobias Nyholm",
-                    "email": "tobias.nyholm@gmail.com",
-                    "homepage": "https://github.com/Nyholm"
-                }
-            ],
-            "description": "Common classes for PSR-6 adapters",
-            "homepage": "http://www.php-cache.com/en/latest/",
-            "keywords": [
-                "cache",
-                "psr-6",
-                "tag"
-            ],
-            "time": "2018-07-08T13:04:33+00:00"
-        },
-        {
-            "name": "cache/apcu-adapter",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-cache/apcu-adapter.git",
-                "reference": "542a23dbf7c9c50a9099d341931faf14f8ffda9b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-cache/apcu-adapter/zipball/542a23dbf7c9c50a9099d341931faf14f8ffda9b",
-                "reference": "542a23dbf7c9c50a9099d341931faf14f8ffda9b",
-                "shasum": ""
-            },
-            "require": {
-                "cache/adapter-common": "^1.0",
-                "php": "^5.6 || ^7.0",
-                "psr/cache": "^1.0",
-                "psr/simple-cache": "^1.0"
-            },
-            "provide": {
-                "psr/cache-implementation": "^1.0"
-            },
-            "require-dev": {
-                "cache/integration-tests": "^0.16",
-                "phpunit/phpunit": "^5.7.21"
-            },
-            "suggest": {
-                "ext-apcu": "The extension required to use this pool."
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Cache\\Adapter\\Apcu\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Aaron Scherer",
-                    "email": "aequasi@gmail.com",
-                    "homepage": "https://github.com/aequasi"
-                },
-                {
-                    "name": "Tobias Nyholm",
-                    "email": "tobias.nyholm@gmail.com",
-                    "homepage": "https://github.com/Nyholm"
-                }
-            ],
-            "description": "A PSR-6 cache implementation using apcu. This implementation supports tags",
-            "homepage": "http://www.php-cache.com/en/latest/",
-            "keywords": [
-                "apcu",
-                "cache",
-                "psr-6"
-            ],
-            "time": "2017-07-16T21:09:25+00:00"
-        },
-        {
-            "name": "cache/tag-interop",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-cache/tag-interop.git",
-                "reference": "c7496dd81530f538af27b4f2713cde97bc292832"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-cache/tag-interop/zipball/c7496dd81530f538af27b4f2713cde97bc292832",
-                "reference": "c7496dd81530f538af27b4f2713cde97bc292832",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.5 || ^7.0",
-                "psr/cache": "^1.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Cache\\TagInterop\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Tobias Nyholm",
-                    "email": "tobias.nyholm@gmail.com",
-                    "homepage": "https://github.com/Nyholm"
-                },
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com",
-                    "homepage": "https://github.com/nicolas-grekas"
-                }
-            ],
-            "description": "Framework interoperable interfaces for tags",
-            "homepage": "http://www.php-cache.com/en/latest/",
-            "keywords": [
-                "cache",
-                "psr",
-                "psr6",
-                "tag"
-            ],
-            "time": "2017-03-13T09:14:27+00:00"
-        },
-        {
             "name": "caxy/php-htmldiff",
             "version": "v0.1.9",
             "source": {
@@ -1365,98 +1180,82 @@
             "time": "2019-01-25T10:00:06+00:00"
         },
         {
-            "name": "commercetools/php-sdk",
-            "version": "v2.8.0",
+            "name": "cohesion/dx8",
+            "version": "5.5.6",
             "source": {
                 "type": "git",
-                "url": "https://github.com/commercetools/commercetools-php-sdk.git",
-                "reference": "78880bb3889d128e445963c66cacf37b1451efb9"
+                "url": "https://bitbucket.org/cohesion_dev/dx8-module.git",
+                "reference": "d4dfbf43c13d1b56facbcb8a0f44fb2e003ddbee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/commercetools/commercetools-php-sdk/zipball/78880bb3889d128e445963c66cacf37b1451efb9",
-                "reference": "78880bb3889d128e445963c66cacf37b1451efb9",
+                "url": "https://bitbucket.org/cohesion_dev/dx8-module/get/d4dfbf43c13d1b56facbcb8a0f44fb2e003ddbee.zip",
+                "reference": "d4dfbf43c13d1b56facbcb8a0f44fb2e003ddbee",
                 "shasum": ""
             },
             "require": {
-                "cache/apcu-adapter": "^1.0 || ^0.3 || ^0.2",
-                "ext-intl": "*",
-                "guzzlehttp/guzzle": "^6.0 || ^5.3.3",
-                "guzzlehttp/psr7": "^1.1",
-                "paragonie/random_compat": "^2.0 || ^1.0 || ^9.99",
-                "php": ">=5.6",
-                "psr/cache": "^1.0",
-                "psr/log": "^1.0",
-                "psr/simple-cache": "^1.0"
-            },
-            "replace": {
-                "commercetools/commons": "*"
+                "cweagans/composer-patches": "^1.6",
+                "drupal/entity_reference_revisions": "^1.6",
+                "drupal/imce": "^1.7",
+                "drupal/token": "^1.5",
+                "ext-json": "*"
             },
             "require-dev": {
-                "behat/behat": "^3.0",
-                "cache/adapter-common": "^1.0",
-                "cache/apcu-adapter": "^1.0",
-                "cache/array-adapter": "^1.0",
-                "cache/doctrine-adapter": "^1.0",
-                "cache/filesystem-adapter": "^1.0",
-                "cache/redis-adapter": "^1.0",
-                "cache/void-adapter": "^1.0",
-                "commercetools/commercetools-api-reference": "dev-master",
-                "doctrine/cache": "^1.6",
-                "guzzlehttp/guzzle": "^6.0",
-                "incenteev/composer-parameter-handler": "^2.1",
-                "monolog/monolog": "^1.12",
-                "phpunit/phpunit": "^7.0 || ^6.0 || ^5.7.21",
-                "squizlabs/php_codesniffer": "^3.2",
-                "symfony/stopwatch": "^3.2",
-                "symfony/yaml": "^3.2"
+                "behat/mink": "^1.7",
+                "phpunit/phpunit": "^6.5",
+                "symfony/phpunit-bridge": "^4.3"
             },
             "suggest": {
-                "cache/doctrine-adapter": "For usage of a doctrine cache instance to store the client access token",
-                "cache/redis-adapter": "For usage of a redis server to store the client access token"
+                "drupal/admin_toolbar": "Provides a better UX for the standard admin toolbar",
+                "drupal/context": "Provides a UI for contexts.",
+                "drupal/google_analytics": "Provides integration with Google Analytics",
+                "drupal/menu_item_extras": "Make the Menu Link Content entity fully fieldable.",
+                "drupal/menu_link_attributes": "This module allows you to add attributes to your menu links or their wrapping <li> elements.",
+                "drupal/request_data_conditions": "Defines a set of conditions via the Drupal 8 Conditions Plugin API for use with the context module",
+                "drupal/search_api": "Provides a framework for easily creating searches on any entity known to Drupal, using any kind of search engine.",
+                "drupal/views_infinite_scroll": "Provides infinite scroll functionality to Views"
             },
-            "bin": [
-                "bin/ctp-tlscheck.php"
-            ],
-            "type": "project",
+            "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-develop": "2.8-dev"
-                },
-                "incenteev-parameters": [
-                    {
-                        "file": "docroot/myapp.yml",
-                        "env-map": {
-                            "client_id": "COMMERCETOOLS_CLIENT_ID",
-                            "client_secret": "COMMERCETOOLS_CLIENT_SECRET",
-                            "project": "COMMERCETOOLS_PROJECT"
-                        }
-                    },
-                    {
-                        "file": "tests/myapp.yml",
-                        "env-map": {
-                            "client_id": "COMMERCETOOLS_CLIENT_ID",
-                            "client_secret": "COMMERCETOOLS_CLIENT_SECRET",
-                            "project": "COMMERCETOOLS_PROJECT",
-                            "oauth_url": "COMMERCETOOLS_OAUTH_URL",
-                            "api_url": "COMMERCETOOLS_API_URL"
-                        }
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
                     }
-                ]
-            },
-            "autoload": {
-                "psr-4": {
-                    "Commercetools\\Core\\": "src/Core/",
-                    "Commercetools\\Commons\\": "src/Commons/"
+                },
+                "patches": {
+                    "drupal/entity_reference_revisions": {
+                        "'Create new revision' option is ignored when updating EntityReferenceRevisionsItem": "https://www.drupal.org/files/issues/2019-06-27/3025709-30.patch"
+                    }
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "The commercetools PHP SDK  The official PHP Interface to the commercetools eCommerce API",
-            "homepage": "https://github.com/commercetools/commercetools-php-sdk",
-            "time": "2019-06-06T09:05:06+00:00"
+            "description": "DX8 module",
+            "homepage": "https://bitbucket.org/cohesion_dev/dx8-module",
+            "support": {
+                "source": "https://bitbucket.org/cohesion_dev/dx8-module/src/d4dfbf43c13d1b56facbcb8a0f44fb2e003ddbee/?at=5.5.6"
+            },
+            "time": "2019-09-17T15:33:22+00:00"
+        },
+        {
+            "name": "cohesion/dx8-theme",
+            "version": "5.5.6",
+            "source": {
+                "type": "git",
+                "url": "https://bitbucket.org/cohesion_dev/dx8-theme.git",
+                "reference": "ea8ca8b29ce7dff63886b08f9c2484f59a579a1d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/cohesion_dev/dx8-theme/get/ea8ca8b29ce7dff63886b08f9c2484f59a579a1d.zip",
+                "reference": "ea8ca8b29ce7dff63886b08f9c2484f59a579a1d",
+                "shasum": ""
+            },
+            "type": "drupal-theme",
+            "description": "DX8 base theme",
+            "homepage": "https://bitbucket.org/cohesion_dev/dx8-theme",
+            "support": {
+                "source": "https://bitbucket.org/cohesion_dev/dx8-theme/src/ea8ca8b29ce7dff63886b08f9c2484f59a579a1d/?at=5.5.6"
+            },
+            "time": "2019-09-17T15:33:27+00:00"
         },
         {
             "name": "composer/installers",
@@ -5417,6 +5216,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "'Create new revision' option is ignored when updating EntityReferenceRevisionsItem": "https://www.drupal.org/files/issues/2019-06-27/3025709-30.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5424,6 +5226,10 @@
                 "GPL-2.0-or-later"
             ],
             "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
                 {
                     "name": "Frans",
                     "homepage": "https://www.drupal.org/user/514222"
@@ -5440,7 +5246,7 @@
             "description": "Adds a Entity Reference field type with revision support.",
             "homepage": "https://www.drupal.org/project/entity_reference_revisions",
             "support": {
-                "source": "http://cgit.drupalcode.org/entity_reference_revisions"
+                "source": "https://git.drupalcode.org/project/entity_reference_revisions"
             }
         },
         {
@@ -6004,6 +5810,57 @@
                 "source": "https://www.drupal.org/project/image_widget_crop",
                 "issues": "https://www.drupal.org/project/issues/image_widget_crop",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
+            "name": "drupal/imce",
+            "version": "1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/imce.git",
+                "reference": "8.x-1.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/imce-8.x-1.7.zip",
+                "reference": "8.x-1.7",
+                "shasum": "55827d5c18c398269cea782a6bb8d9788a97576c"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.7",
+                    "datestamp": "1540559280",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "thalles",
+                    "homepage": "https://www.drupal.org/user/3589086"
+                },
+                {
+                    "name": "ufku",
+                    "homepage": "https://www.drupal.org/user/9910"
+                }
+            ],
+            "description": "Provides a file manager supporting personal folders.",
+            "homepage": "https://drupal.org/project/imce",
+            "support": {
+                "source": "https://git.drupalcode.org/project/imce"
             }
         },
         {
@@ -12869,54 +12726,6 @@
             "time": "2018-11-20T15:27:04+00:00"
         },
         {
-            "name": "psr/simple-cache",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/simple-cache.git",
-                "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
-                "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Psr\\SimpleCache\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
-                }
-            ],
-            "description": "Common interfaces for simple caching",
-            "keywords": [
-                "cache",
-                "caching",
-                "psr",
-                "psr-16",
-                "simple-cache"
-            ],
-            "time": "2017-10-23T01:57:42+00:00"
-        },
-        {
             "name": "psy/psysh",
             "version": "v0.9.9",
             "source": {
@@ -17227,6 +17036,285 @@
             "time": "2018-12-22T21:15:53+00:00"
         },
         {
+            "name": "cache/adapter-common",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-cache/adapter-common.git",
+                "reference": "6320bb5f5574cb88438059b59f8708da6b6f1d32"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-cache/adapter-common/zipball/6320bb5f5574cb88438059b59f8708da6b6f1d32",
+                "reference": "6320bb5f5574cb88438059b59f8708da6b6f1d32",
+                "shasum": ""
+            },
+            "require": {
+                "cache/tag-interop": "^1.0",
+                "php": "^5.6 || ^7.0",
+                "psr/cache": "^1.0",
+                "psr/log": "^1.0",
+                "psr/simple-cache": "^1.0"
+            },
+            "require-dev": {
+                "cache/integration-tests": "^0.16",
+                "phpunit/phpunit": "^5.7.21"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Cache\\Adapter\\Common\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aaron Scherer",
+                    "email": "aequasi@gmail.com",
+                    "homepage": "https://github.com/aequasi"
+                },
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com",
+                    "homepage": "https://github.com/Nyholm"
+                }
+            ],
+            "description": "Common classes for PSR-6 adapters",
+            "homepage": "http://www.php-cache.com/en/latest/",
+            "keywords": [
+                "cache",
+                "psr-6",
+                "tag"
+            ],
+            "time": "2018-07-08T13:04:33+00:00"
+        },
+        {
+            "name": "cache/apcu-adapter",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-cache/apcu-adapter.git",
+                "reference": "542a23dbf7c9c50a9099d341931faf14f8ffda9b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-cache/apcu-adapter/zipball/542a23dbf7c9c50a9099d341931faf14f8ffda9b",
+                "reference": "542a23dbf7c9c50a9099d341931faf14f8ffda9b",
+                "shasum": ""
+            },
+            "require": {
+                "cache/adapter-common": "^1.0",
+                "php": "^5.6 || ^7.0",
+                "psr/cache": "^1.0",
+                "psr/simple-cache": "^1.0"
+            },
+            "provide": {
+                "psr/cache-implementation": "^1.0"
+            },
+            "require-dev": {
+                "cache/integration-tests": "^0.16",
+                "phpunit/phpunit": "^5.7.21"
+            },
+            "suggest": {
+                "ext-apcu": "The extension required to use this pool."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Cache\\Adapter\\Apcu\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aaron Scherer",
+                    "email": "aequasi@gmail.com",
+                    "homepage": "https://github.com/aequasi"
+                },
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com",
+                    "homepage": "https://github.com/Nyholm"
+                }
+            ],
+            "description": "A PSR-6 cache implementation using apcu. This implementation supports tags",
+            "homepage": "http://www.php-cache.com/en/latest/",
+            "keywords": [
+                "apcu",
+                "cache",
+                "psr-6"
+            ],
+            "time": "2017-07-16T21:09:25+00:00"
+        },
+        {
+            "name": "cache/tag-interop",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-cache/tag-interop.git",
+                "reference": "c7496dd81530f538af27b4f2713cde97bc292832"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-cache/tag-interop/zipball/c7496dd81530f538af27b4f2713cde97bc292832",
+                "reference": "c7496dd81530f538af27b4f2713cde97bc292832",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.5 || ^7.0",
+                "psr/cache": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Cache\\TagInterop\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com",
+                    "homepage": "https://github.com/Nyholm"
+                },
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com",
+                    "homepage": "https://github.com/nicolas-grekas"
+                }
+            ],
+            "description": "Framework interoperable interfaces for tags",
+            "homepage": "http://www.php-cache.com/en/latest/",
+            "keywords": [
+                "cache",
+                "psr",
+                "psr6",
+                "tag"
+            ],
+            "time": "2017-03-13T09:14:27+00:00"
+        },
+        {
+            "name": "commercetools/php-sdk",
+            "version": "v2.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/commercetools/commercetools-php-sdk.git",
+                "reference": "78880bb3889d128e445963c66cacf37b1451efb9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/commercetools/commercetools-php-sdk/zipball/78880bb3889d128e445963c66cacf37b1451efb9",
+                "reference": "78880bb3889d128e445963c66cacf37b1451efb9",
+                "shasum": ""
+            },
+            "require": {
+                "cache/apcu-adapter": "^1.0 || ^0.3 || ^0.2",
+                "ext-intl": "*",
+                "guzzlehttp/guzzle": "^6.0 || ^5.3.3",
+                "guzzlehttp/psr7": "^1.1",
+                "paragonie/random_compat": "^2.0 || ^1.0 || ^9.99",
+                "php": ">=5.6",
+                "psr/cache": "^1.0",
+                "psr/log": "^1.0",
+                "psr/simple-cache": "^1.0"
+            },
+            "replace": {
+                "commercetools/commons": "*"
+            },
+            "require-dev": {
+                "behat/behat": "^3.0",
+                "cache/adapter-common": "^1.0",
+                "cache/apcu-adapter": "^1.0",
+                "cache/array-adapter": "^1.0",
+                "cache/doctrine-adapter": "^1.0",
+                "cache/filesystem-adapter": "^1.0",
+                "cache/redis-adapter": "^1.0",
+                "cache/void-adapter": "^1.0",
+                "commercetools/commercetools-api-reference": "dev-master",
+                "doctrine/cache": "^1.6",
+                "guzzlehttp/guzzle": "^6.0",
+                "incenteev/composer-parameter-handler": "^2.1",
+                "monolog/monolog": "^1.12",
+                "phpunit/phpunit": "^7.0 || ^6.0 || ^5.7.21",
+                "squizlabs/php_codesniffer": "^3.2",
+                "symfony/stopwatch": "^3.2",
+                "symfony/yaml": "^3.2"
+            },
+            "suggest": {
+                "cache/doctrine-adapter": "For usage of a doctrine cache instance to store the client access token",
+                "cache/redis-adapter": "For usage of a redis server to store the client access token"
+            },
+            "bin": [
+                "bin/ctp-tlscheck.php"
+            ],
+            "type": "project",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "2.8-dev"
+                },
+                "incenteev-parameters": [
+                    {
+                        "file": "docroot/myapp.yml",
+                        "env-map": {
+                            "client_id": "COMMERCETOOLS_CLIENT_ID",
+                            "client_secret": "COMMERCETOOLS_CLIENT_SECRET",
+                            "project": "COMMERCETOOLS_PROJECT"
+                        }
+                    },
+                    {
+                        "file": "tests/myapp.yml",
+                        "env-map": {
+                            "client_id": "COMMERCETOOLS_CLIENT_ID",
+                            "client_secret": "COMMERCETOOLS_CLIENT_SECRET",
+                            "project": "COMMERCETOOLS_PROJECT",
+                            "oauth_url": "COMMERCETOOLS_OAUTH_URL",
+                            "api_url": "COMMERCETOOLS_API_URL"
+                        }
+                    }
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "Commercetools\\Core\\": "src/Core/",
+                    "Commercetools\\Commons\\": "src/Commons/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "The commercetools PHP SDK  The official PHP Interface to the commercetools eCommerce API",
+            "homepage": "https://github.com/commercetools/commercetools-php-sdk",
+            "time": "2019-06-06T09:05:06+00:00"
+        },
+        {
             "name": "dmore/behat-chrome-extension",
             "version": "1.3.0",
             "source": {
@@ -17449,6 +17537,54 @@
             ],
             "description": "Behat 3 JUnit xml formatter",
             "time": "2016-01-26T17:05:07+00:00"
+        },
+        {
+            "name": "psr/simple-cache",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/simple-cache.git",
+                "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
+                "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\SimpleCache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interfaces for simple caching",
+            "keywords": [
+                "cache",
+                "caching",
+                "psr",
+                "psr-16",
+                "simple-cache"
+            ],
+            "time": "2017-10-23T01:57:42+00:00"
         },
         {
             "name": "se/selenium-server-standalone",

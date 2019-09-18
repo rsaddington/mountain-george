@@ -6,7 +6,8 @@
     "prefer-stable": true,
     "require": {
         "acquia/blt": "9.2.4",
-        "commercetools/php-sdk": "^2.8",
+        "cohesion/dx8": "5.5.6",
+        "cohesion/dx8-theme": "5.5.6",
         "drupal/acquia_connector": "^1.5",
         "drupal/acquia_contenthub": "^1.32",
         "drupal/acquia_lift": "^3.10",
@@ -106,6 +107,16 @@
             "merge-scripts": true,
             "replace": false,
             "ignore-duplicates": true
+        }
+    },
+    "repositories": {
+        "dx8": {
+            "type": "vcs",
+            "url": "https://bitbucket.org/cohesion_dev/dx8-module.git"
+        },
+        "dx8-theme": {
+            "type": "vcs",
+            "url": "https://bitbucket.org/cohesion_dev/dx8-theme.git"
         }
     }
 }
