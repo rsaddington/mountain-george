@@ -30,7 +30,7 @@ function mountain_george_general_acquia_contenthub_drupal_to_cdf_alter($entity_t
   // exported to Content Hub and adds the string ' - By My Cool Site'.
   // It does it by changing the drupal entity title before it is converted
   // to Common Data Format (CDF).
-  if ($entity_type_id === 'node') {
+  /*if ($entity_type_id === 'node') {
     // Site String.
     $site_string = ' - By My Cool Site - NODE';
 
@@ -46,6 +46,7 @@ function mountain_george_general_acquia_contenthub_drupal_to_cdf_alter($entity_t
       $entity->get('title')->setValue($title);
     }
   }
+  */
 
 }
 
