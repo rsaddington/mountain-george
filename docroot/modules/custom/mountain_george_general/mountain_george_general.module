@@ -66,7 +66,6 @@ function mountain_george_general_acquia_contenthub_cdf_from_drupal_alter(Content
       // Load the paragraph in full....
       $paragraph = \Drupal::service('entity.repository')->loadEntityByUuid($contenthub_entity->getType(), $contenthub_entity->getUuid());
       $paragraph_bundle = $paragraph->bundle();
-      $paragraph_label =  _get_paragraph_label($paragraph_bundle);
 
       //$paragraph_id = $paragraph->id();
       //$entity_label  = explode(">",$paragraph->label());
@@ -76,7 +75,7 @@ function mountain_george_general_acquia_contenthub_cdf_from_drupal_alter(Content
       $title = new Attribute('string');
 
       // Set our custom title...
-      $title->setValue($node_title . " - PARAGRAPH -  " . $paragraph_label);
+      $title->setValue($node_title . " - PARAGRAPH -  " . $paragraph_bundle);
 
       // Apply the title to CDF...
       $contenthub_entity->setAttribute('title',$title);
@@ -88,21 +87,4 @@ function mountain_george_general_acquia_contenthub_cdf_from_drupal_alter(Content
       // particular node so the changes take effect.
     }
   }
-}
-
-/**
- * Helper function for paragraph to identify the paragraph label.
- */
-
-function _get_paragraph_label($paragraph_id) {
-  // DB connection and fetch.
-  $connection = \Drupal::database();
-  $paragraph_name = 'paragraphs.paragraphs_type.'.$paragraph_id;
-  $query = \Drupal::database()
-    ->select('config_snapshot', 'cs')
-    ->fields('cs', ['data'])
-    ->condition('name', $paragraph_name);
-  $results = $query->execute()->fetchCol();
-  $data = unserialize($results[0]);
-  return $data['label'];
 }
