@@ -67,12 +67,8 @@ function mountain_george_general_acquia_contenthub_cdf_from_drupal_alter(Content
       $paragraph = \Drupal::service('entity.repository')->loadEntityByUuid($contenthub_entity->getType(), $contenthub_entity->getUuid());
       $paragraph_bundle = $paragraph->bundle();
 
-
-      $node = _get_parent_node($paragraph);
-
-      //$paragraph_id = $paragraph->id();
-      //$entity_label  = explode(">",$paragraph->label());
-      $node_title = $node->getTitle();
+      // Get the parent node title....
+      $node_title = $paragraph->getParentEntity()->getTitle();
 
       // Create a new attribute...
       $title = new Attribute('string');
