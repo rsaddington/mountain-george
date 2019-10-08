@@ -89,3 +89,20 @@ function mountain_george_general_acquia_contenthub_cdf_from_drupal_alter(Content
     }
   }
 }
+
+/**
+ * Helper function for paragraph to identify the paragraph label.
+ */
+
+function _get_paragraph_label($paragraph_id) {
+  // DB connection and fetch.
+  $connection = \Drupal::database();
+  $paragraph_name = 'paragraphs.paragraphs_type.'.$paragraph_id;
+  $query = \Drupal::database()
+    ->select('config_snapshot', 'cs')
+    ->fields('cs', ['data'])
+    ->condition('name', $paragraph_name);
+  $results = $query->execute()->fetchCol();
+  $data = unserialize($results[0]);
+  return $data['label'];
+}
