@@ -64,9 +64,7 @@ function mountain_george_general_acquia_contenthub_cdf_from_drupal_alter(Content
     if (!$contenthub_entity->getAttribute('title')) {
 
       // Load the paragraph in full....
-      $paragraph = \Drupal::entityTypeManager()->getStorage('paragraph')->loadByProperties(['uuid' => $contenthub_entity->getUuid()]);
-
-      //$paragraph = \Drupal::service('entity.repository')->loadEntityByUuid($contenthub_entity->getType(), $contenthub_entity->getUuid());
+      $paragraph = \Drupal::service('entity.repository')->loadEntityByUuid($contenthub_entity->getType(), $contenthub_entity->getUuid());
       $paragraph_bundle = $paragraph->bundle();
       $paragraph_label =  _get_paragraph_label($paragraph_bundle);
 
