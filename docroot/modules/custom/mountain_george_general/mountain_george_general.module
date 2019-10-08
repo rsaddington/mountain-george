@@ -67,9 +67,12 @@ function mountain_george_general_acquia_contenthub_cdf_from_drupal_alter(Content
       $paragraph = \Drupal::service('entity.repository')->loadEntityByUuid($contenthub_entity->getType(), $contenthub_entity->getUuid());
       $paragraph_bundle = $paragraph->bundle();
 
+
+      $node = _get_parent_node($paragraph);
+
       //$paragraph_id = $paragraph->id();
       //$entity_label  = explode(">",$paragraph->label());
-      $node_title = "My node title";
+      $node_title = $node->getTitle();
 
       // Create a new attribute...
       $title = new Attribute('string');
@@ -86,5 +89,19 @@ function mountain_george_general_acquia_contenthub_cdf_from_drupal_alter(Content
       // Content Hub, you would need to invalidate the cache tag for this
       // particular node so the changes take effect.
     }
+  }
+}
+
+/**
+ * Helper function for components to identify the current node/entity.
+ */
+function _get_parent_node(EntityInterface $entity) {
+  // Recursively look for a non-paragraph parent.
+  $parent = $entity->getParentEntity();
+  if ($parent instanceof Node) {
+    return $parent;
+  }
+  else {
+    return _get_parent_node($parent);
   }
 }
