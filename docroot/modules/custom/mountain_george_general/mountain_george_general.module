@@ -87,17 +87,3 @@ function mountain_george_general_acquia_contenthub_cdf_from_drupal_alter(Content
     }
   }
 }
-
-/**
- * Helper function for components to identify the current node/entity.
- */
-function _get_parent_node(EntityInterface $entity) {
-  // Recursively look for a non-paragraph parent.
-  $parent = $entity->getParentEntity();
-  if ($parent instanceof Node) {
-    return $parent;
-  }
-  else {
-    return _get_parent_node($parent);
-  }
-}
