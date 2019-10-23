@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9e725581e1f5ceeb1e5e158b8089d236",
+    "content-hash": "b322d6ad82c8a04077a3fd8a127818db",
     "packages": [
         {
             "name": "acquia/blt",
@@ -5674,6 +5674,53 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/file_mdm"
             }
+        },
+        {
+            "name": "drupal/fixed_block_content",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/fixed_block_content.git",
+                "reference": "61c473f2bd9faad0fc852ee29c346c1b24652012"
+            },
+            "require": {
+                "drupal/core": "~8.6"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0+4-dev",
+                    "datestamp": "1564420084",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Manuel Adan",
+                    "homepage": "https://www.drupal.org/user/516420",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Provides fixed placements for custom blocks.",
+            "homepage": "http://drupal.org/project/fixed_block_content",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://cgit.drupalcode.org/fixed_block_content",
+                "issues": "https://drupal.org/project/issues/fixed_block_content"
+            },
+            "time": "2019-07-29T17:57:07+00:00"
         },
         {
             "name": "drupal/ga_login",
@@ -18500,6 +18547,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/fixed_block_content": 20,
         "drupal/ga_login": 15,
         "drupal/geofield": 10,
         "drupal/password_policy": 15,
