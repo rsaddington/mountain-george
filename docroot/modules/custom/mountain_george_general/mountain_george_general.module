@@ -73,14 +73,14 @@ function mountain_george_general_acquia_contenthub_cdf_from_drupal_alter(Content
       // Use field_title if available...
       $paragraph_title = "no title";
       if(isset($paragraph->field_title->value)) {
-        $paragraph_title = $paragraph->field_title->value;
+        $paragraph_title = " - paragraph:".$paragraph->field_title->value;
       }
 
       // Create a new attribute...
       $title = new Attribute('string');
 
       // Set our custom title...
-      $title->setValue($node_title . " - PARAGRAPH -  " . $paragraph_bundle . " - " . $paragraph_title);
+      $title->setValue($node_title.$paragraph_title . ' - ' . $paragraph_bundle);
 
       // Apply the title to CDF...
       $contenthub_entity->setAttribute('title',$title);
