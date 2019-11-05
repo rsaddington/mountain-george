@@ -1185,12 +1185,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/cohesion_dev/dx8-module.git",
-                "reference": "d4dfbf43c13d1b56facbcb8a0f44fb2e003ddbee"
+                "reference": "ef39ffd1071437a7755c1afed3be354ac3d60fd9"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://bitbucket.org/cohesion_dev/dx8-module/get/ef39ffd1071437a7755c1afed3be354ac3d60fd9.zip",
-                "reference": "d4dfbf43c13d1b56facbcb8a0f44fb2e003ddbee",
+                "reference": "ef39ffd1071437a7755c1afed3be354ac3d60fd9",
                 "shasum": ""
             },
             "require": {
