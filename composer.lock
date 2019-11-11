@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8fc7026d4917e6176b818acf281d200e",
+    "content-hash": "f14311ed2b046af98a894ab4b897c358",
     "packages": [
         {
             "name": "acquia/blt",
@@ -9411,6 +9411,61 @@
             }
         },
         {
+            "name": "drupal/shortcode",
+            "version": "1.0.0-rc2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/shortcode.git",
+                "reference": "8.x-1.0-rc2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/shortcode-8.x-1.0-rc2.zip",
+                "reference": "8.x-1.0-rc2",
+                "shasum": "323b24bdb91562e3c303f3876d8ad86dee49c344"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-rc2",
+                    "datestamp": "1543219495",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Denes.Szabo",
+                    "homepage": "https://www.drupal.org/user/582668"
+                },
+                {
+                    "name": "squall3d",
+                    "homepage": "https://www.drupal.org/user/1256364"
+                },
+                {
+                    "name": "sthomps5",
+                    "homepage": "https://www.drupal.org/user/3534579"
+                }
+            ],
+            "description": "Provides ShortCodes filter framework and API (like WP ShortCodes)",
+            "homepage": "https://www.drupal.org/project/shortcode",
+            "support": {
+                "source": "https://git.drupalcode.org/project/shortcode"
+            }
+        },
+        {
             "name": "drupal/simple_oauth",
             "version": "3.16.0",
             "source": {
@@ -18607,6 +18662,7 @@
         "drupal/geofield": 10,
         "drupal/password_policy": 15,
         "drupal/rules": 15,
+        "drupal/shortcode": 5,
         "drupal/tfa": 15,
         "drupal/webp": 10,
         "drupal/workbench_access": 10,
