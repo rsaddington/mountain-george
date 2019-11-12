@@ -48,6 +48,7 @@
         "drupal/webp": "^1.0@beta",
         "drupal/workbench": "^1.1",
         "drupal/workbench_access": "^1.0@beta",
+        "drupal/workbench_moderation": "^1.5",
         "drupal/workflow_notifications": "^1.0@alpha",
         "solarium/solarium": "^5",
         "webflo/drupal-core-require-dev": "^8.6.0"
