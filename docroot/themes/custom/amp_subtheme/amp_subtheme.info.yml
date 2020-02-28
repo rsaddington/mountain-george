@@ -1,7 +1,7 @@
-name: ExAMPle Subtheme REAL
+name: AMP Subtheme
 type: theme
 base theme: amptheme
-description: A REAL AMP subtheme.
+description: 'A REAL AMP subtheme.'
 package: Custom
 # core: 8.x
 regions:
@@ -12,5 +12,4 @@ regions:
 # Information added by Drupal.org packaging script on 2018-04-07
 version: '8.x-1.1'
 core: '8.x'
-project: 'amp_subtheme'
 datestamp: 1523124484
