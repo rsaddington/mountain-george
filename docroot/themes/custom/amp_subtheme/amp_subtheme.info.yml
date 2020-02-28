@@ -1,7 +1,7 @@
 name: ExAMPle Subtheme REAL
 type: theme
 base theme: amptheme
-description: The ExAMPle subtheme sets custom styles on AMP pages.
+description: A REAL AMP subtheme.
 package: Custom
 # core: 8.x
 regions:
