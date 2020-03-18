@@ -29,49 +29,18 @@
   <head>
     <head-placeholder token="{{ placeholder_token|raw }}">
     
-    <!-- Acquia Lift -->
-    <meta itemprop="acquia_lift:account_id" content="rsaddington" />
-    <meta itemprop="acquia_lift:liftAssetsURL" content="https://builder-demo.lift.acquia.com" />
-    <meta itemprop="acquia_lift:liftDecisionAPIURL" content="https://us-east-1-demo-decisionapi.lift.acquia.com" />
-    <meta itemprop="acquia_lift:authEndpoint" content="https://us-east-1-demo-oauth2.lift.acquia.com/authorize" />
-    <meta itemprop="acquia_lift:contentReplacementMode" content="trusted" />
-    <meta itemprop="acquia_lift:bootstrapMode" content="auto" />
+    <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
 
-    <!-- MANDATORY -->
-    <meta itemprop="acquia_lift:site_id" content="mountaingeorge_dev" />
-
-    <!-- CUSTOM PAGE META DATA | OPTIONAL -->
+    <!--meta name="amp-script-src" content="sha384-NDIzNzI3OGZlYWEyOWJmNjRmZjQ0MDgxN2U5Y2JhMTAzMGFlYWFlZjU1MjAyMzFkYzcxYTE5MWYwNjAzN2Q3NzYzYjczZTY5ZTNlZWE5NzBiMjRhMThhZmFhMzNiNjBmCg=="-->    
     
-    <meta itemprop="acquia_lift:content_section" content="" />
-    <meta itemprop="acquia_lift:content_title" content="Homepage - AMP" />
-    <meta itemprop="acquia_lift:post_id" content="223885" />
-    <meta itemprop="acquia_lift:content_type" content="node page" />
-    <meta itemprop="acquia_lift:page_type" content="amp_view" />
-
-
-    <!-- CUSTOM COLUMN META DATA | OPTIONAL -->
-
-  <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
-
-  <!--meta name="amp-script-src" content="sha384-NDIzNzI3OGZlYWEyOWJmNjRmZjQ0MDgxN2U5Y2JhMTAzMGFlYWFlZjU1MjAyMzFkYzcxYTE5MWYwNjAzN2Q3NzYzYjczZTY5ZTNlZWE5NzBiMjRhMThhZmFhMzNiNjBmCg=="-->    
-    
-    <!-- /Acquia Lift -->
-
     <title>{{ head_title|safe_join(' | ') }}</title>
-    
-
-
     <style amp-boilerplate>{% spaceless %}{% include '@amptheme/amp-css/amp-boilerplate-styles-min.html.twig' %}{% endspaceless %}</style><noscript><style amp-boilerplate>{% spaceless %}{% include '@amptheme/amp-css/amp-boilerplate-styles-noscript-min.html.twig' %}{% endspaceless %}</style></noscript>
     <style amp-custom>
       {% include active_theme_path() ~ '/templates/amp-css/amp-custom-styles.html.twig' %}
     </style>
-    
-
-
     {# Only JS from an AMP library is processed in the placeholder. #}
     <js-placeholder token="{{ placeholder_token|raw }}">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-
   </head>
   <body{{ attributes }}>
 
