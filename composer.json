@@ -15,7 +15,6 @@
         "drupal/admin_toolbar": "^1.24",
         "drupal/advanced_scheduler": "^1.1",
         "drupal/amp": "^2.1",
-        "drupal/amptheme": "^1.1",
         "drupal/core": "^8.6.6",
         "drupal/devel": "^2.0",
         "drupal/ds": "^3.1",
