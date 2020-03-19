@@ -28,10 +28,11 @@
 <html amp{{ html_attributes }}>
   <head>
     <head-placeholder token="{{ placeholder_token|raw }}">
-    
+
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
     <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
     
-    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 
     <!-- Acquia Lift example -->
     <amp-analytics type="acquialift" id="acquialift">
@@ -41,7 +42,7 @@
         "siteId":"mountaingeorge_dev",
         "accountId": "rsaddington",
         "decisionApiUrl": "us-east-1-demo-decisionapi.lift.acquia.com",
-        "content_title": "{{ title }}",
+        "content_title": "{{ head_title|safe_join(' | ') }}",
         "content_type": "{{ node_type }}",       
         "page_type": "TEST",
         "content_section": "TEST",
