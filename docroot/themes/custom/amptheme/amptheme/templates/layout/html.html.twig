@@ -30,9 +30,21 @@
     <head-placeholder token="{{ placeholder_token|raw }}">
     
     <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 
-    <!--meta name="amp-script-src" content="sha384-NDIzNzI3OGZlYWEyOWJmNjRmZjQ0MDgxN2U5Y2JhMTAzMGFlYWFlZjU1MjAyMzFkYzcxYTE5MWYwNjAzN2Q3NzYzYjczZTY5ZTNlZWE5NzBiMjRhMThhZmFhMzNiNjBmCg=="-->    
-    
+    <!-- Acquia Lift example -->
+    <amp-analytics type="acquialift" id="acquialift">
+    <script type="application/json">
+    {
+      "vars": {
+        "siteId":"mountaingeorge_dev",
+        "accountId": "rsaddington",
+        "decisionApiUrl": "us-east-1-demo-decisionapi.lift.acquia.com"
+      }
+    }
+    </script>
+    </amp-analytics>
+
     <title>{{ head_title|safe_join(' | ') }}</title>
     <style amp-boilerplate>{% spaceless %}{% include '@amptheme/amp-css/amp-boilerplate-styles-min.html.twig' %}{% endspaceless %}</style><noscript><style amp-boilerplate>{% spaceless %}{% include '@amptheme/amp-css/amp-boilerplate-styles-noscript-min.html.twig' %}{% endspaceless %}</style></noscript>
     <style amp-custom>
@@ -40,14 +52,11 @@
     </style>
     {# Only JS from an AMP library is processed in the placeholder. #}
     <js-placeholder token="{{ placeholder_token|raw }}">
+    
     <script async src="https://cdn.ampproject.org/v0.js"></script>
+
   </head>
   <body{{ attributes }}>
-
-<!--amp-script layout="container" src="/lift.js"-->
-<amp-script layout="container" src="https://builder-demo.lift.acquia.com/lift.js">
-  <button>Hello amp-script!</button>
-</amp-script>
 
     {% if amp_skip_link %}
       {{ amp_skip_link }}
