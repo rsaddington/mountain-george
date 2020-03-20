@@ -33,7 +33,6 @@
 
     <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
     
-
     <!-- Acquia Lift example -->
     <amp-analytics type="acquialift" id="acquialift">
     <script type="application/json">
@@ -51,6 +50,9 @@
         "persona": "TEST",       
         "engagement_score": "1",
         "author": "{{ author_name }}"
+      }
+      "transport": {
+        "xhrpost": true
       }
     }
     </script>
