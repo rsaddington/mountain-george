@@ -37,6 +37,9 @@
     <amp-analytics type="acquialift" id="acquialift">
     <script type="application/json">
     {
+      "transport": {
+        "xhrpost": true
+      }
       "vars": {
         "siteId":"mountaingeorge_dev",
         "accountId": "rsaddington",
@@ -50,9 +53,6 @@
         "persona": "TEST",       
         "engagement_score": "1",
         "author": "{{ author_name }}"
-      }
-      "transport": {
-        "xhrpost": true
       }
     }
     </script>
