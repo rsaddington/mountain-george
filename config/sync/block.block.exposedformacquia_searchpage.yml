@@ -1,0 +1,25 @@
+uuid: b3ac2416-a59d-4ae9-b47c-80b094450fc7
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.acquia_search
+  module:
+    - views
+  theme:
+    - bartik
+_core:
+  default_config_hash: MnGHGNkOcN54HROOlCNlxL9Vk_x2GLIgDnrZiSCFdQc
+id: exposedformacquia_searchpage
+theme: bartik
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'views_exposed_filter_block:acquia_search-page'
+settings:
+  id: 'views_exposed_filter_block:acquia_search-page'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility: {  }

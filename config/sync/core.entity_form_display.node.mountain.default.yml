@@ -1,0 +1,158 @@
+uuid: ac8b7bd4-46da-41bc-8c92-12d178968375
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.mountain.body
+    - field.field.node.mountain.field_climbed
+    - field.field.node.mountain.field_date_climbed
+    - field.field.node.mountain.field_height
+    - field.field.node.mountain.field_layout_canvas
+    - field.field.node.mountain.field_location
+    - field.field.node.mountain.field_mountain_range
+    - field.field.node.mountain.field_personalised_content
+    - field.field.node.mountain.field_slides
+    - field.field.node.mountain.field_template
+    - field.field.node.mountain.field_volcano
+    - image.style.thumbnail
+    - node.type.mountain
+  module:
+    - cohesion_elements
+    - cohesion_templates
+    - datetime
+    - geofield
+    - image
+    - paragraphs
+    - text
+id: node.mountain.default
+targetEntityType: node
+bundle: mountain
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 6
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_climbed:
+    weight: 7
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_date_climbed:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_height:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_layout_canvas:
+    type: cohesion_layout_builder_widget
+    weight: 14
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_location:
+    weight: 3
+    settings:
+      html5_geolocation: false
+    third_party_settings: {  }
+    type: geofield_latlon
+    region: content
+  field_mountain_range:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_personalised_content:
+    weight: 10
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+  field_slides:
+    weight: 9
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_template:
+    weight: 15
+    settings: {  }
+    third_party_settings: {  }
+    type: cohesion_template_selector_widget
+    region: content
+  field_volcano:
+    weight: 5
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  moderation_state:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  status:
+    type: boolean_checkbox
+    weight: 12
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  url_redirects:
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

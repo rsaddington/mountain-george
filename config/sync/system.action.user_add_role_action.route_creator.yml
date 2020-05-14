@@ -1,0 +1,14 @@
+uuid: 740778d2-8836-41bc-99b0-54f74a57dbb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.route_creator
+  module:
+    - user
+id: user_add_role_action.route_creator
+label: 'Add the Route creator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: route_creator

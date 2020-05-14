@@ -1,0 +1,27 @@
+uuid: ecc7e6dc-126d-4b30-978a-f29468d971b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_dam_file
+    - media.type.acquia_dam_media_asset
+  module:
+    - file
+id: media.acquia_dam_media_asset.field_dam_file
+field_name: field_dam_file
+entity_type: media
+bundle: acquia_dam_media_asset
+label: 'DAM file'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'jpg gif png svg pdf doc docx ppt pptx xls xlsx mp4 mpg mpeg webm'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

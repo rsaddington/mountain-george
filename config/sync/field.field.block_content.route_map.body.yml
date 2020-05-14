@@ -1,0 +1,22 @@
+uuid: 807e6a8d-55b3-4460-881e-fce6b4090d64
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.route_map
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.route_map.body
+field_name: body
+entity_type: block_content
+bundle: route_map
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

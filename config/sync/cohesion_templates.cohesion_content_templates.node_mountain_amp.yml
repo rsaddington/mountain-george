@@ -1,0 +1,19 @@
+uuid: 72d74277-21d6-4a4f-9c9f-7b0e5158c60d
+langcode: en
+status: false
+dependencies: {  }
+label: 'AMP (Node, Mountain)'
+id: node_mountain_amp
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: mountain
+view_mode: amp
+master_template: ''

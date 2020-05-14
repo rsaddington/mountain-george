@@ -1,0 +1,19 @@
+uuid: a70f7f5f-4799-4ad9-80aa-8b8e7550a539
+langcode: en
+status: false
+dependencies: {  }
+label: 'Map info window (Node)'
+id: node___any___map_info_window
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: __any__
+view_mode: map_info_window
+master_template: ''

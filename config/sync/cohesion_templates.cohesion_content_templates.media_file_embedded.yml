@@ -1,0 +1,19 @@
+uuid: 8966bf5f-fc77-4430-b35d-fd814b29c2b7
+langcode: en
+status: false
+dependencies: {  }
+label: 'Embedded (Media, File)'
+id: media_file_embedded
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: media
+bundle: file
+view_mode: embedded
+master_template: ''

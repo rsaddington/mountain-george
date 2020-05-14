@@ -1,0 +1,19 @@
+uuid: cb0f874d-8b35-4e39-ae8e-77f677ab1184
+langcode: en
+status: false
+dependencies: {  }
+label: 'Token (Contact_message)'
+id: contact_message___any___token
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: contact_message
+bundle: __any__
+view_mode: token
+master_template: ''

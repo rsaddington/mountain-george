@@ -1,0 +1,19 @@
+uuid: 44fe879d-a25e-46d0-895d-9240a37fcdfd
+langcode: en
+status: false
+dependencies: {  }
+label: 'Thumbnail (Media, Acquia DAM media asset)'
+id: media_acquia_dam_media_asset_thu
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: media
+bundle: acquia_dam_media_asset
+view_mode: thumbnail
+master_template: ''

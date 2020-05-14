@@ -1,0 +1,13 @@
+uuid: a7163007-3a49-400b-a12f-e8f07542fc46
+langcode: en
+status: true
+dependencies: {  }
+label: Black
+id: black
+json_values: '{"name":"Black","uid":"black","value":{"value":{"hex":"#000000","rgba":"rgba(0, 0, 0, 1)"}},"wysiwyg":true,"class":".coh-color-black","variable":"$coh-color-black","inuse":true,"link":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: true
+selectable: true
+weight: 0

@@ -1,0 +1,56 @@
+uuid: d2ee9a6f-0726-4f33-bc78-f72106d3d41a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.route_map
+    - field.field.block_content.route_map.body
+    - field.field.block_content.route_map.field_route_map
+  module:
+    - file
+    - text
+id: block_content.route_map.default
+targetEntityType: block_content
+bundle: route_map
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_route_map:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 3
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  moderation_state:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden: {  }

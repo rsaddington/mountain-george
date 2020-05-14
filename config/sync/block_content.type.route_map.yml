@@ -1,0 +1,8 @@
+uuid: 086cf42e-3631-46c4-9d61-d243536b3990
+langcode: en
+status: true
+dependencies: {  }
+id: route_map
+label: 'Route map'
+revision: 1
+description: 'A map of the route we walked'

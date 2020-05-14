@@ -1,0 +1,19 @@
+uuid: 98ba26b0-2e12-41e9-b406-e7e22696d9a0
+langcode: en
+status: false
+dependencies: {  }
+label: 'Full content (Media, Acquia DAM media asset)'
+id: media_acquia_dam_media_asset_ful
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: media
+bundle: acquia_dam_media_asset
+view_mode: full
+master_template: ''

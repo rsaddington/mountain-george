@@ -1,0 +1,19 @@
+uuid: 3d6c178b-dcb2-4200-87d9-e7a2aa657e09
+langcode: en
+status: false
+dependencies: {  }
+label: 'Full content (Media)'
+id: media___any___full
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: media
+bundle: __any__
+view_mode: full
+master_template: ''

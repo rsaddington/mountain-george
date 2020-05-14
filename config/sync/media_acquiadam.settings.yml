@@ -1,0 +1,12 @@
+username: rich.saddington@acquia.com
+password: 'AcquiaDAM1*'
+client_id: 555571d66c36273f374aa6c5cca4e98a7a410147
+secret: 219726d4590eaf7fb5153cfc663d2be40dfa2704
+sync_interval: '3600'
+size_limit: '-1'
+oauth:
+  excluded_redirect_keys:
+    - original_path
+_core:
+  default_config_hash: 7EQEFj6oWEN-6FJV3P9X-Au6VheJQFjebuloI1UUpmU
+fallback_thumbnail: 'public://webdam.png'

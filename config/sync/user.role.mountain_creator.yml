@@ -1,0 +1,28 @@
+uuid: 7c0bda4e-cf4f-4c12-afc2-9aabfb0895dc
+langcode: en
+status: true
+dependencies: {  }
+id: mountain_creator
+label: 'Mountain creator'
+weight: 7
+is_admin: null
+permissions:
+  - 'access contextual links'
+  - 'access in-place editing'
+  - 'access media_browser entity browser pages'
+  - 'access panels in-place editing'
+  - 'access toolbar'
+  - 'administer panelizer node mountain content'
+  - 'administer panelizer node mountain layout'
+  - 'change layouts in place editing'
+  - 'create mountain content'
+  - 'create url aliases'
+  - 'edit own mountain content'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition review'
+  - 'use moderation sidebar'
+  - 'use text format rich_text'
+  - 'view any unpublished content'
+  - 'view latest version'
+  - 'view mountain revisions'
+  - 'view own unpublished content'

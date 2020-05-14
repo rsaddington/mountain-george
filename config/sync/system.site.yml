@@ -1,0 +1,14 @@
+uuid: f4ffda69-9017-4c63-9640-467fa20be611
+name: 'The Global Mountain Database'
+mail: rich.saddington@acquia.com
+slogan: 'A comprehensive database of mountains all over the world'
+page:
+  403: ''
+  404: ''
+  front: /node/56
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

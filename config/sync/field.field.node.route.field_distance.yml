@@ -1,0 +1,23 @@
+uuid: 659c4d01-59da-4ae9-b90c-60a171e8b6a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_distance
+    - node.type.route
+id: node.route.field_distance
+field_name: field_distance
+entity_type: node
+bundle: route
+label: Distance
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: km
+field_type: integer

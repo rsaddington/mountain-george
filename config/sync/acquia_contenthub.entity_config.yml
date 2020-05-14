@@ -1,0 +1,12 @@
+user_role: anonymous
+use_block_content_view_builder: false
+export_with_queue: 1
+export_queue_entities_per_item: 1
+export_queue_batch_size: 1
+export_queue_waiting_time: 3
+_core:
+  default_config_hash: A_Oz_1aSp78CIjr1TD64UxItvrkrWMTkuoid0mXadLo
+import_with_queue: 0
+import_queue_batch_size: all
+import_queue_wait_time: '3'
+delete_mismatching_translations: 0

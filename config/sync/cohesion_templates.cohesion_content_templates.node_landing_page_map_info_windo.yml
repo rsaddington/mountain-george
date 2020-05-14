@@ -1,0 +1,19 @@
+uuid: bd4c65e6-1ec1-4fde-b2e2-e06ed334fa76
+langcode: en
+status: false
+dependencies: {  }
+label: 'Map info window (Node, Landing page)'
+id: node_landing_page_map_info_windo
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: landing_page
+view_mode: map_info_window
+master_template: ''

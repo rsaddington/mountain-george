@@ -1,0 +1,29 @@
+uuid: 8d5c0b60-c57d-4ce4-b7bc-80339d7d53f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.personalised_content_block
+    - field.storage.block_content.field_persona
+    - taxonomy.vocabulary.persona
+id: block_content.personalised_content_block.field_persona
+field_name: field_persona
+entity_type: block_content
+bundle: personalised_content_block
+label: Persona
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      persona: persona
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,32 @@
+uuid: 743d8a61-8b85-492f-9cbe-44d01862b1a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.route_map
+    - field.field.block_content.route_map.body
+    - field.field.block_content.route_map.field_route_map
+  module:
+    - file
+    - text
+id: block_content.route_map.default
+targetEntityType: block_content
+bundle: route_map
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_route_map:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
+hidden:
+  langcode: true

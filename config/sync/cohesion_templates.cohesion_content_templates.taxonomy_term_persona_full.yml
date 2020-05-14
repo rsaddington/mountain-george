@@ -1,0 +1,19 @@
+uuid: 1ead0bd7-f38e-4f54-adbe-3400367c60a8
+langcode: en
+status: false
+dependencies: {  }
+label: 'Taxonomy term page (Taxonomy_term, Persona)'
+id: taxonomy_term_persona_full
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: taxonomy_term
+bundle: persona
+view_mode: full
+master_template: ''

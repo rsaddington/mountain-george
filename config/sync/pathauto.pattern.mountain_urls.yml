@@ -1,0 +1,22 @@
+uuid: 9d0cf580-139b-4d38-9e3b-0a5225d619d6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: mountain_urls
+label: 'Mountain content URLs'
+type: 'canonical_entities:node'
+pattern: 'mountain/[node:title]'
+selection_criteria:
+  8a4bda51-d687-452e-9199-08f3d26f3022:
+    id: node_type
+    bundles:
+      mountain: mountain
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 8a4bda51-d687-452e-9199-08f3d26f3022
+selection_logic: and
+weight: -5
+relationships: {  }

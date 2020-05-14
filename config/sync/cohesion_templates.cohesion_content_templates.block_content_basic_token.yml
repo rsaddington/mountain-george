@@ -1,0 +1,19 @@
+uuid: 69db8c9e-73c4-4a2b-b0b8-03e772e66693
+langcode: en
+status: false
+dependencies: {  }
+label: 'Token (Block_content, Basic block)'
+id: block_content_basic_token
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: block_content
+bundle: basic
+view_mode: token
+master_template: ''

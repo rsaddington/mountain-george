@@ -1,0 +1,19 @@
+uuid: 0804c596-1d39-47e6-967e-5f4b02a17f8b
+langcode: en
+status: false
+dependencies: {  }
+label: 'Teaser (Node, Landing page)'
+id: node_landing_page_teaser
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: landing_page
+view_mode: teaser
+master_template: ''

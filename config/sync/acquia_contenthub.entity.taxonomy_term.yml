@@ -1,0 +1,14 @@
+uuid: 4ca9abf4-768e-478c-8b18-cf2e255369f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.persona
+  module:
+    - taxonomy
+id: taxonomy_term
+bundles:
+  persona:
+    enable_index: true
+    enable_viewmodes: false
+    rendering: {  }

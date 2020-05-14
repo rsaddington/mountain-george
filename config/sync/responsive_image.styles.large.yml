@@ -1,0 +1,30 @@
+uuid: 9f55623a-a992-492a-a257-59bcd91e5149
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.medium
+    - image.style.thumbnail
+    - image.style.wide
+  theme:
+    - bartik
+id: large
+label: Large
+image_style_mappings:
+  -
+    breakpoint_id: bartik.wide
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: wide
+  -
+    breakpoint_id: bartik.narrow
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: medium
+  -
+    breakpoint_id: bartik.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: thumbnail
+breakpoint_group: bartik
+fallback_image_style: thumbnail

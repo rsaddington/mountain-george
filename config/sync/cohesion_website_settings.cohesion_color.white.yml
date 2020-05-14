@@ -1,0 +1,13 @@
+uuid: 330c5d13-58c7-4154-b9d4-da790cb3978b
+langcode: en
+status: true
+dependencies: {  }
+label: White
+id: white
+json_values: '{"name":"White","uid":"white","value":{"value":{"hex":"#ffffff","rgba":"rgba(255, 255, 255, 1)"}},"wysiwyg":true,"class":".coh-color-white","variable":"$coh-color-white","inuse":true,"link":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: true
+selectable: true
+weight: 2

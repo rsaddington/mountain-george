@@ -1,0 +1,14 @@
+uuid: 94908472-2e75-40fc-9358-3b6a1b4e178e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.mountain_reviewer
+  module:
+    - user
+id: user_add_role_action.mountain_reviewer
+label: 'Add the Mountain reviewer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: mountain_reviewer

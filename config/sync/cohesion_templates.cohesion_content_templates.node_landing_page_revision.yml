@@ -1,0 +1,19 @@
+uuid: e5ec8ce1-9be2-4190-9e67-ab8467915d25
+langcode: en
+status: false
+dependencies: {  }
+label: 'Revision (Node, Landing page)'
+id: node_landing_page_revision
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: landing_page
+view_mode: revision
+master_template: ''

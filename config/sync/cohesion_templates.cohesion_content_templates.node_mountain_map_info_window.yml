@@ -1,0 +1,19 @@
+uuid: b1330b18-4900-43c4-9205-f7370c84e416
+langcode: en
+status: false
+dependencies: {  }
+label: 'Map info window (Node, Mountain)'
+id: node_mountain_map_info_window
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: mountain
+view_mode: map_info_window
+master_template: ''

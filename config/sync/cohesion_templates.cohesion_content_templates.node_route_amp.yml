@@ -1,0 +1,19 @@
+uuid: 37569fe4-3ec2-4917-a001-4fef47cb45a1
+langcode: en
+status: false
+dependencies: {  }
+label: 'AMP (Node, Route)'
+id: node_route_amp
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: route
+view_mode: amp
+master_template: ''

@@ -1,0 +1,19 @@
+uuid: ca3c9061-3b89-4e74-8886-ac05c8c90de6
+langcode: en
+status: false
+dependencies: {  }
+label: 'Search index (Node, Route)'
+id: node_route_search_index
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: route
+view_mode: search_index
+master_template: ''

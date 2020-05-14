@@ -1,0 +1,19 @@
+uuid: 6389f484-7400-436f-bf76-8447ecc51eba
+langcode: en
+status: false
+dependencies: {  }
+label: 'AMP (Node, Landing page)'
+id: node_landing_page_amp
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: landing_page
+view_mode: amp
+master_template: ''

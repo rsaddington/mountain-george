@@ -1,0 +1,20 @@
+uuid: cd035b77-8aeb-4085-942e-1a7f7aa21b5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.mountain
+id: node.mountain.uid
+field_name: uid
+entity_type: node
+bundle: mountain
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

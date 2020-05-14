@@ -1,0 +1,22 @@
+uuid: 200a2a4d-08de-48b0-82a0-308d38b9c826
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.route
+  module:
+    - text
+id: node.route.body
+field_name: body
+entity_type: node
+bundle: route
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

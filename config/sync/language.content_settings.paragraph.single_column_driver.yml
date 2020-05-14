@@ -1,0 +1,11 @@
+uuid: e5d7a1ed-44d3-4d2e-95c9-ae41a21f9e45
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.single_column_driver
+id: paragraph.single_column_driver
+target_entity_type_id: paragraph
+target_bundle: single_column_driver
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,19 @@
+uuid: 45559ebc-e617-4229-a9d2-259ddf51908e
+langcode: en
+status: false
+dependencies: {  }
+label: 'Search result highlighting input (Node, Mountain)'
+id: node_mountain_search_result
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: mountain
+view_mode: search_result
+master_template: ''

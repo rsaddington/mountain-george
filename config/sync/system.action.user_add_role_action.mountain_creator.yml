@@ -1,0 +1,14 @@
+uuid: 74ea730b-1431-4f9d-9eac-db6f3f68eab6
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.mountain_creator
+  module:
+    - user
+id: user_add_role_action.mountain_creator
+label: 'Add the Mountain creator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: mountain_creator

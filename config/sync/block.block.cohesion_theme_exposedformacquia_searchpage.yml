@@ -1,0 +1,25 @@
+uuid: 9d01f079-95db-4a8a-8f9c-6f702a7fb6a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.acquia_search
+  module:
+    - views
+  theme:
+    - cohesion_theme
+_core:
+  default_config_hash: MnGHGNkOcN54HROOlCNlxL9Vk_x2GLIgDnrZiSCFdQc
+id: cohesion_theme_exposedformacquia_searchpage
+theme: cohesion_theme
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'views_exposed_filter_block:acquia_search-page'
+settings:
+  id: 'views_exposed_filter_block:acquia_search-page'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility: {  }

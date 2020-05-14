@@ -1,0 +1,23 @@
+uuid: 4224c09b-2341-465a-85c8-0f8e4abf0743
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - file
+id: block_content.field_route_map
+field_name: field_route_map
+entity_type: block_content
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

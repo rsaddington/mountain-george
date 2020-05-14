@@ -1,0 +1,74 @@
+uuid: 3b88d039-de01-4596-91b9-44ed9339e8d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.media
+  module:
+    - lightning_media
+    - media_acquiadam
+    - views
+_core:
+  default_config_hash: kT3o2OhRMWgZX6kGxRYSsItntaw241e3UwpGCD3RpJE
+name: media_browser
+label: 'Media browser'
+display: iframe
+display_configuration:
+  width: 100%
+  height: '600'
+  link_text: 'Select entities'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  8b142f33-59d1-47b1-9e3a-4ae85d8376fa:
+    settings:
+      submit_text: Place
+      target_bundles: {  }
+      form_mode: media_browser
+    uuid: 8b142f33-59d1-47b1-9e3a-4ae85d8376fa
+    weight: -8
+    label: 'Create embed'
+    id: embed_code
+  044d2af7-314b-4830-8b6d-64896bbb861e:
+    settings:
+      submit_text: Place
+      target_bundles: {  }
+      form_mode: media_browser
+      return_file: false
+      upload_validators: {  }
+    uuid: 044d2af7-314b-4830-8b6d-64896bbb861e
+    weight: -9
+    label: Upload
+    id: file_upload
+  bd2a541f-e5b5-49c3-9eed-19d9787b01b0:
+    settings:
+      view: media
+      view_display: entity_browser_1
+      submit_text: Place
+      auto_select: false
+    uuid: bd2a541f-e5b5-49c3-9eed-19d9787b01b0
+    weight: -10
+    label: Library
+    id: view
+  2d44eadc-5c41-478d-8d24-1ef04f2eecc2:
+    settings:
+      extensions: 'jpg jpeg png gif'
+      media_type: image
+      upload_location: 'public://'
+      multiple: '1'
+      submit_text: 'Select files'
+    uuid: 2d44eadc-5c41-478d-8d24-1ef04f2eecc2
+    weight: 4
+    label: media_image_upload
+    id: media_image_upload
+  aa425ca3-245d-4a94-a63f-97ce742a6d6f:
+    settings:
+      media_type: acquia_dam_media_asset
+      submit_text: 'Select assets'
+    uuid: aa425ca3-245d-4a94-a63f-97ce742a6d6f
+    weight: 5
+    label: acquiadam
+    id: acquiadam

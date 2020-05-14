@@ -1,0 +1,18 @@
+uuid: 9a019f5c-4289-46fd-8600-cd40d55b3c70
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.mountain
+id: node.mountain.created
+field_name: created
+entity_type: node
+bundle: mountain
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

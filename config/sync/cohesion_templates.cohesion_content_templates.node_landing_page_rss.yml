@@ -1,0 +1,19 @@
+uuid: 7712e4d8-04ca-40e4-9e23-f84502a7b64d
+langcode: en
+status: false
+dependencies: {  }
+label: 'RSS (Node, Landing page)'
+id: node_landing_page_rss
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: landing_page
+view_mode: rss
+master_template: ''

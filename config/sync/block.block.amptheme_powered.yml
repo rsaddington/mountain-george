@@ -1,0 +1,22 @@
+uuid: 45b119f6-8519-4ea3-b2b1-d36ea9fcb75c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - amptheme
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: amptheme_powered
+theme: amptheme
+region: header
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

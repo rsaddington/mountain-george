@@ -1,0 +1,19 @@
+uuid: 3223eaf4-c4b4-4b89-8b40-76b1a4743f29
+langcode: en
+status: false
+dependencies: {  }
+label: 'Preview (Paragraph, Image driver 2)'
+id: paragraph_image_driver_2_preview
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: paragraph
+bundle: image_driver_2
+view_mode: preview
+master_template: ''

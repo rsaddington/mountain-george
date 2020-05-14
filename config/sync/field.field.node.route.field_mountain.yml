@@ -1,0 +1,28 @@
+uuid: 91a74d86-f267-4338-88d9-c9d4abce54c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mountain
+    - node.type.mountain
+    - node.type.route
+id: node.route.field_mountain
+field_name: field_mountain
+entity_type: node
+bundle: route
+label: Mountain
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      mountain: mountain
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

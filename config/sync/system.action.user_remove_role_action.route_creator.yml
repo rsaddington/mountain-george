@@ -1,0 +1,14 @@
+uuid: 75a70d90-2fec-4824-be13-f2790a0916f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.route_creator
+  module:
+    - user
+id: user_remove_role_action.route_creator
+label: 'Remove the Route creator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: route_creator

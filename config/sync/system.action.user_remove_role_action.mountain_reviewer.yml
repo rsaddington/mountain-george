@@ -1,0 +1,14 @@
+uuid: 296a1005-4d25-4d1c-88dd-c167a35b8710
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.mountain_reviewer
+  module:
+    - user
+id: user_remove_role_action.mountain_reviewer
+label: 'Remove the Mountain reviewer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: mountain_reviewer

@@ -1,0 +1,21 @@
+uuid: 7f197aad-921e-4af8-956c-ae079de705b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.multi_column_driver
+_core:
+  default_config_hash: IglKmvj35CHB13udYcSbRDvRSxErDAOAH4sU91o9faI
+id: paragraph.multi_column_driver.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: multi_column_driver
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

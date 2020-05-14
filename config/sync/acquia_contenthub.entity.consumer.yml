@@ -1,0 +1,12 @@
+uuid: 82e61b80-959b-48b2-b227-0cf6276afc12
+langcode: en
+status: true
+dependencies:
+  module:
+    - consumers
+id: consumer
+bundles:
+  consumer:
+    enable_index: false
+    enable_viewmodes: false
+    rendering: {  }

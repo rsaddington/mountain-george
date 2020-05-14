@@ -1,0 +1,46 @@
+uuid: 76ac4a4b-0e9f-46d9-a1b3-53e0754feda2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.personalised_content.field_image
+    - field.field.paragraph.personalised_content.field_text
+    - field.field.paragraph.personalised_content.field_title
+    - paragraphs.paragraphs_type.personalised_content
+  module:
+    - image
+    - paragraphs
+    - text
+id: paragraph
+bundles:
+  image_driver:
+    enable_index: false
+    enable_viewmodes: false
+    rendering:
+      default: default
+  image_driver_2:
+    enable_index: false
+    enable_viewmodes: false
+    rendering:
+      default: default
+  multi_column_driver:
+    enable_index: false
+    enable_viewmodes: false
+    rendering:
+      default: default
+  personalised_content:
+    enable_index: true
+    enable_viewmodes: true
+    rendering:
+      preview: preview
+  single_column_driver:
+    enable_index: false
+    enable_viewmodes: false
+    rendering:
+      default: default
+  video_driver:
+    enable_index: false
+    enable_viewmodes: false
+    rendering:
+      default: default

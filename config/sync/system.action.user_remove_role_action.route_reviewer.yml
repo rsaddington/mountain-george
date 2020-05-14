@@ -1,0 +1,14 @@
+uuid: 8df4d6e4-c215-449c-86f7-826eb29dbf34
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.route_reviewer
+  module:
+    - user
+id: user_remove_role_action.route_reviewer
+label: 'Remove the Route reviewer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: route_reviewer

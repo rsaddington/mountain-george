@@ -1,0 +1,19 @@
+uuid: 58579b9b-5f1a-4666-9adc-be03a300220d
+langcode: en
+status: false
+dependencies: {  }
+label: 'Revision comparison (Node, Route)'
+id: node_route_diff
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: route
+view_mode: diff
+master_template: ''

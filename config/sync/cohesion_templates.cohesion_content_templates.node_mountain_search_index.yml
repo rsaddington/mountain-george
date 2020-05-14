@@ -1,0 +1,19 @@
+uuid: bca8bd1a-5a88-4895-baff-88ece1ed3c48
+langcode: en
+status: false
+dependencies: {  }
+label: 'Search index (Node, Mountain)'
+id: node_mountain_search_index
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: mountain
+view_mode: search_index
+master_template: ''

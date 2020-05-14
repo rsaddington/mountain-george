@@ -1,0 +1,21 @@
+uuid: 10a43258-214c-4452-9529-1d77bbbd6a5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.personalised_content
+  module:
+    - text
+id: paragraph.personalised_content.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: personalised_content
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

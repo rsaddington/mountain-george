@@ -1,0 +1,19 @@
+uuid: 9b25dd9a-a6b0-4dd6-877c-dcc60a02baa7
+langcode: en
+status: false
+dependencies: {  }
+label: 'RSS (Node, Route)'
+id: node_route_rss
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: route
+view_mode: rss
+master_template: ''

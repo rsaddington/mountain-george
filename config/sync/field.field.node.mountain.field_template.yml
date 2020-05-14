@@ -1,0 +1,23 @@
+uuid: 2fc51c6b-6dc6-44f2-8580-11dc4a42747f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_template
+    - node.type.mountain
+  module:
+    - cohesion_templates
+id: node.mountain.field_template
+field_name: field_template
+entity_type: node
+bundle: mountain
+label: Template
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    selected_template: node_mountain_full
+default_value_callback: ''
+settings: {  }
+field_type: cohesion_template_selector

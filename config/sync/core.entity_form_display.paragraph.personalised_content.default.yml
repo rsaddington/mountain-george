@@ -1,0 +1,56 @@
+uuid: c84b7756-df98-434c-9ea4-63ed2286ce4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.personalised_content.field_image
+    - field.field.paragraph.personalised_content.field_persona
+    - field.field.paragraph.personalised_content.field_text
+    - field.field.paragraph.personalised_content.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.personalised_content
+  module:
+    - image
+    - text
+id: paragraph.personalised_content.default
+targetEntityType: paragraph
+bundle: personalised_content
+mode: default
+content:
+  field_image:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_persona:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_text:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

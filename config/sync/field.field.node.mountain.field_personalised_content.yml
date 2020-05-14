@@ -1,0 +1,46 @@
+uuid: b9ae53bf-b17b-4f06-8d10-fd9779faaedb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_personalised_content
+    - node.type.mountain
+    - paragraphs.paragraphs_type.personalised_content
+  module:
+    - entity_reference_revisions
+id: node.mountain.field_personalised_content
+field_name: field_personalised_content
+entity_type: node
+bundle: mountain
+label: 'Personalised Content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      personalised_content: personalised_content
+    target_bundles_drag_drop:
+      image_driver:
+        weight: 7
+        enabled: false
+      image_driver_2:
+        weight: 8
+        enabled: false
+      multi_column_driver:
+        weight: 9
+        enabled: false
+      personalised_content:
+        enabled: true
+        weight: 10
+      single_column_driver:
+        weight: 11
+        enabled: false
+      video_driver:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

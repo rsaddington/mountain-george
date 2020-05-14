@@ -1,0 +1,23 @@
+uuid: 25fe18e2-5bdf-4652-8ffb-ea50b87bd8ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_volcano
+    - node.type.mountain
+id: node.mountain.field_volcano
+field_name: field_volcano
+entity_type: node
+bundle: mountain
+label: Volcano
+description: 'Is this a volcanic mountain?'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

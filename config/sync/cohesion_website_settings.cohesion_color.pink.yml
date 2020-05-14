@@ -1,0 +1,13 @@
+uuid: 7f9a66bd-6c6e-40cd-af4d-80448e0e3cc5
+langcode: en
+status: true
+dependencies: {  }
+label: Pink
+id: pink
+json_values: '{"link":true,"value":{"value":{"hex":"#ef7fe3","rgba":"rgba(239, 127, 227, 1)"}},"name":"Pink","uid":"pink","class":".coh-color-pink","variable":"$coh-color-pink","wysiwyg":true,"inuse":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: true
+selectable: true
+weight: 3

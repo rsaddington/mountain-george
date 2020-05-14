@@ -1,0 +1,11 @@
+uuid: 6fb2d531-4806-4fd9-8071-72b965a66207
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sL588ui1E_8-2c_UupwyYxcqX2OVyMFp3HTLbbFqvPc
+id: global
+label: Global
+tags:
+  canonical_url: dev.mountaingeorge.uk
+  title: '[current-page:title] | [site:name]'

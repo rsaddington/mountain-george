@@ -1,0 +1,11 @@
+shield_enable: true
+credential_provider: shield
+credentials:
+  shield:
+    user: rich
+    pass: rich
+print: Hello!
+allow_cli: false
+_core:
+  default_config_hash: yHBuI_J_kdrugm0JRNsxHODZ0qQyPzejI6r1ZPacK5Q
+whitelist: ''

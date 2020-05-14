@@ -1,0 +1,11 @@
+uuid: 0bb904be-91e0-4577-b459-5cff28f478e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.acquia_dam_media_asset
+id: media.acquia_dam_media_asset
+target_entity_type_id: media
+target_bundle: acquia_dam_media_asset
+default_langcode: site_default
+language_alterable: false

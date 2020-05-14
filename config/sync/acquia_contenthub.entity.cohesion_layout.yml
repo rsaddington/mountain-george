@@ -1,0 +1,12 @@
+uuid: aa3a353b-6910-417c-aefb-0a5f0b9bf540
+langcode: en
+status: true
+dependencies:
+  module:
+    - cohesion_elements
+id: cohesion_layout
+bundles:
+  cohesion_layout:
+    enable_index: false
+    enable_viewmodes: false
+    rendering: {  }

@@ -1,0 +1,141 @@
+uuid: a58f5dd1-7622-4fd9-a74a-104a0cc938f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.amp
+    - field.field.node.mountain.body
+    - field.field.node.mountain.field_climbed
+    - field.field.node.mountain.field_date_climbed
+    - field.field.node.mountain.field_height
+    - field.field.node.mountain.field_layout_canvas
+    - field.field.node.mountain.field_location
+    - field.field.node.mountain.field_mountain_range
+    - field.field.node.mountain.field_personalised_content
+    - field.field.node.mountain.field_slides
+    - field.field.node.mountain.field_template
+    - field.field.node.mountain.field_volcano
+    - image.style.large
+    - node.type.mountain
+  module:
+    - cohesion_elements
+    - datetime
+    - ds
+    - geofield
+    - image
+    - layout_builder
+    - options
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+  layout_builder:
+    sections: {  }
+    allow_custom: false
+    enabled: false
+id: node.mountain.amp
+targetEntityType: node
+bundle: mountain
+mode: amp
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_climbed:
+    weight: 7
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_date_climbed:
+    weight: 8
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_height:
+    weight: 4
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_layout_canvas:
+    type: cohesion_entity_reference_revisions_entity_view
+    weight: 9
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_location:
+    weight: 3
+    label: above
+    settings:
+      output_format: wkt
+      output_escape: true
+    third_party_settings: {  }
+    type: geofield_default
+    region: content
+  field_mountain_range:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_slides:
+    type: image
+    weight: 2
+    region: content
+    label: above
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+  field_volcano:
+    weight: 5
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  langcode:
+    type: language
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
+hidden:
+  content_moderation_control: true
+  field_personalised_content: true
+  field_template: true
+  links: true
+  search_api_excerpt: true

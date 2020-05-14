@@ -1,0 +1,25 @@
+uuid: 1315661a-8e9c-4b8a-81db-97a73d304845
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.acquia_search
+  module:
+    - views
+  theme:
+    - amptheme
+_core:
+  default_config_hash: MnGHGNkOcN54HROOlCNlxL9Vk_x2GLIgDnrZiSCFdQc
+id: amptheme_exposedformacquia_searchpage
+theme: amptheme
+region: header
+weight: -8
+provider: null
+plugin: 'views_exposed_filter_block:acquia_search-page'
+settings:
+  id: 'views_exposed_filter_block:acquia_search-page'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility: {  }

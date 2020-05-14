@@ -1,0 +1,8 @@
+uuid: 66187434-d045-42a9-a358-e9aefc0b1199
+langcode: en
+status: true
+dependencies: {  }
+id: hero
+label: Hero
+revision: 1
+description: 'A hero block for page headers'

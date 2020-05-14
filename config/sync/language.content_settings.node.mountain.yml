@@ -1,0 +1,11 @@
+uuid: 1d3f2283-eb70-4edc-b202-230e635b5c39
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.mountain
+id: node.mountain
+target_entity_type_id: node
+target_bundle: mountain
+default_langcode: current_interface
+language_alterable: true

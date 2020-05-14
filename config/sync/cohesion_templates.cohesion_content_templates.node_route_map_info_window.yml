@@ -1,0 +1,19 @@
+uuid: 5bb1364f-30d5-4abd-8a36-c35091632f9e
+langcode: en
+status: false
+dependencies: {  }
+label: 'Map info window (Node, Route)'
+id: node_route_map_info_window
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: route
+view_mode: map_info_window
+master_template: ''

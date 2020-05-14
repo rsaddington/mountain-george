@@ -1,0 +1,37 @@
+uuid: 70801487-b6b6-4b71-922a-b37488d29628
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d939d6e5-62ea-4de4-8ba4-164063519d02'
+  module:
+    - block_content
+    - cohesion
+    - system
+  theme:
+    - cohesion_theme
+id: cohesion_theme_personalisedblock1
+theme: cohesion_theme
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:d939d6e5-62ea-4de4-8ba4-164063519d02'
+settings:
+  id: 'block_content:d939d6e5-62ea-4de4-8ba4-164063519d02'
+  label: 'Recommended routes for you'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/mountain/*\r\n/route-list*\r\n/route/*\r\n"
+    negate: false
+    context_mapping: {  }
+  cohesion_master_template:
+    id: cohesion_master_template
+    using_master_template: 0
+    negate: false
+    context_mapping: {  }

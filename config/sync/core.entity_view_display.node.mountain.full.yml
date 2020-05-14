@@ -1,0 +1,214 @@
+uuid: 97ae8081-9d3a-4928-a48a-750ac69c934e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.mountain.body
+    - field.field.node.mountain.field_climbed
+    - field.field.node.mountain.field_date_climbed
+    - field.field.node.mountain.field_height
+    - field.field.node.mountain.field_layout_canvas
+    - field.field.node.mountain.field_location
+    - field.field.node.mountain.field_mountain_range
+    - field.field.node.mountain.field_personalised_content
+    - field.field.node.mountain.field_slides
+    - field.field.node.mountain.field_template
+    - field.field.node.mountain.field_volcano
+    - node.type.mountain
+    - responsive_image.styles.large
+  module:
+    - cohesion_elements
+    - datetime
+    - ds
+    - geofield_map
+    - layout_builder
+    - options
+    - panelizer
+    - responsive_image
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+  ds:
+    layout:
+      id: ds_2col_stacked_fluid
+      library: ds/ds_2col_stacked_fluid
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          header: header
+          left: aside
+          right: aside
+          footer: footer
+        outer_wrapper: section
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      header:
+        - body
+      left:
+        - field_mountain_range
+        - field_height
+        - field_volcano
+        - field_climbed
+        - field_date_climbed
+      right:
+        - field_location
+      footer:
+        - field_slides
+        - field_layout_canvas
+  layout_builder:
+    sections: {  }
+id: node.mountain.full
+targetEntityType: node
+bundle: mountain
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: header
+  field_climbed:
+    weight: 4
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: left
+  field_date_climbed:
+    weight: 5
+    label: above
+    settings:
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_plain
+    region: left
+  field_height:
+    weight: 2
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: left
+  field_layout_canvas:
+    type: cohesion_entity_reference_revisions_entity_view
+    weight: 8
+    region: footer
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+  field_location:
+    weight: 6
+    label: hidden
+    settings:
+      map_dimensions:
+        width: 70%
+        height: 220px
+      map_empty:
+        empty_behaviour: '0'
+        empty_message: 'No Geofield Value entered for this field'
+      map_center:
+        lat: '42'
+        lon: '12.5'
+        center_force: 0
+        geocode: 'Find my location'
+      map_zoom_and_pan:
+        zoom:
+          initial: '10'
+          min: '1'
+          max: '22'
+          force: 0
+        scrollwheel: 0
+        draggable: 0
+        map_reset: 0
+      map_controls:
+        zoom_control: '1'
+        map_type_id: roadmap
+        map_type_control: '1'
+        map_type_control_options_type_ids:
+          roadmap: roadmap
+          satellite: 0
+          hybrid: 0
+          terrain: 0
+        disable_default_ui: 0
+        scale_control: 0
+        street_view_control: 0
+        fullscreen_control: 0
+      map_marker_and_infowindow:
+        icon_image_path: ''
+        infowindow_field: title
+        view_mode: diff
+        multivalue_split: 0
+        force_open: 0
+      map_additional_options: ''
+      map_oms:
+        map_oms_control: '1'
+        map_oms_options: '{"markersWontMove":"true","markersWontHide":"true","basicFormatEvents":"true","nearbyDistance":3}'
+      custom_style_map:
+        custom_style_name: ''
+        custom_style_options: ''
+        custom_style_control: 0
+        custom_style_default: 0
+      map_markercluster:
+        markercluster_additional_options: ''
+        markercluster_control: 0
+      gmap_api_key: ''
+      map_additional_libraries: {  }
+      map_geometries_options: '{"strokeColor":"black","strokeOpacity":"0.8","strokeWeight":2,"fillColor":"blue","fillOpacity":"0.1", "clickable": false}'
+    third_party_settings: {  }
+    type: geofield_google_map
+    region: right
+  field_mountain_range:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: left
+  field_slides:
+    type: responsive_image
+    weight: 7
+    region: footer
+    label: above
+    settings:
+      responsive_image_style: large
+      image_link: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+  field_volcano:
+    weight: 3
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: left
+hidden:
+  content_moderation_control: true
+  field_personalised_content: true
+  field_template: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

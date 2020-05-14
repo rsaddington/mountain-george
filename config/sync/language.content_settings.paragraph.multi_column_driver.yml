@@ -1,0 +1,11 @@
+uuid: 36d250bc-5c75-4f3c-b39b-214492e4acd7
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.multi_column_driver
+id: paragraph.multi_column_driver
+target_entity_type_id: paragraph
+target_bundle: multi_column_driver
+default_langcode: site_default
+language_alterable: false

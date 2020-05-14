@@ -1,0 +1,19 @@
+uuid: ee5f2dc2-7328-49da-b20e-675057ef48c9
+langcode: en
+status: false
+dependencies: {  }
+label: 'Revision comparison (Node, Landing page)'
+id: node_landing_page_diff
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: landing_page
+view_mode: diff
+master_template: ''

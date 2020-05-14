@@ -1,0 +1,23 @@
+uuid: 5bfc760d-ef4b-428f-b5d5-170db7d1e1a0
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_embed
+    - image
+    - media
+_core:
+  default_config_hash: ShmiFDMOjYFcwCuRYCxiR3-z-A892AG9cgjMKet5lns
+label: 'Media browser'
+id: media_browser
+type_id: entity
+type_settings:
+  entity_type: media
+  bundles: {  }
+  display_plugins:
+    - 'view_mode:media.embedded'
+    - media_image
+  entity_browser: media_browser
+  entity_browser_settings:
+    display_review: false
+icon_uuid: null

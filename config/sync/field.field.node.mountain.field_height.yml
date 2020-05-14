@@ -1,0 +1,23 @@
+uuid: c51b8f16-7119-4f13-8200-e6b00acddd83
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_height
+    - node.type.mountain
+id: node.mountain.field_height
+field_name: field_height
+entity_type: node
+bundle: mountain
+label: Height
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: m
+field_type: integer

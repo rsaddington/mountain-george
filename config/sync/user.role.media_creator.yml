@@ -1,0 +1,29 @@
+uuid: 7aee0247-7e49-4789-b09b-580b18b37c9b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: _IJNze-N-V6Z63278VbfRpZPKdLb2qaNVXhet2pxMQE
+id: media_creator
+label: 'Media creator'
+weight: 5
+is_admin: null
+permissions:
+  - 'access media overview'
+  - 'access media_browser entity browser pages'
+  - 'create document media'
+  - 'create file media'
+  - 'create image media'
+  - 'create media'
+  - 'create video media'
+  - 'delete media'
+  - 'delete own document media'
+  - 'delete own file media'
+  - 'delete own image media'
+  - 'delete own video media'
+  - 'dropzone upload files'
+  - 'edit own document media'
+  - 'edit own file media'
+  - 'edit own image media'
+  - 'edit own video media'
+  - 'update media'

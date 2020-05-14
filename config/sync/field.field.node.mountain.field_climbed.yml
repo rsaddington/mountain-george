@@ -1,0 +1,23 @@
+uuid: 72403af6-8d1b-4771-8652-6505fbf531c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_climbed
+    - node.type.mountain
+id: node.mountain.field_climbed
+field_name: field_climbed
+entity_type: node
+bundle: mountain
+label: Climbed
+description: 'Have we climbed it?'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

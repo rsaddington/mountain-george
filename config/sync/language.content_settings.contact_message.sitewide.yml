@@ -1,0 +1,11 @@
+uuid: 20669a93-b1d6-4b18-be5d-0ff3d64c2dc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.sitewide
+id: contact_message.sitewide
+target_entity_type_id: contact_message
+target_bundle: sitewide
+default_langcode: site_default
+language_alterable: false

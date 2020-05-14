@@ -1,0 +1,22 @@
+uuid: 244149ae-08fd-43be-8ba0-7adbba14962a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.mountain
+id: node.mountain.sticky
+field_name: sticky
+entity_type: node
+bundle: mountain
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

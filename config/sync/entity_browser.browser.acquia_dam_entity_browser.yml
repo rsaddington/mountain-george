@@ -1,0 +1,27 @@
+uuid: 665d6d61-9e18-4420-9970-84c1ee71cdbe
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_acquiadam
+name: acquia_dam_entity_browser
+label: 'Acquia Dam Entity Browser'
+display: iframe
+display_configuration:
+  width: 100%
+  height: '800'
+  link_text: 'Select entities'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  32e832dd-75c5-4712-9225-c953563307d5:
+    settings:
+      media_type: acquia_dam_media_asset
+      submit_text: 'Select assets'
+    uuid: 32e832dd-75c5-4712-9225-c953563307d5
+    weight: 2
+    label: acquiadam
+    id: acquiadam

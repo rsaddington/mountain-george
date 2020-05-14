@@ -1,0 +1,20 @@
+uuid: f2fe3c2c-cd32-4c7f-b72f-7c07c2873fdc
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.file
+  module:
+    - path
+id: media.file.path
+field_name: path
+entity_type: media
+bundle: file
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

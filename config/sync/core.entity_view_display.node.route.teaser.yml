@@ -1,0 +1,42 @@
+uuid: 7d38da2a-8efc-4f73-b346-cef6853a30bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.route.body
+    - field.field.node.route.field_difficulty
+    - field.field.node.route.field_distance
+    - field.field.node.route.field_mountain
+    - field.field.node.route.field_type
+    - node.type.route
+  module:
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.route.teaser
+targetEntityType: node
+bundle: route
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 0
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_difficulty: true
+  field_distance: true
+  field_mountain: true
+  field_type: true
+  langcode: true
+  links: true

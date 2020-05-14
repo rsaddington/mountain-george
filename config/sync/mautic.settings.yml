@@ -1,0 +1,7 @@
+visibility:
+  request_path_mode: '0'
+  request_path_pages: "/admin\r\n/admin/*\r\n/batch\r\n/node/add*\r\n/node/*/*\r\n/user/*/*"
+_core:
+  default_config_hash: 7VDjt4rr_-VuD0dnw3jGNOh4ZNB4uSScTt1YtH9bFvw
+mautic_enable: 1
+mautic_base_url: 'https://mountaingeorge.mautic.net/mtc.js'

@@ -1,0 +1,25 @@
+uuid: 51f443ad-2304-49e3-9be4-073e1cbb6208
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.image_driver
+  module:
+    - link
+_core:
+  default_config_hash: btUKMYwrTULLurijrjzf-QY8CqFWDykn49CeRXXO7Ro
+id: paragraph.image_driver.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: image_driver
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

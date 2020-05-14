@@ -1,0 +1,43 @@
+uuid: c53414b7-bd9a-4b12-91ee-0dbe60caff30
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.personalised_content.field_image
+    - field.field.paragraph.personalised_content.field_text
+    - field.field.paragraph.personalised_content.field_title
+    - paragraphs.paragraphs_type.personalised_content
+  module:
+    - image
+    - text
+id: paragraph.personalised_content.preview
+targetEntityType: paragraph
+bundle: personalised_content
+mode: preview
+content:
+  field_image:
+    type: image
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_text:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

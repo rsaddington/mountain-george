@@ -1,0 +1,19 @@
+uuid: 809c2064-5f2d-448e-a760-d2786b2f804b
+langcode: en
+status: false
+dependencies: {  }
+label: 'Revision (Node, Route)'
+id: node_route_revision
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: route
+view_mode: revision
+master_template: ''

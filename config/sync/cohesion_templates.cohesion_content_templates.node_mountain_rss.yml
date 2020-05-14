@@ -1,0 +1,19 @@
+uuid: ae1c2cba-0347-451f-af1d-6e4ba7448108
+langcode: en
+status: false
+dependencies: {  }
+label: 'RSS (Node, Mountain)'
+id: node_mountain_rss
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: mountain
+view_mode: rss
+master_template: ''

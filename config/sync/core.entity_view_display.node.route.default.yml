@@ -1,0 +1,66 @@
+uuid: 8017a8c1-b617-418d-b5e4-aeeadedfb945
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.route.body
+    - field.field.node.route.field_difficulty
+    - field.field.node.route.field_distance
+    - field.field.node.route.field_mountain
+    - field.field.node.route.field_type
+    - node.type.route
+  module:
+    - options
+    - text
+    - user
+id: node.route.default
+targetEntityType: node
+bundle: route
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_difficulty:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_distance:
+    weight: 103
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_mountain:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_type:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

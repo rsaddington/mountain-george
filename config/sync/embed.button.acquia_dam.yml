@@ -1,0 +1,26 @@
+uuid: 4eb2d308-fbcf-4ac0-88db-590c42478950
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.full
+    - entity_browser.browser.acquia_dam_entity_browser
+    - media.type.acquia_dam_media_asset
+  content:
+    - 'file:file:059ad294-2932-4415-8c11-14158698c1f2'
+  module:
+    - entity_embed
+    - media
+label: 'Acquia DAM'
+id: acquia_dam
+type_id: entity
+type_settings:
+  entity_type: media
+  bundles:
+    - acquia_dam_media_asset
+  display_plugins:
+    - 'view_mode:media.full'
+  entity_browser: acquia_dam_entity_browser
+  entity_browser_settings:
+    display_review: false
+icon_uuid: 059ad294-2932-4415-8c11-14158698c1f2

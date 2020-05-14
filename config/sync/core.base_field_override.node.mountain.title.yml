@@ -1,0 +1,18 @@
+uuid: 3477621b-bdab-438e-97f4-ef30992d3ef0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.mountain
+id: node.mountain.title
+field_name: title
+entity_type: node
+bundle: mountain
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

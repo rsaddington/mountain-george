@@ -1,0 +1,19 @@
+uuid: 0f9c6b47-bdf5-45e0-959f-dc3f7844e246
+langcode: en
+status: false
+dependencies: {  }
+label: 'Thumbnail (Media, Document)'
+id: media_document_thumbnail
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: media
+bundle: document
+view_mode: thumbnail
+master_template: ''

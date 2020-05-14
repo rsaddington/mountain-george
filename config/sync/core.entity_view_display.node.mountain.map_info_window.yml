@@ -1,0 +1,64 @@
+uuid: ce90f419-374b-46cf-bde8-d9564d38f89d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.map_info_window
+    - field.field.node.mountain.body
+    - field.field.node.mountain.field_climbed
+    - field.field.node.mountain.field_date_climbed
+    - field.field.node.mountain.field_height
+    - field.field.node.mountain.field_location
+    - field.field.node.mountain.field_mountain_range
+    - field.field.node.mountain.field_slides
+    - field.field.node.mountain.field_volcano
+    - node.type.mountain
+  module:
+    - options
+    - panelizer
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.mountain.map_info_window
+targetEntityType: node
+bundle: mountain
+mode: map_info_window
+content:
+  field_climbed:
+    weight: 2
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_height:
+    weight: 1
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_mountain_range:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden:
+  body: true
+  field_date_climbed: true
+  field_location: true
+  field_slides: true
+  field_volcano: true
+  langcode: true
+  links: true

@@ -1,0 +1,22 @@
+uuid: 41fa8fe3-de9a-426c-b79c-87e8c1f695bd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ampsubtheme_example
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: ampsubtheme_example_content
+theme: ampsubtheme_example
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

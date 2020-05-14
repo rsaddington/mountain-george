@@ -1,0 +1,19 @@
+uuid: 05d6f638-8cf6-4dc2-ab07-10bcb31767e7
+langcode: en
+status: false
+dependencies: {  }
+label: 'Token (Block_content, Personalised Content Block)'
+id: block_content_personalised_con_0
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: block_content
+bundle: personalised_content_block
+view_mode: token
+master_template: ''

@@ -1,0 +1,8 @@
+uuid: 7433bcd3-ac00-40a4-aa76-faab17d70393
+langcode: en
+status: true
+dependencies: {  }
+id: personalised_content_block
+label: 'Personalised Content Block'
+revision: 1
+description: 'Block used for personalisation'

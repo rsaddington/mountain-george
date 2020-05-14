@@ -1,0 +1,33 @@
+uuid: 1b30f882-3441-437d-b6a8-538616a82dab
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media
+bundles:
+  acquia_dam_media_asset:
+    enable_index: false
+    enable_viewmodes: false
+    rendering:
+      default: default
+  document:
+    enable_index: false
+    enable_viewmodes: false
+    rendering:
+      default: default
+  file:
+    enable_index: false
+    enable_viewmodes: false
+    rendering:
+      default: default
+  image:
+    enable_index: false
+    enable_viewmodes: false
+    rendering:
+      default: default
+  video:
+    enable_index: false
+    enable_viewmodes: false
+    rendering:
+      default: default

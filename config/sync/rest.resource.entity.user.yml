@@ -1,0 +1,19 @@
+uuid: 79913a0e-f51f-4e69-a6c8-e5bd76ee67fb
+langcode: en
+status: false
+dependencies:
+  module:
+    - serialization
+    - simple_oauth
+    - user
+id: entity.user
+plugin_id: 'entity:user'
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - oauth2
+    - cookie

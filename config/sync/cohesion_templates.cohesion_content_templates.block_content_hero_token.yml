@@ -1,0 +1,19 @@
+uuid: b2ab8462-9a9c-4f18-84ef-033ffeaaa7bc
+langcode: en
+status: false
+dependencies: {  }
+label: 'Token (Block_content, Hero)'
+id: block_content_hero_token
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: block_content
+bundle: hero
+view_mode: token
+master_template: ''

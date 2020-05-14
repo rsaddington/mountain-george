@@ -1,0 +1,19 @@
+uuid: dbffac5b-4e22-4009-8539-13bd6a63dccd
+langcode: en
+status: false
+dependencies: {  }
+label: 'Full content (Node)'
+id: node___any___full
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: __any__
+view_mode: full
+master_template: ''

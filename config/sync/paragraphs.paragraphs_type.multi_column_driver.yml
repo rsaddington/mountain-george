@@ -1,0 +1,11 @@
+uuid: 684c4e71-b7c8-4c55-8040-6ec4a2d81acf
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ZnoNKpg_85sX95XqTp6xKH8GhYvArB98vlpCzqvnzWI
+id: multi_column_driver
+label: 'Multi column driver'
+icon_uuid: null
+description: 'A multi column driver with repeatable field groups'
+behavior_plugins: {  }

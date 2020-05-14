@@ -1,0 +1,26 @@
+uuid: c2bd229e-414f-4480-9f05-08f8cc998d25
+langcode: en
+status: true
+dependencies: {  }
+name: hero_banner
+label: 'Hero Banner'
+effects:
+  ec4e66e9-329f-45e3-8ab3-04546f76d97e:
+    uuid: ec4e66e9-329f-45e3-8ab3-04546f76d97e
+    id: image_scale_and_crop
+    weight: -8
+    data:
+      width: 1024
+      height: 500
+      anchor: center-center
+  35373504-7b8d-417c-8b98-5f7c3a269399:
+    uuid: 35373504-7b8d-417c-8b98-5f7c3a269399
+    id: image_desaturate
+    weight: -10
+    data: {  }
+  95be33cc-aecc-4ed7-badd-2fb0fff57ebc:
+    uuid: 95be33cc-aecc-4ed7-badd-2fb0fff57ebc
+    id: image_convert
+    weight: -9
+    data:
+      extension: png

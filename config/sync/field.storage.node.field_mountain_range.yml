@@ -1,0 +1,51 @@
+uuid: 8e19af24-b299-4313-bd0e-28ec793d5d8f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_mountain_range
+field_name: field_mountain_range
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Alps
+      label: Alps
+    -
+      value: Andes
+      label: Andes
+    -
+      value: 'Black Mountains'
+      label: 'Black Mountains'
+    -
+      value: 'Brecon Beacons'
+      label: 'Brecon Beacons'
+    -
+      value: 'Grampian Mountains'
+      label: 'Grampian Mountains'
+    -
+      value: Himalayas
+      label: Himalayas
+    -
+      value: 'Lake District'
+      label: 'Lake District'
+    -
+      value: 'Peak District'
+      label: 'Peak District'
+    -
+      value: 'Rila mountains'
+      label: 'Rila mountains'
+    -
+      value: Snowdonia
+      label: Snowdonia
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

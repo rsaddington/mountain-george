@@ -1,0 +1,11 @@
+uuid: fe0e49a3-35ec-4a8f-bcaf-020202dfdde6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.route_map
+id: block_content.route_map
+target_entity_type_id: block_content
+target_bundle: route_map
+default_langcode: site_default
+language_alterable: false

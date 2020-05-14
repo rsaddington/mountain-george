@@ -1,0 +1,11 @@
+uuid: ac42f3d9-add2-4978-9dc7-93f78a4bae64
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.image_driver_2
+id: paragraph.image_driver_2
+target_entity_type_id: paragraph
+target_bundle: image_driver_2
+default_langcode: site_default
+language_alterable: false

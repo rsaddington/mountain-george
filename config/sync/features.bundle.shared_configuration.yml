@@ -1,0 +1,132 @@
+uuid: 1d3c6895-a7da-4ebe-b730-5cf4cdc40025
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Eu8CvZYqHh4Zx02qu1Xf9a7QC3JnDQTOZmSWkD8h4ic
+name: 'Shared configuration'
+machine_name: shared_configuration
+description: 'Auto-generated bundle from package Shared configuration'
+assignments:
+  alter:
+    core: true
+    uuid: true
+    user_permissions: true
+    enabled: true
+    weight: 0
+  base:
+    types:
+      config:
+        comment_type: comment_type
+        node_type: node_type
+      content:
+        user: user
+    enabled: true
+    weight: -2
+  core:
+    types:
+      config:
+        date_format: date_format
+        field_storage_config: field_storage_config
+        entity_form_mode: entity_form_mode
+        image_style: image_style
+        menu: menu
+        responsive_image_style: responsive_image_style
+        user_role: user_role
+        entity_view_mode: entity_view_mode
+    enabled: true
+    weight: 5
+  dependency:
+    enabled: true
+    weight: 15
+  exclude:
+    types:
+      config:
+        system_simple: system_simple
+        action: action
+        base_field_override: base_field_override
+        block: block
+        contact_form: contact_form
+        node_type: node_type
+        crop_type: crop_type
+        block_content_type: block_content_type
+        date_format: date_format
+        embed_button: embed_button
+        entity_browser: entity_browser
+        entity_form_display: entity_form_display
+        entity_view_display: entity_view_display
+        features_bundle: features_bundle
+        field_config: field_config
+        entity_form_mode: entity_form_mode
+        image_style: image_style
+        media_type: media_type
+        menu: menu
+        metatag_defaults: metatag_defaults
+        oauth2_token_type: oauth2_token_type
+        paragraphs_type: paragraphs_type
+        rdf_mapping: rdf_mapping
+        user_role: user_role
+        search_api_index: search_api_index
+        search_api_server: search_api_server
+        shortcut_set: shortcut_set
+        taxonomy_vocabulary: taxonomy_vocabulary
+        editor: editor
+        filter_format: filter_format
+        view: view
+        entity_view_mode: entity_view_mode
+        workflow: workflow
+    curated: true
+    module:
+      installed: true
+      profile: true
+      namespace: true
+      namespace_any: false
+    enabled: true
+    weight: -5
+  existing:
+    enabled: true
+    weight: 12
+  forward_dependency:
+    enabled: true
+    weight: 4
+  namespace:
+    enabled: true
+    weight: 0
+  optional:
+    types:
+      config: {  }
+    enabled: true
+    weight: 0
+  packages:
+    enabled: true
+    weight: -20
+  profile:
+    curated: true
+    standard:
+      files: true
+      dependencies: true
+    types:
+      config:
+        block: block
+        language_content_settings: language_content_settings
+        configurable_language: configurable_language
+        migration: migration
+        shortcut_set: shortcut_set
+        tour: tour
+    enabled: true
+    weight: 10
+  site:
+    types:
+      config:
+        action: action
+        contact_form: contact_form
+        block_content_type: block_content_type
+        rdf_mapping: rdf_mapping
+        search_page: search_page
+        taxonomy_vocabulary: taxonomy_vocabulary
+        editor: editor
+        filter_format: filter_format
+    enabled: true
+    weight: 7
+profile_name: ''
+is_profile: false

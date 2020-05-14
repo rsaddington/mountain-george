@@ -1,0 +1,27 @@
+credential:
+  account_id: rsaddington
+  site_id: mountaingeorge_dev
+  assets_url: 'https://builder-demo.lift.acquia.com'
+  content_origin: 6405b6aa-59d7-44b0-4c09-6072ff4b611a
+  decision_api_url: 'https://us-east-1-demo-decisionapi.lift.acquia.com'
+  oauth_url: 'https://us-east-1-demo-oauth2.lift.acquia.com/authorize'
+identity:
+  capture_identity: false
+  identity_parameter: ''
+  identity_type_parameter: ''
+  default_identity_type: ''
+field_mappings:
+  content_section: ''
+  content_keywords: ''
+  persona: field_type
+udf_person_mappings: {  }
+udf_touch_mappings: {  }
+udf_event_mappings: {  }
+visibility:
+  path_patterns: "/admin\r\n/admin/*\r\n/batch\r\n/node/add*\r\n/node/*/*\r\n/user/*\r\n/block/*"
+advanced:
+  bootstrap_mode: auto
+  content_replacement_mode: trusted
+langcode: en
+_core:
+  default_config_hash: tn0LRJB-BAvpd5tbdr2hOUSKk9Tnm9727-PTbp1tm_A

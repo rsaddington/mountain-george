@@ -1,0 +1,21 @@
+api_url: 'https://api.cohesiondx.com'
+api_key: rich-saddington-9116d7db
+organization_key: internal-acquia-6240593d
+site_id: f4ffda69-9017-4c63-9640-467fa20be611
+api_build_status: NO_CONTENT
+google_map_api_key: ''
+elements_permissions: '{}'
+_core:
+  default_config_hash: RI0unua26mtYe2xd_06fN2tmccs_Jf-tCMfJo2qwBfo
+use_dx8: enable
+asset_is_imported: '1'
+log_dx8_error: enable
+animate_on_view_mobile: ENABLED
+add_animation_classes: ENABLED
+image_browser:
+  config:
+    type: entity_imagebrowser
+    dx8_entity_browser: media_browser
+  content:
+    type: entity_imagebrowser
+    dx8_entity_browser: media_browser

@@ -1,0 +1,70 @@
+uuid: e4b5d837-1569-4383-9b95-bda546748569
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - core.entity_view_mode.node.teaser
+    - field.field.node.landing_page.body
+    - field.field.node.landing_page.field_meta_tags
+    - field.field.node.landing_page.field_personalised_content
+    - field.field.node.landing_page.panelizer
+    - field.field.node.mountain.body
+    - field.field.node.mountain.field_climbed
+    - field.field.node.mountain.field_date_climbed
+    - field.field.node.mountain.field_height
+    - field.field.node.mountain.field_layout_canvas
+    - field.field.node.mountain.field_location
+    - field.field.node.mountain.field_mountain_range
+    - field.field.node.mountain.field_slides
+    - field.field.node.mountain.field_template
+    - field.field.node.mountain.field_volcano
+    - field.field.node.page.body
+    - field.field.node.page.field_meta_tags
+    - field.field.node.page.panelizer
+    - field.field.node.route.body
+    - field.field.node.route.field_difficulty
+    - field.field.node.route.field_distance
+    - field.field.node.route.field_mountain
+    - field.field.node.route.field_type
+    - node.type.landing_page
+    - node.type.mountain
+    - node.type.page
+    - node.type.route
+    - responsive_image.styles.large
+  module:
+    - cohesion_elements
+    - datetime
+    - ds
+    - geofield_map
+    - layout_builder
+    - metatag
+    - node
+    - options
+    - panelizer
+    - responsive_image
+    - text
+    - user
+id: node
+bundles:
+  landing_page:
+    enable_index: true
+    enable_viewmodes: true
+    rendering:
+      full: full
+  mountain:
+    enable_index: true
+    enable_viewmodes: true
+    rendering:
+      full: full
+  page:
+    enable_index: true
+    enable_viewmodes: true
+    rendering:
+      default: default
+  route:
+    enable_index: true
+    enable_viewmodes: true
+    rendering:
+      default: default
+      teaser: teaser

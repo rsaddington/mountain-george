@@ -1,0 +1,23 @@
+uuid: 440c39e5-5c55-452e-9a16-7371b6b3b04b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_in_library
+    - media.type.acquia_dam_media_asset
+id: media.acquia_dam_media_asset.field_media_in_library
+field_name: field_media_in_library
+entity_type: media
+bundle: acquia_dam_media_asset
+label: 'Show in media library'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'Shown in media library'
+  off_label: 'Hidden in media library'
+field_type: boolean

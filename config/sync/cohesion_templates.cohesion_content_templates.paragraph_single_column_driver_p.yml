@@ -1,0 +1,19 @@
+uuid: 152e5829-2dea-4fe1-bc62-862644ecdaec
+langcode: en
+status: false
+dependencies: {  }
+label: 'Preview (Paragraph, Single column driver)'
+id: paragraph_single_column_driver_p
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: paragraph
+bundle: single_column_driver
+view_mode: preview
+master_template: ''

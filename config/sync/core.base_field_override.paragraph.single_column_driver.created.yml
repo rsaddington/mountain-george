@@ -1,0 +1,18 @@
+uuid: d19260b6-e8eb-403b-8bf1-68f98379585d
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.single_column_driver
+id: paragraph.single_column_driver.created
+field_name: created
+entity_type: paragraph
+bundle: single_column_driver
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

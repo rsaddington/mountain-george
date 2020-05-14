@@ -1,0 +1,31 @@
+uuid: c3f4e80d-de9a-47ec-a7c9-dbd6120cac49
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.personalised_content_block
+    - core.entity_view_mode.block_content.full
+    - field.field.block_content.personalised_content_block.body
+  module:
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    sections: {  }
+    allow_custom: false
+    enabled: false
+id: block_content.personalised_content_block.full
+targetEntityType: block_content
+bundle: personalised_content_block
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

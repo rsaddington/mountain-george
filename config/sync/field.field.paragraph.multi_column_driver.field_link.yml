@@ -1,0 +1,25 @@
+uuid: 7af287d4-0dbd-4361-b5d4-b49209ae8a07
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.multi_column_driver
+  module:
+    - link
+_core:
+  default_config_hash: FQgfao8Cg3ZATpbyLc7i8JC-b9iD2WH754v94IwRyDg
+id: paragraph.multi_column_driver.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: multi_column_driver
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

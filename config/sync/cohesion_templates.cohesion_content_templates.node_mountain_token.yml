@@ -1,0 +1,19 @@
+uuid: ebe00df6-84cb-4710-a653-fa9ac0cfa90f
+langcode: en
+status: false
+dependencies: {  }
+label: 'Token (Node, Mountain)'
+id: node_mountain_token
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: mountain
+view_mode: token
+master_template: ''

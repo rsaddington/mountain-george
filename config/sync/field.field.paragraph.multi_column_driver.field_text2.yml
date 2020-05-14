@@ -1,0 +1,23 @@
+uuid: db293ce3-f481-4b8d-b324-e9a4df03186c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text2
+    - paragraphs.paragraphs_type.multi_column_driver
+  module:
+    - text
+_core:
+  default_config_hash: 4_s3YkSogx_kV4GpW58A2OedsvkI1tgAo9d19Icq7Xc
+id: paragraph.multi_column_driver.field_text2
+field_name: field_text2
+entity_type: paragraph
+bundle: multi_column_driver
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

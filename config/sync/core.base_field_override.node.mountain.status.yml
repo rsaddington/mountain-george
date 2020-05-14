@@ -1,0 +1,22 @@
+uuid: bb9bd175-5f9a-4757-a4c2-ce916b644e1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.mountain
+id: node.mountain.status
+field_name: status
+entity_type: node
+bundle: mountain
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

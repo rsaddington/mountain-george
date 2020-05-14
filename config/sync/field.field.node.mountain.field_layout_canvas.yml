@@ -1,0 +1,24 @@
+uuid: 84fae013-191a-4719-baf9-9961fbe570bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_layout_canvas
+    - node.type.mountain
+  module:
+    - cohesion_elements
+id: node.mountain.field_layout_canvas
+field_name: field_layout_canvas
+entity_type: node
+bundle: mountain
+label: 'Layout canvas'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:cohesion_layout'
+  handler_settings: {  }
+  access_elements: '1'
+field_type: cohesion_entity_reference_revisions

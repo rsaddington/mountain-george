@@ -1,0 +1,9 @@
+uuid: 7e54e751-df00-47b0-9ba6-fa5df52509b7
+langcode: en
+status: true
+dependencies: {  }
+id: personalised_content
+label: 'Personalised Content'
+icon_uuid: null
+description: 'Personalised content paragraph type that can be embedded on a page'
+behavior_plugins: {  }

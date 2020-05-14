@@ -1,0 +1,19 @@
+uuid: adf91d0e-b827-445f-850b-f014bd3c77ca
+langcode: en
+status: false
+dependencies: {  }
+label: 'Revision comparison (Node, Mountain)'
+id: node_mountain_diff
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: mountain
+view_mode: diff
+master_template: ''

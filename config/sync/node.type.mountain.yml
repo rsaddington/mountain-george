@@ -1,0 +1,17 @@
+uuid: 561cd7a9-ac51-44e1-a0db-4965a09dbe25
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Mountain
+type: mountain
+description: 'A mountain and the key stats about it'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

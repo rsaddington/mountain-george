@@ -1,0 +1,21 @@
+uuid: b983126e-6ec5-4ab3-b0fc-9a885ed9f3b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_climbed
+    - node.type.mountain
+  module:
+    - datetime
+id: node.mountain.field_date_climbed
+field_name: field_date_climbed
+entity_type: node
+bundle: mountain
+label: 'Dates climbed'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

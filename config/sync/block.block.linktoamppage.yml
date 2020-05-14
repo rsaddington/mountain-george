@@ -1,0 +1,39 @@
+uuid: d4164d0c-6e3c-4553-abe9-7c46a78f8c30
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0c8135ad-981e-454f-ad4d-23fe4f76bcb7'
+  module:
+    - block_content
+    - cohesion
+    - ctools
+  theme:
+    - bartik
+id: linktoamppage
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:0c8135ad-981e-454f-ad4d-23fe4f76bcb7'
+settings:
+  id: 'block_content:0c8135ad-981e-454f-ad4d-23fe4f76bcb7'
+  label: 'Link to AMP page'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  cohesion_master_template:
+    id: cohesion_master_template
+    using_master_template: 0
+    negate: false
+    context_mapping: {  }
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      mountain: mountain
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

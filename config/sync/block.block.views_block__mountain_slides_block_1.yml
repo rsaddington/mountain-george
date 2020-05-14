@@ -1,0 +1,33 @@
+uuid: 9858bd5e-614a-44d3-9828-93c2a4db61d0
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.mountain_slides
+  module:
+    - ctools
+    - views
+  theme:
+    - bartik
+id: views_block__mountain_slides_block_1
+theme: bartik
+region: sidebar_second
+weight: -4
+provider: null
+plugin: 'views_block:mountain_slides-block_1'
+settings:
+  id: 'views_block:mountain_slides-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      mountain: mountain
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

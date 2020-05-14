@@ -1,0 +1,8 @@
+enable: false
+mail_address: ''
+dblog: false
+allow_role_bypass: false
+bypass_action: provide_link_login_page
+white_black_list: 0
+_core:
+  default_config_hash: 6bZqSoH9-gPmBFPgmW1JcSLt9wN_AfYsUbs9H4_xJeQ

@@ -1,0 +1,20 @@
+uuid: 2b4d6921-e835-4a59-a37e-1b5a28b4d8b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - crop
+    - media_acquiadam
+third_party_settings:
+  crop:
+    image_field: _none
+id: acquia_dam_media_asset
+label: 'Acquia DAM media asset'
+description: 'Acquia DAM media asset'
+source: acquiadam_asset
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_acquiadam_asset_id
+field_map:
+  file: field_dam_file

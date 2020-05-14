@@ -1,0 +1,11 @@
+uuid: ae4d6fad-dc74-4eb3-b4d4-c0696057916e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.persona
+id: taxonomy_term.persona
+target_entity_type_id: taxonomy_term
+target_bundle: persona
+default_langcode: site_default
+language_alterable: false

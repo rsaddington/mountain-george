@@ -1,0 +1,20 @@
+uuid: 725e86f6-a502-4ad3-9298-c78c52cd02a2
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: fAmE5PvY01KjPbH3ed_Z9ne0alK4MZXTb3gLnw9N86Y
+name: 'Landing page'
+type: landing_page
+description: 'A special page with its own one-off layout and content.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

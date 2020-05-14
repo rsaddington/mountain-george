@@ -1,0 +1,11 @@
+uuid: 30ba0fd7-d496-477c-9780-a8ac0edfb2f9
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: '-K5I762gpPqFH1lQvanrIDXlf3koHLHxbWc5LLg_o3I'
+id: video_driver
+label: 'Video driver'
+icon_uuid: null
+description: 'Video driver'
+behavior_plugins: {  }

@@ -1,0 +1,22 @@
+uuid: 37233529-b19e-443e-90b4-56b638f2bace
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cohesion_theme
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: cohesion_theme_powered
+theme: cohesion_theme
+region: header
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

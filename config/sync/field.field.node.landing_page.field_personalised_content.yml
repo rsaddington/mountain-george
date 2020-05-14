@@ -1,0 +1,46 @@
+uuid: 568be126-6249-4617-a425-d49dab1b2ef9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_personalised_content
+    - node.type.landing_page
+    - paragraphs.paragraphs_type.personalised_content
+  module:
+    - entity_reference_revisions
+id: node.landing_page.field_personalised_content
+field_name: field_personalised_content
+entity_type: node
+bundle: landing_page
+label: 'Personalised Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      personalised_content: personalised_content
+    target_bundles_drag_drop:
+      image_driver:
+        weight: 7
+        enabled: false
+      image_driver_2:
+        weight: 8
+        enabled: false
+      multi_column_driver:
+        weight: 9
+        enabled: false
+      personalised_content:
+        enabled: true
+        weight: 10
+      single_column_driver:
+        weight: 11
+        enabled: false
+      video_driver:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

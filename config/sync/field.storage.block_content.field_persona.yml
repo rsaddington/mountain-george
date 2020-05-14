@@ -1,0 +1,20 @@
+uuid: ce46adc1-0f1e-40b1-b52e-a552eb4c97e4
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - taxonomy
+id: block_content.field_persona
+field_name: field_persona
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

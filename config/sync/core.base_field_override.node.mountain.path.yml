@@ -1,0 +1,20 @@
+uuid: 3dc2163f-1599-4f6d-9aa4-b6941fe05cc6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.mountain
+  module:
+    - path
+id: node.mountain.path
+field_name: path
+entity_type: node
+bundle: mountain
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

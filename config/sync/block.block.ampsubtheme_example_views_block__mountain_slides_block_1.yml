@@ -1,0 +1,33 @@
+uuid: d095ca08-c8f2-4498-9c3a-911617dff5eb
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.mountain_slides
+  module:
+    - ctools
+    - views
+  theme:
+    - ampsubtheme_example
+id: ampsubtheme_example_views_block__mountain_slides_block_1
+theme: ampsubtheme_example
+region: header
+weight: -4
+provider: null
+plugin: 'views_block:mountain_slides-block_1'
+settings:
+  id: 'views_block:mountain_slides-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      mountain: mountain
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

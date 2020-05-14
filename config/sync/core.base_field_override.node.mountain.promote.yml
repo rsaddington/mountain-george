@@ -1,0 +1,22 @@
+uuid: 13e6fc19-d8cd-4f3a-8044-9dba5cfc2a2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.mountain
+id: node.mountain.promote
+field_name: promote
+entity_type: node
+bundle: mountain
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

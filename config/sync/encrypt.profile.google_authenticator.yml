@@ -1,0 +1,13 @@
+uuid: bb5da36e-e915-4707-a27d-eeabf4ce5e4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - key.key.google_authentication_key
+  module:
+    - real_aes
+id: google_authenticator
+label: 'Google Authenticator'
+encryption_method: real_aes
+encryption_key: google_authentication_key
+encryption_method_configuration: {  }

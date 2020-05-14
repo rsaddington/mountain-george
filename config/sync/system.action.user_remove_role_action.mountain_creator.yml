@@ -1,0 +1,14 @@
+uuid: 60bcb00c-a9c6-449d-bd5b-2b3074fa7642
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.mountain_creator
+  module:
+    - user
+id: user_remove_role_action.mountain_creator
+label: 'Remove the Mountain creator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: mountain_creator

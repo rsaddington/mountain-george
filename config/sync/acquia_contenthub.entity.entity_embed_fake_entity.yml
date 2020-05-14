@@ -1,0 +1,12 @@
+uuid: e4df6309-4b6a-4097-add3-01b8a2eaf0ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_embed
+id: entity_embed_fake_entity
+bundles:
+  entity_embed_fake_entity:
+    enable_index: false
+    enable_viewmodes: false
+    rendering: {  }

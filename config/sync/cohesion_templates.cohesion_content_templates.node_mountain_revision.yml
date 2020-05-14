@@ -1,0 +1,19 @@
+uuid: 09c271b8-f026-4aaa-902f-308fdb5ece49
+langcode: en
+status: false
+dependencies: {  }
+label: 'Revision (Node, Mountain)'
+id: node_mountain_revision
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: mountain
+view_mode: revision
+master_template: ''

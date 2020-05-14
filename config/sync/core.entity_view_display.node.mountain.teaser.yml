@@ -1,0 +1,45 @@
+uuid: 4c7750c1-accc-4862-877a-40b671c60bfa
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mountain.body
+    - field.field.node.mountain.field_climbed
+    - field.field.node.mountain.field_date_climbed
+    - field.field.node.mountain.field_height
+    - field.field.node.mountain.field_location
+    - field.field.node.mountain.field_mountain_range
+    - field.field.node.mountain.field_slides
+    - field.field.node.mountain.field_volcano
+    - node.type.mountain
+  module:
+    - text
+    - user
+id: node.mountain.teaser
+targetEntityType: node
+bundle: mountain
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_climbed: true
+  field_date_climbed: true
+  field_height: true
+  field_location: true
+  field_mountain_range: true
+  field_slides: true
+  field_volcano: true
+  langcode: true

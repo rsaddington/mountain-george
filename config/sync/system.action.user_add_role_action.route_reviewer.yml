@@ -1,0 +1,14 @@
+uuid: 3f071c7c-e2c7-4b2e-a00a-b55374a1f4d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.route_reviewer
+  module:
+    - user
+id: user_add_role_action.route_reviewer
+label: 'Add the Route reviewer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: route_reviewer

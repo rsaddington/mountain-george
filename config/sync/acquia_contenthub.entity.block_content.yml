@@ -1,0 +1,34 @@
+uuid: d5e1a96a-8fa5-4183-bb3b-bab3b48f0b24
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.personalised_content_block
+    - core.entity_view_mode.block_content.full
+    - field.field.block_content.personalised_content_block.body
+  module:
+    - block_content
+    - layout_builder
+    - text
+id: block_content
+bundles:
+  basic:
+    enable_index: false
+    enable_viewmodes: false
+    rendering:
+      default: default
+  hero:
+    enable_index: false
+    enable_viewmodes: false
+    rendering:
+      default: default
+  personalised_content_block:
+    enable_index: true
+    enable_viewmodes: true
+    rendering:
+      full: full
+  route_map:
+    enable_index: false
+    enable_viewmodes: false
+    rendering:
+      default: default

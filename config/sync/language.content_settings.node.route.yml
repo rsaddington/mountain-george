@@ -1,0 +1,11 @@
+uuid: 7b996cb4-1952-4e41-bb64-bc7b9c2de927
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.route
+id: node.route
+target_entity_type_id: node
+target_bundle: route
+default_langcode: site_default
+language_alterable: false

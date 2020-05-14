@@ -1,0 +1,98 @@
+uuid: c817f415-5fc9-4697-8f5a-052c2b4ffe81
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.amp
+    - field.field.node.landing_page.body
+    - field.field.node.landing_page.field_meta_tags
+    - field.field.node.landing_page.field_personalised_content
+    - field.field.node.landing_page.panelizer
+    - node.type.landing_page
+  module:
+    - ds
+    - layout_builder
+    - metatag
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      content:
+        - langcode
+        - panelizer
+        - links
+        - body
+        - field_meta_tags
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+  layout_builder:
+    sections: {  }
+    allow_custom: false
+    enabled: false
+_core:
+  default_config_hash: SkxeWojHNSc5vLeE-XSjLhntXats7kNY7Vhbzy21xRU
+id: node.landing_page.amp
+targetEntityType: node
+bundle: landing_page
+mode: amp
+content:
+  body:
+    weight: 102
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    type: text_summary_or_trimmed
+    region: content
+  content_moderation_control:
+    weight: -20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_empty_formatter
+    region: content
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  langcode:
+    type: language
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  panelizer:
+    type: panelizer
+    weight: 0
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  workbench_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_personalised_content: true
+  search_api_excerpt: true

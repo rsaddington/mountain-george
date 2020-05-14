@@ -1,0 +1,19 @@
+uuid: 2702cf80-8cb8-45d4-be35-d0f838e617e1
+langcode: en
+status: false
+dependencies: {  }
+label: 'Preview (Paragraph, Video driver)'
+id: paragraph_video_driver_preview
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: paragraph
+bundle: video_driver
+view_mode: preview
+master_template: ''

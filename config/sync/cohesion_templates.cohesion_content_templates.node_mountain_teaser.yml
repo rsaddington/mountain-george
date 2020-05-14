@@ -1,0 +1,19 @@
+uuid: f5bd360e-ea10-4bf8-956a-e4b8559696cb
+langcode: en
+status: false
+dependencies: {  }
+label: 'Teaser (Node, Mountain)'
+id: node_mountain_teaser
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: mountain
+view_mode: teaser
+master_template: ''

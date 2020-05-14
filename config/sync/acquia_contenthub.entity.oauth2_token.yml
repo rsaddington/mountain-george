@@ -1,0 +1,20 @@
+uuid: a20a541a-b177-400d-92a8-0a83cf81f570
+langcode: en
+status: true
+dependencies:
+  module:
+    - simple_oauth
+id: oauth2_token
+bundles:
+  access_token:
+    enable_index: false
+    enable_viewmodes: false
+    rendering: {  }
+  auth_code:
+    enable_index: false
+    enable_viewmodes: false
+    rendering: {  }
+  refresh_token:
+    enable_index: false
+    enable_viewmodes: false
+    rendering: {  }

@@ -1,0 +1,29 @@
+uuid: 30d61be8-f6a3-4063-ace7-a0c14ca19e2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_persona
+    - paragraphs.paragraphs_type.personalised_content
+    - taxonomy.vocabulary.persona
+id: paragraph.personalised_content.field_persona
+field_name: field_persona
+entity_type: paragraph
+bundle: personalised_content
+label: Persona
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      persona: persona
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

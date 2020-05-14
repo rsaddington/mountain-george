@@ -1,0 +1,21 @@
+uuid: 7cc1018b-6ffe-494d-9eee-d916487e4f9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mountain_range
+    - node.type.mountain
+  module:
+    - options
+id: node.mountain.field_mountain_range
+field_name: field_mountain_range
+entity_type: node
+bundle: mountain
+label: 'Mountain range'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

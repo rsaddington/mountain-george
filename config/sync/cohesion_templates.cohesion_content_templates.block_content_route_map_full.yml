@@ -1,0 +1,19 @@
+uuid: 9dea08b1-974d-4524-8c9f-8fb76b39910a
+langcode: en
+status: false
+dependencies: {  }
+label: 'Full (Block_content, Route map)'
+id: block_content_route_map_full
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: block_content
+bundle: route_map
+view_mode: full
+master_template: ''

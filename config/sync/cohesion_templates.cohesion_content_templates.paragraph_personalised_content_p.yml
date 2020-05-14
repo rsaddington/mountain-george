@@ -1,0 +1,19 @@
+uuid: 6bacbc59-1efb-44ff-9400-4629ecd602fd
+langcode: en
+status: false
+dependencies: {  }
+label: 'Preview (Paragraph, Personalised Content)'
+id: paragraph_personalised_content_p
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: paragraph
+bundle: personalised_content
+view_mode: preview
+master_template: ''

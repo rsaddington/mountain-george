@@ -1,0 +1,11 @@
+uuid: 21056e3a-7c4f-4762-9700-f5337d965ad5
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: '-DedhcK_YJ4oT-ionAjbSjUeJ72eMRRrZysbd9f5xo8'
+id: image_driver
+label: 'Image driver'
+icon_uuid: null
+description: 'Image and link'
+behavior_plugins: {  }

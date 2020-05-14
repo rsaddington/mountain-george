@@ -1,0 +1,19 @@
+uuid: b108006c-9ffa-46de-85cd-714f49561d83
+langcode: en
+status: false
+dependencies: {  }
+label: 'Preview (Paragraph, Multi column driver)'
+id: paragraph_multi_column_driver_pr
+json_values: '{"canvas":[],"model":[],"mapper":null}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0015
+locked: false
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: paragraph
+bundle: multi_column_driver
+view_mode: preview
+master_template: ''
