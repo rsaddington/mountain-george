@@ -48,7 +48,7 @@
         "drupal/tfa": "^1.0@alpha",
         "drupal/views_extras": "^1.1",
         "drupal/views_slideshow": "^4.6",
-        "drupal/webform": "5.8",
+        "drupal/webform": "5.6",
         "drupal/webform_encrypt": "^1.0@alpha",
         "drupal/webp": "^1.0@beta",
         "drupal/workbench": "^1.1",
