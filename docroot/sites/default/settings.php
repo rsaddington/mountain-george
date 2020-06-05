@@ -781,6 +781,7 @@ $settings['trusted_host_patterns'] = array(
     '^test\.mountaingeorge\.uk$',
     '^www\.mountaingeorge\.uk$',
     '^mountaingeorge\.uk$',
+    '^school1\.schools\.dev\.mountaingeorge\.uk$',
 );
 
 $config_directories = [
