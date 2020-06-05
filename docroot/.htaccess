@@ -156,8 +156,7 @@ AddEncoding gzip svgz
 
 
   # custom rewrite for Helsinki schools
-  #RewriteRule "^/schools/school1/(.+)" /$1 [NC,L]
-  RewriteRule "^schools\/school1\/(.*)" https://school1.schools.dev.mountaingeorge.uk/$1 [NC,L]
+  RewriteRule ^/schools/school1/(.*) /$1 [QSA]
 
   # Rules to correctly serve gzip compressed CSS and JS files.
   # Requires both mod_rewrite and mod_headers to be enabled.

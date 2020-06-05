@@ -782,6 +782,7 @@ $settings['trusted_host_patterns'] = array(
     '^www\.mountaingeorge\.uk$',
     '^mountaingeorge\.uk$',
     '^school1\.schools\.dev\.mountaingeorge\.uk$',
+    '^static-school1-schools-dev\.mountaingeorge\.uk$',
 );
 
 $config_directories = [
