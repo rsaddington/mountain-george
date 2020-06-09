@@ -135,6 +135,9 @@ AddEncoding gzip svgz
   RewriteCond %{REQUEST_URI} ^(.*)?/(fb-search) [NC]
   RewriteRule ^fb-search(.*)$ https://stage-shared-15-20-2-search.clients.uk.funnelback.com/s/search.html?collection=sbsoxford-meta$1 [P]
 
+  RewriteCond %{REQUEST_URI} ^(.*)?/(search.html?collection=sbsoxford-meta) [NC]
+  RewriteRule ^ fb-search$1 [L]
+
   # Pass all requests not referring directly to files in the filesystem to
   # index.php.
   RewriteCond %{REQUEST_FILENAME} !-f
