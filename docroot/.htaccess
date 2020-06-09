@@ -159,8 +159,9 @@ AddEncoding gzip svgz
   #RewriteCond %{REQUEST_URI} ^(.*)?/(install.php) [OR]
   #RewriteCond %{REQUEST_URI} ^/schools/school1 [NC]
   #RewriteRule ^/schools/school1/(.*) /$1 [QSA]
-  
+
   #Funnelback proxy -> test
+  RewriteCond %{REQUEST_URI} ^/fb-search/ [NC]
   RewriteRule ^fb-search(.*)$ https://stage-shared-15-20-2-search.clients.uk.funnelback.com/s/search.html?collection=sbsoxford-meta$1   [QSA,L]
 
   # Rules to correctly serve gzip compressed CSS and JS files.
