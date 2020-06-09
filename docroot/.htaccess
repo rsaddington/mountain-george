@@ -156,7 +156,12 @@ AddEncoding gzip svgz
 
 
   # custom rewrite for Helsinki schools
-  RewriteRule ^/schools/school1/(.*) /$1 [QSA]
+  #RewriteCond %{REQUEST_URI} ^(.*)?/(install.php) [OR]
+  #RewriteCond %{REQUEST_URI} ^/schools/school1 [NC]
+  #RewriteRule ^/schools/school1/(.*) /$1 [QSA]
+  
+  #Funnelback proxy -> test
+  RewriteRule ^fb-search(.*)$ https://stage-shared-15-20-2-search.clients.uk.funnelback.com/s/search.html?collection=sbsoxford-meta$1   [QSA,L]
 
   # Rules to correctly serve gzip compressed CSS and JS files.
   # Requires both mod_rewrite and mod_headers to be enabled.
