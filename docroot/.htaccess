@@ -142,7 +142,7 @@ AddEncoding gzip svgz
   RewriteRule ^ https://stage-shared-15-20-2-search.clients.uk.funnelback.com%{REQUEST_URI}  [P]
 
   RewriteCond %{REQUEST_URI} ^(.*)?/(resources-global) [NC]
-  RewriteRule ^ https://stage-shared-15-20-2-search.clients.uk.funnelback.com%{REQUEST_URI}  [P]
+  RewriteRule ^ https://stage-shared-15-20-2-search.clients.uk.funnelback.com/s%{REQUEST_URI}  [P]
 
 
   RewriteCond %{REQUEST_URI} ^(.*)?/(search.html) [NC]
