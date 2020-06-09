@@ -69,10 +69,6 @@ AddEncoding gzip svgz
 <IfModule mod_rewrite.c>
   RewriteEngine on
 
-  #Funnelback proxy -> test
-  RewriteCond %{REQUEST_URI} ^(.*)?/(fb-search) [NC]
-  RewriteRule ^fb-search(.*)$ https://stage-shared-15-20-2-search.clients.uk.funnelback.com/s/search.html?collection=sbsoxford-meta$1   [QSA,L]
-
   # Set "protossl" to "s" if we were accessed via https://.  This is used later
   # if you enable "www." stripping or enforcement, in order to ensure that
   # you don't bounce between http and https.
@@ -134,6 +130,10 @@ AddEncoding gzip svgz
 
   # Rewrite install.php during installation to see if mod_rewrite is working
   RewriteRule ^core/install.php core/install.php?rewrite=ok [QSA,L]
+
+  # Funnelback proxy -> test
+  RewriteCond %{REQUEST_URI} ^(.*)?/(fb-search) [NC]
+  RewriteRule ^fb-search(.*)$ https://stage-shared-15-20-2-search.clients.uk.funnelback.com/s/search.html?collection=sbsoxford-meta$1 [P]
 
   # Pass all requests not referring directly to files in the filesystem to
   # index.php.
