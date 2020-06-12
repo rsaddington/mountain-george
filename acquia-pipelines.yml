@@ -32,7 +32,7 @@ events:
         - setup-app:
             type: script
             script:
-              - source ${BLT_DIR}/scripts/pipelines/setup_app --ignore-dirty
+              - source ${BLT_DIR}/scripts/pipelines/setup_app
         #- tests:
         #    type: script
         #    script:
@@ -40,7 +40,7 @@ events:
         - build-artifact:
             type: script
             script:
-              - source ${BLT_DIR}/scripts/pipelines/build_artifact
+              - source ${BLT_DIR}/scripts/pipelines/build_artifact --ignore-dirty
   post-deploy:
     steps:
       - deploy:
