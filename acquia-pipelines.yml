@@ -32,7 +32,7 @@ events:
         - setup-app:
             type: script
             script:
-              - source ${BLT_DIR}/scripts/pipelines/setup_app
+              - source ${BLT_DIR}/scripts/pipelines/setup_app --ignore-dirty
         #- tests:
         #    type: script
         #    script:
