@@ -5,16 +5,19 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "acquia/blt": "9.2.4",
-        "cohesion/dx8": "^5.6",
-        "cohesion/dx8-theme": "^5.6",
-        "drupal/acquia_connector": "^1.5",
+        "acquia/blt": "^10.0.0",
+        "acquia/drupal-spec-tool": "*",
+        "acquia/lightning": "~3.4.3",
+        "acquia/memcache-settings": "*",
+        "drupal/acquia_connector": "^1.5.0",
         "drupal/acquia_contenthub": "^1.32",
         "drupal/acquia_lift": "^3.10",
         "drupal/acquia_purge": "^1.0",
         "drupal/admin_toolbar": "^1.24",
         "drupal/advanced_scheduler": "^1.1",
         "drupal/amp": "^2.1",
+        "drupal/cog": "^1.0.0",
+        "drupal/config_split": "^1.0.0",
         "drupal/core": "^8.6.6",
         "drupal/devel": "^2.0",
         "drupal/ds": "^3.1",
@@ -28,11 +31,11 @@
         "drupal/google_tag": "^1.1",
         "drupal/http_cache_control": "^1.0",
         "drupal/imagemagick": "^2.6",
-        "drupal/jsonapi": "^2.0-rc4",
         "drupal/mautic": "^1.1",
         "drupal/media_acquiadam": "^1.35",
         "drupal/paragraphs": "^1.5",
         "drupal/password_policy": "^3.0@alpha",
+        "drupal/qa_accounts": "^1.0.0-alpha1",
         "drupal/quick_node_clone": "^1.11",
         "drupal/real_aes": "^2.2",
         "drupal/redirect": "^1.3",
@@ -55,14 +58,19 @@
         "drupal/workbench_access": "^1.0@beta",
         "drupal/workbench_moderation": "^1.5",
         "drupal/workflow_notifications": "^1.0@alpha",
+        "php": ">=7.1",
         "solarium/solarium": "^5",
         "webflo/drupal-core-require-dev": "^8.6.0"
     },
     "require-dev": {
+        "acquia/blt-require-dev": "^10.0.0-alpha1",
         "geerlingguy/drupal-vm": "^4.8"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "platform": {
+            "php": "7.2"
+        }
     },
     "extra": {
         "enable-patching": true,
@@ -106,32 +114,60 @@
                 "IP whitelist and enable/disable option as config": "https://www.drupal.org/files/issues/2018-04-17/ip_whitelist-2855364-22.patch"
             },
             "drupal/simplesamlphp_auth": {
-                "Installing the module causes exception and Drupal whitescreen":"https://www.drupal.org/files/issues/2019-02-13/simplesamlphp_auth-fatal-error-on-enable-2915568-31.patch"
+                "Installing the module causes exception and Drupal whitescreen": "https://www.drupal.org/files/issues/2019-02-13/simplesamlphp_auth-fatal-error-on-enable-2915568-31.patch"
             },
             "drupal/tfa": {
-                "Default encryption method mcrypt is deprecated since PHP7.1":"https://www.drupal.org/files/issues/2019-05-29/tfa_deprecated-mcrypt-2978265-8-1-alpha1-25.patch"
+                "Default encryption method mcrypt is deprecated since PHP7.1": "https://www.drupal.org/files/issues/2019-05-29/tfa_deprecated-mcrypt-2978265-8-1-alpha1-25.patch"
             }
         },
-        "merge-plugin": {
-            "require": [
-                "blt/composer.required.json",
-                "blt/composer.suggested.json"
-            ],
-            "merge-extra": true,
-            "merge-extra-deep": true,
-            "merge-scripts": true,
-            "replace": false,
-            "ignore-duplicates": true
+        "composer-exit-on-patch-failure": true,
+        "drupal-scaffold": {
+            "initial": {
+                "sites/default/default.services.yml": "sites/default/services.yml",
+                "sites/default/default.settings.php": "sites/default/settings.php"
+            }
+        },
+        "patchLevel": {
+            "drupal/core": "-p2"
         }
     },
     "repositories": {
-        "dx8": {
-            "type": "vcs",
-            "url": "https://bitbucket.org/cohesion_dev/dx8-module.git"
+        "0": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
         },
-        "dx8-theme": {
-            "type": "vcs",
-            "url": "https://bitbucket.org/cohesion_dev/dx8-theme.git"
+        "1": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        "asset-packagist": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
         }
+    },
+    "autoload": {
+        "psr-4": {
+            "Example\\": "blt/src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Drupal\\Tests\\PHPUnit\\": "tests/phpunit/src/"
+        }
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "blt internal:create-project:init-repo"
+        ],
+        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+        "nuke": [
+            "rm -rf vendor composer.lock docroot/core docroot/modules/contrib docroot/profiles/contrib docroot/themes/contrib",
+            "@composer clearcache --ansi",
+            "@composer install --ansi"
+        ]
     }
 }
