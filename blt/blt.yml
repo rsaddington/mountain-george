@@ -9,7 +9,6 @@ project:
     hostname: 'local.${project.machine_name}.com'
 git:
   default_branch: master
-  remotes: {  }
 deploy:
   tag_source: true
 drush:
