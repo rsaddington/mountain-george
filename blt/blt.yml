@@ -10,7 +10,7 @@ project:
 git:
   default_branch: master
   remotes:
-   - 'eersaddington@svn-28441.prod.hosting.acquia.com:eersaddington.git' 
+   - 'git@github.com:rsaddington/mountain-george.git' 
 deploy:
   tag_source: true
 drush:
