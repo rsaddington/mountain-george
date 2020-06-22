@@ -9,7 +9,8 @@ project:
     hostname: 'local.${project.machine_name}.com'
 git:
   default_branch: master
-  remotes: {  }
+  remotes:
+   - 'eersaddington@svn-28441.prod.hosting.acquia.com:eersaddington.git' 
 deploy:
   tag_source: true
 drush:
